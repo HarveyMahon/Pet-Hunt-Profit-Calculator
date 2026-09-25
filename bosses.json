@@ -4099,6 +4099,81 @@
       "price": 239556,
       "tradeable": false,
       "valueNote": "Fixed value: the Wiki money-making guide's average floor 4-5 loot per run (1,676,889 gp/hr at 7 runs/hr, supplies deducted), as of 25 Sep 2026"
+    },
+    "Ultracompost": {
+      "price": 474,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Dragonfruit": {
+      "price": 790,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Papaya fruit": {
+      "price": 1650,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Calquat fruit": {
+      "price": 101,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Poison ivy berries": {
+      "price": 218,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Celastrus bark": {
+      "price": 8019,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Monkey nuts": {
+      "price": 133,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Monkey bar": {
+      "price": 770,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Yanillian hops": {
+      "price": 826,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Cadava berries": {
+      "price": 69,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Seaweed spore": {
+      "price": 227,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Giant seaweed": {
+      "price": 71,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Mushroom spore": {
+      "price": 79,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Mushroom": {
+      "price": 193,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Magic roots": {
+      "price": 8166,
+      "tradeable": true,
+      "referenceOnly": true
     }
   },
   "bosses": [
@@ -30770,6 +30845,397 @@
         "Courier tasks count only their coin bags. Shipwreck loot uses each Wiki money-making guide's hourly profit, which is fixed rather than refreshed by the weekly price update.",
         "Deep sea trawling, sea charting and trimming sails are not listed.",
         "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
+      ]
+    },
+    {
+      "id": "tangleroot",
+      "name": "Tangleroot",
+      "skill": "Farming",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Tangleroot",
+      "level": 99,
+      "levelFactor": 25,
+      "timeUnit": "day",
+      "petFormula": "Chance per patch check (or final harvest) = 1 / (base chance - 25 x Farming level)",
+      "rollsLabel": "Pet rolls/day",
+      "ranking": {
+        "label": "equal weight on days to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "herbs",
+          "name": "Herb run (torstol)",
+          "location": "9-10 herb patches",
+          "baseChance": 98364,
+          "actionsPerHour": 40,
+          "unit": "patches (10 x 4 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Grimy torstol",
+              "perAction": 9.14
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Torstol seed",
+              "perAction": 1
+            },
+            {
+              "item": "Ultracompost",
+              "perAction": 1
+            }
+          ],
+          "requirements": "85 Farming; magic secateurs",
+          "note": "8.8-9.1 herbs per patch as in the Wiki's money-making guide.",
+          "rateSource": "10 patches; 1.33333-hour growth (Wiki), so 4 runs a day (capped at 4 a day)"
+        },
+        {
+          "id": "magic-trees",
+          "name": "Tree run (magic trees)",
+          "location": "6 tree patches",
+          "baseChance": 9368,
+          "actionsPerHour": 18.0,
+          "unit": "patches (6 x 3 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Magic roots",
+              "perAction": 2.5
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Magic seed",
+              "perAction": 1
+            },
+            {
+              "item": "Coconut",
+              "perAction": 25
+            }
+          ],
+          "requirements": "75 Farming",
+          "note": "Trees are dug up for roots and replanted; the 25-coconut payment protects each tree. Logs are not counted.",
+          "rateSource": "6 patches; 8-hour growth (Wiki), so 3 runs a day"
+        },
+        {
+          "id": "dragonfruit",
+          "name": "Fruit tree run (dragonfruit)",
+          "location": "6 fruit tree patches",
+          "baseChance": 9000,
+          "actionsPerHour": 9.0,
+          "unit": "patches (6 x 1.5 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Dragonfruit",
+              "perAction": 6
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Dragonfruit tree seed",
+              "perAction": 1
+            },
+            {
+              "item": "Coconut",
+              "perAction": 15
+            }
+          ],
+          "requirements": "81 Farming",
+          "note": "",
+          "rateSource": "6 patches; 16-hour growth (Wiki), so 1.5 runs a day"
+        },
+        {
+          "id": "palm",
+          "name": "Fruit tree run (palm trees)",
+          "location": "6 fruit tree patches",
+          "baseChance": 9000,
+          "actionsPerHour": 9.0,
+          "unit": "patches (6 x 1.5 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coconut",
+              "perAction": 6
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Palm tree seed",
+              "perAction": 1
+            },
+            {
+              "item": "Papaya fruit",
+              "perAction": 15
+            }
+          ],
+          "requirements": "68 Farming",
+          "note": "",
+          "rateSource": "6 patches; 16-hour growth (Wiki), so 1.5 runs a day"
+        },
+        {
+          "id": "calquat",
+          "name": "Calquat tree",
+          "location": "Tai Bwo Wannai",
+          "baseChance": 6000,
+          "actionsPerHour": 1.125,
+          "unit": "patches (1 x 1.1 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Calquat fruit",
+              "perAction": 6
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Calquat tree seed",
+              "perAction": 1
+            },
+            {
+              "item": "Poison ivy berries",
+              "perAction": 8
+            }
+          ],
+          "requirements": "72 Farming",
+          "note": "",
+          "rateSource": "1 patch; 21.3333-hour growth (Wiki), so 1.1 runs a day"
+        },
+        {
+          "id": "celastrus",
+          "name": "Celastrus tree",
+          "location": "Farming Guild",
+          "baseChance": 9000,
+          "actionsPerHour": 1.8,
+          "unit": "patches (1 x 1.8 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Celastrus bark",
+              "perAction": 3
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Celastrus seed",
+              "perAction": 1
+            },
+            {
+              "item": "Potato cactus",
+              "perAction": 8
+            }
+          ],
+          "requirements": "85 Farming",
+          "note": "",
+          "rateSource": "1 patch; 13.3333-hour growth (Wiki), so 1.8 runs a day"
+        },
+        {
+          "id": "crystal",
+          "name": "Crystal tree",
+          "location": "Prifddinas",
+          "baseChance": 9000,
+          "actionsPerHour": 3.0,
+          "unit": "patches (1 x 3 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Crystal shard (as divine potions)",
+              "perAction": 24
+            }
+          ],
+          "inputs": [],
+          "requirements": "74 Farming; Song of the Elves",
+          "note": "About 24 crystal shards per tree, valued as divine super combat potions (as on the beaver page). Crystal acorns are untradeable, so they are not costed.",
+          "rateSource": "1 patch; 8-hour growth (Wiki), so 3 runs a day"
+        },
+        {
+          "id": "redwood",
+          "name": "Redwood tree",
+          "location": "Farming Guild",
+          "baseChance": 5000,
+          "actionsPerHour": 0.225,
+          "unit": "patches (1 x 0.22 runs)",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [
+            {
+              "item": "Redwood tree seed",
+              "perAction": 1
+            },
+            {
+              "item": "Dragonfruit",
+              "perAction": 6
+            }
+          ],
+          "requirements": "90 Farming",
+          "note": "Logs are not counted.",
+          "rateSource": "1 patch; 106.667-hour growth (Wiki), so 0.22 runs a day"
+        },
+        {
+          "id": "spirit",
+          "name": "Spirit trees",
+          "location": "Up to 5 spirit tree patches",
+          "baseChance": 5000,
+          "actionsPerHour": 1.875,
+          "unit": "patches (5 x 0.38 runs)",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [
+            {
+              "item": "Monkey nuts",
+              "perAction": 5
+            },
+            {
+              "item": "Monkey bar",
+              "perAction": 1
+            }
+          ],
+          "requirements": "83 Farming",
+          "note": "Spirit seeds and ground teeth are untradeable, so they are not costed.",
+          "rateSource": "5 patches; 64-hour growth (Wiki), so 0.38 runs a day"
+        },
+        {
+          "id": "mahogany",
+          "name": "Hardwood trees (mahogany)",
+          "location": "Fossil Island and Avium Savannah",
+          "baseChance": 5000,
+          "actionsPerHour": 1.125,
+          "unit": "patches (4 x 0.28 runs)",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [
+            {
+              "item": "Mahogany seed",
+              "perAction": 1
+            },
+            {
+              "item": "Yanillian hops",
+              "perAction": 25
+            }
+          ],
+          "requirements": "55 Farming",
+          "note": "Logs are not counted.",
+          "rateSource": "4 patches; 85.3333-hour growth (Wiki), so 0.28 runs a day"
+        },
+        {
+          "id": "hespori",
+          "name": "Hespori",
+          "location": "Farming Guild",
+          "baseChance": 7000,
+          "actionsPerHour": 0.75,
+          "unit": "patches (1 x 0.75 runs)",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "65 Farming",
+          "note": "Hespori seeds and the anima seeds it drops are untradeable, so there is no profit.",
+          "rateSource": "1 patch; 32-hour growth (Wiki), so 0.75 runs a day"
+        },
+        {
+          "id": "belladonna",
+          "name": "Belladonna",
+          "location": "Draynor Manor",
+          "baseChance": 8000,
+          "actionsPerHour": 4,
+          "unit": "patches (1 x 4 runs)",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [
+            {
+              "item": "Belladonna seed",
+              "perAction": 1
+            }
+          ],
+          "requirements": "63 Farming",
+          "note": "Nightshade has no Grand Exchange price, so only the seed cost is counted.",
+          "rateSource": "1 patch; 5.33333-hour growth (Wiki), so 4 runs a day (capped at 4 a day)"
+        },
+        {
+          "id": "cactus",
+          "name": "Cactus",
+          "location": "Al Kharid and the Farming Guild",
+          "baseChance": 7000,
+          "actionsPerHour": 5.1429,
+          "unit": "patches (2 x 2.6 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Cactus spine",
+              "perAction": 3
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Cactus seed",
+              "perAction": 1
+            },
+            {
+              "item": "Cadava berries",
+              "perAction": 6
+            }
+          ],
+          "requirements": "55 Farming",
+          "note": "Not potato cactus, which has a much worse pet rate.",
+          "rateSource": "2 patches; 9.33333-hour growth (Wiki), so 2.6 runs a day"
+        },
+        {
+          "id": "seaweed",
+          "name": "Giant seaweed",
+          "location": "Fossil Island (underwater)",
+          "baseChance": 7500,
+          "actionsPerHour": 8,
+          "unit": "patches (2 x 4 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Giant seaweed",
+              "perAction": 4
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Seaweed spore",
+              "perAction": 1
+            }
+          ],
+          "requirements": "23 Farming; Bone Voyage",
+          "note": "About 4 giant seaweed per patch (estimate).",
+          "rateSource": "2 patches; 0.666667-hour growth (Wiki), so 4 runs a day (capped at 4 a day)"
+        },
+        {
+          "id": "mushrooms",
+          "name": "Mushrooms",
+          "location": "Canifis",
+          "baseChance": 7500,
+          "actionsPerHour": 4,
+          "unit": "patches (1 x 4 runs)",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Mushroom",
+              "perAction": 6
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Mushroom spore",
+              "perAction": 1
+            }
+          ],
+          "requirements": "53 Farming",
+          "note": "",
+          "rateSource": "1 patch; 4-hour growth (Wiki), so 4 runs a day (capped at 4 a day)"
+        }
+      ],
+      "assumptions": [
+        "Level 99 Farming; pet chance per patch check (or final harvest where a patch has no health check) = 1 / (base chance - 25 x 99), using the Wiki's base chances.",
+        "Time is real-world days: each run is done every time it is ready, up to 4 runs a day (so herb, seaweed, belladonna and mushroom runs are capped at 4 a day). Every patch survives.",
+        "Profit counts produce sold on the Grand Exchange minus seeds, protection payments and compost where listed. Farming experience, tree logs, and untradeable seeds are not counted.",
+        "The Wiki suggests combining runs (trees plus cactus, belladonna, hespori, seaweed and mushrooms) for the fastest pet; each run here is shown on its own.",
+        "Methods are ranked by the average of their rank for days to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
       ]
     }
   ]
