@@ -170,7 +170,7 @@
     <div class="title-row">
       <h1>Pet Hunt <span>Profit</span> Calculator</h1>
       <nav class="tabs" aria-label="Views">
-        <button type="button" class="tab" id="tab-overview" data-view="overview">All bosses</button>
+        <button type="button" class="tab" id="tab-overview" data-view="overview">All pets</button>
         <button type="button" class="tab" id="tab-calc" data-view="calc">Calculator</button>
         <button type="button" class="tab" id="tab-skill" data-view="skill">Skilling pets</button>
         <button type="button" class="tab" id="tab-misc" data-view="misc">Miscellaneous pets</button>
@@ -181,7 +181,7 @@
   <section id="overview-view" class="view">
     <div class="table-head">
       <h2>Loot by the pet drop rate</h2>
-      <p class="note" style="margin:0">Average loot collected over the number of kills, raids or runs that matches each pet's drop rate. Bosses with extra options use their default settings. Select a boss to see its full breakdown and change the settings.</p>
+      <p class="note" style="margin:0">Average loot collected over the number of kills, raids, runs or actions that matches each pet's drop rate. Bosses with extra options use their default settings, and skilling pets use the top method on their page. Select a row to see its full breakdown and change the settings.</p>
     </div>
     <div class="scroller"><table id="overview"><thead></thead><tbody></tbody></table></div>
   </section>
@@ -653,12 +653,17 @@
 
   const nameKey = n => n.replace(/^the\s+/i, '');
   const OVS = {
-    overview: { table: 'overview', first: 'Boss', sort: { key: 'total', dir: -1 }, rows: [] },
+    overview: { table: 'overview', first: 'Source', sort: { key: 'total', dir: -1 }, rows: [] },
     misc: { table: 'misc-overview', first: 'Source', sort: { key: 'total', dir: -1 }, rows: [] },
   };
   function buildOverview() {
     const all = DATA.bosses.map(b => ({ id: b.id, name: b.name, pet: b.petName || '', misc: b.category === 'misc', ...defaultRun(b) }));
-    OVS.overview.rows = all.filter(r => !r.misc);
+    // Skilling pets at their best-ranked method (the top row on their page)
+    const skill = (DATA.skillingPets || []).map(p => {
+      const top = skillRun(p, DATA.items).top[0];
+      return top ? { id: 'skill-' + p.id, skillId: p.id, name: `${top.name} (${p.skill})`, pet: p.name, total: top.total } : null;
+    }).filter(Boolean);
+    OVS.overview.rows = [...all, ...skill];
     OVS.misc.rows = all.filter(r => r.misc);
     renderOverview('overview'); renderOverview('misc');
     if (!OVS.misc.rows.length) $('tab-misc').hidden = true;
@@ -690,7 +695,14 @@
         <td class="pet">${esc(r.pet)}</td>
         <td class="num">${r.total < 0 ? costGp(-r.total) : gp(r.total)}</td>
       </tr>`).join('');
-    tbody.querySelectorAll('tr').forEach(tr => tr.addEventListener('click', () => openBoss(tr.dataset.id)));
+    tbody.querySelectorAll('tr').forEach(tr => tr.addEventListener('click', () => {
+      const id = tr.dataset.id;
+      if (id.startsWith('skill-')) openSkill(id.slice(6)); else openBoss(id);
+    }));
+  }
+  function openSkill(id) {
+    const p = (DATA.skillingPets || []).find(x => x.id === id); if (!p) return;
+    SKILL = p; $('skill-pet').value = id; store.set('skillpet', id); renderSkill(); showView('skill'); window.scrollTo(0, 0);
   }
   function showView(v) {
     $('overview-view').hidden = v !== 'overview';
