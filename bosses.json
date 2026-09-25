@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schemaVersion": 9,
+    "schemaVersion": 10,
     "description": "Local drop-table and price snapshot for the OSRS Pet Hunt Profit Calculator. The app reads only this file; prices are refreshed by running update_prices.py, not by the app.",
     "dropSource": "Old School RuneScape Wiki drop tables",
     "dropsRetrieved": "2026-09-25",
@@ -28,7 +28,8 @@
       "Tombs of Amascut uses a points-based 'raidOption' (type 'toa'); see its howItWorks.",
       "Royal Titans stores two loot tables under 'lootChoice' (the app uses the more valuable) and a 'duoOption'.",
       "Nex and The Hueycoatl use 'teamOption' with per-drop 'teamScaling' (rate, quantity, mvpOnly, none).",
-      "Items with 'derivedFrom' are priced from other items: price = sum(item price x factor) over its terms (e.g. Tokkul = Uncut onyx / 260,000; vestiges = ring - 3 chromium ingots). Items marked referenceOnly are only used for these formulas."
+      "Items with 'derivedFrom' are priced from other items: price = sum(item price x factor) over its terms (e.g. Tokkul = Uncut onyx / 260,000; vestiges = ring - 3 chromium ingots). Items marked referenceOnly are only used for these formulas.",
+      "'skillingPets' holds skilling pets modelled per training method (trees, success chances, logistics) rather than drop tables; the app ranks methods by GP/hr divided by hours to the pet."
     ],
     "pricesUpdatedAt": "2026-09-25T13:48:00+00:00"
   },
@@ -3763,6 +3764,66 @@
       "price": 159,
       "tradeable": true,
       "id": 12934
+    },
+    "Teak logs": {
+      "price": 159,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Arctic pine logs": {
+      "price": 694,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Camphor logs": {
+      "price": 339,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Ironwood logs": {
+      "price": 105,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Redwood logs": {
+      "price": 755,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Rosewood logs": {
+      "price": 366,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Forester's ration": {
+      "price": 45,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Felling axe handle": {
+      "price": 2013017,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Magic leaves": {
+      "price": 668,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Yew leaves": {
+      "price": 498,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Divine super combat potion(4)": {
+      "price": 18246,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Super combat potion(4)": {
+      "price": 12204,
+      "tradeable": true,
+      "referenceOnly": true
     }
   },
   "bosses": [
@@ -28112,6 +28173,284 @@
         }
       ],
       "unit": "kill"
+    }
+  ],
+  "skillingPets": [
+    {
+      "id": "beaver",
+      "name": "Beaver",
+      "skill": "Woodcutting",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Beaver",
+      "level": 99,
+      "levelFactor": 25,
+      "petFormula": "Chance per successful chop = 1 / (base chance - 25 x Woodcutting level)",
+      "ranking": {
+        "label": "GP/hr ÷ hours to pet",
+        "top": 5,
+        "maxTickManipulation": 2
+      },
+      "setup": {
+        "axe": "Crystal felling axe with Forester's rations",
+        "tickSeconds": 0.6,
+        "rollTicks": 4,
+        "noLogChance": 0.2,
+        "rationItem": "Forester's ration",
+        "rationsPerChop": 1,
+        "inventoryCapacity": 54,
+        "treeHopSeconds": 4,
+        "twoTickEfficiency": 0.95,
+        "forestry": {
+          "eventsPerHour": 5,
+          "minutesPerEvent": 2.5,
+          "barkPerHour": 1500,
+          "barkValueTerms": [
+            {
+              "item": "Felling axe handle",
+              "factor": 0.0001
+            },
+            {
+              "item": "Oak logs",
+              "factor": -0.05
+            }
+          ]
+        },
+        "crystalShards": {
+          "chancePerLog": 0.025,
+          "valueTerms": [
+            {
+              "item": "Divine super combat potion(4)",
+              "factor": 2.5
+            },
+            {
+              "item": "Super combat potion(4)",
+              "factor": -2.5
+            }
+          ]
+        },
+        "leavesPerLog": 0.5
+      },
+      "trees": {
+        "teak": {
+          "name": "Teak tree",
+          "baseChance": 264336,
+          "successLow": 60,
+          "successHigh": 200,
+          "despawnSeconds": 30,
+          "log": "Teak logs"
+        },
+        "mahogany": {
+          "name": "Mahogany tree",
+          "baseChance": 220623,
+          "successLow": 36,
+          "successHigh": 97,
+          "despawnSeconds": 60,
+          "log": "Mahogany logs"
+        },
+        "arctic": {
+          "name": "Arctic pine tree",
+          "baseChance": 145758,
+          "successLow": 32,
+          "successHigh": 100,
+          "despawnSeconds": 84,
+          "log": "Arctic pine logs"
+        },
+        "yew": {
+          "name": "Yew tree",
+          "baseChance": 145013,
+          "successLow": 16,
+          "successHigh": 50,
+          "despawnSeconds": 114,
+          "log": "Yew logs",
+          "leaves": "Yew leaves"
+        },
+        "camphor": {
+          "name": "Camphor tree",
+          "baseChance": 145013,
+          "successLow": 34,
+          "successHigh": 93,
+          "despawnSeconds": 120,
+          "log": "Camphor logs"
+        },
+        "magic": {
+          "name": "Magic tree",
+          "baseChance": 72321,
+          "successLow": 8,
+          "successHigh": 23,
+          "despawnSeconds": 234,
+          "log": "Magic logs",
+          "leaves": "Magic leaves"
+        },
+        "ironwood": {
+          "name": "Ironwood tree",
+          "baseChance": 72321,
+          "successLow": 30,
+          "successHigh": 83,
+          "despawnSeconds": 240,
+          "log": "Ironwood logs"
+        },
+        "redwood": {
+          "name": "Redwood tree",
+          "baseChance": 72321,
+          "successLow": 8,
+          "successHigh": 35,
+          "despawnSeconds": 264,
+          "log": "Redwood logs"
+        },
+        "rosewood": {
+          "name": "Rosewood tree",
+          "baseChance": 72321,
+          "successLow": 27,
+          "successHigh": 73,
+          "despawnSeconds": 274.8,
+          "log": "Rosewood logs"
+        }
+      },
+      "methods": [
+        {
+          "id": "2t-teak-prif",
+          "name": "2-tick teaks",
+          "location": "Prifddinas (north-east)",
+          "tree": "teak",
+          "rollTicks": 2,
+          "tickManipulation": true,
+          "inventory": "drop",
+          "prifddinas": true,
+          "forestry": true,
+          "requirements": "Song of the Elves",
+          "note": "Logs dropped; crystal shards kept. Uses rabbits for the 2-tick cycle."
+        },
+        {
+          "id": "2t-mahogany-prif",
+          "name": "2-tick mahogany",
+          "location": "Prifddinas (north-east)",
+          "tree": "mahogany",
+          "rollTicks": 2,
+          "tickManipulation": true,
+          "inventory": "drop",
+          "prifddinas": true,
+          "forestry": true,
+          "requirements": "Song of the Elves",
+          "note": "Logs dropped; crystal shards kept."
+        },
+        {
+          "id": "teak-prif",
+          "name": "Teaks",
+          "location": "Prifddinas (north-east)",
+          "tree": "teak",
+          "inventory": "bank",
+          "bankTripSeconds": 40,
+          "prifddinas": true,
+          "forestry": true,
+          "requirements": "Song of the Elves"
+        },
+        {
+          "id": "mahogany-prif",
+          "name": "Mahogany",
+          "location": "Prifddinas (north-east)",
+          "tree": "mahogany",
+          "inventory": "bank",
+          "bankTripSeconds": 40,
+          "prifddinas": true,
+          "forestry": true,
+          "requirements": "Song of the Elves"
+        },
+        {
+          "id": "yew-prif",
+          "name": "Yews",
+          "location": "Prifddinas (by the south-east bank)",
+          "tree": "yew",
+          "inventory": "bank",
+          "bankTripSeconds": 15,
+          "prifddinas": true,
+          "forestry": true,
+          "requirements": "Song of the Elves"
+        },
+        {
+          "id": "magic-prif",
+          "name": "Magic trees",
+          "location": "Prifddinas (north-west)",
+          "tree": "magic",
+          "inventory": "bank",
+          "bankTripSeconds": 20,
+          "prifddinas": true,
+          "forestry": true,
+          "requirements": "Song of the Elves"
+        },
+        {
+          "id": "arctic-neitiznot",
+          "name": "Arctic pines",
+          "location": "Neitiznot yak pen",
+          "tree": "arctic",
+          "inventory": "bank",
+          "bankTripSeconds": 40,
+          "forestry": true,
+          "requirements": "Partial The Fremennik Isles"
+        },
+        {
+          "id": "camphor-grove",
+          "name": "Camphor",
+          "location": "The Sacred Grove",
+          "tree": "camphor",
+          "inventory": "bank",
+          "bankTripSeconds": 12,
+          "forestry": true,
+          "requirements": "The Red Reef (45 Sailing)"
+        },
+        {
+          "id": "ironwood-sunbleak",
+          "name": "Ironwood",
+          "location": "Sunbleak Island",
+          "tree": "ironwood",
+          "inventory": "bank",
+          "bankTripSeconds": 20,
+          "forestry": true,
+          "requirements": "72 Sailing; bank chest space on your boat (70 Construction)"
+        },
+        {
+          "id": "rosewood-drumstick",
+          "name": "Rosewood",
+          "location": "Drumstick Isle",
+          "tree": "rosewood",
+          "inventory": "bank",
+          "bankTripSeconds": 60,
+          "forestry": true,
+          "requirements": "79 Sailing; Greater teleport focus on your boat",
+          "note": "Banked by teleporting off the island and back to the boat."
+        },
+        {
+          "id": "redwood-guild",
+          "name": "Redwood",
+          "location": "Woodcutting Guild",
+          "tree": "redwood",
+          "inventory": "bank",
+          "bankTripSeconds": 30,
+          "forestry": false,
+          "levelBoost": 7,
+          "requirements": "Woodcutting Guild access",
+          "note": "No Forestry events in the guild; its invisible +7 boost is included."
+        },
+        {
+          "id": "magic-guild",
+          "name": "Magic trees",
+          "location": "Woodcutting Guild",
+          "tree": "magic",
+          "inventory": "bank",
+          "bankTripSeconds": 20,
+          "forestry": false,
+          "levelBoost": 7,
+          "requirements": "Woodcutting Guild access",
+          "note": "No Forestry events in the guild; its invisible +7 boost is included."
+        }
+      ],
+      "assumptions": [
+        "Level 99 Woodcutting with a crystal felling axe and Forester's rations: 20% of successful chops give no log, but the pet is still rolled on every successful chop. One ration is used per successful chop.",
+        "A roll every 4 ticks (2.4 s); 2-tick methods roll every 2 ticks at 95% efficiency (from the Wiki's 2-tick teak rates). Success chances use the Wiki's crystal axe chart for each tree.",
+        "Forestry events (not in the Woodcutting Guild): 5 per hour at 2.5 minutes each, with no chopping during them, earning 1,500 anima-infused bark per hour. Bark is valued by buying felling axe handles (10,000 bark + 500 oak logs) and selling them.",
+        "No group bonus from other players on the same tree, and no dragon or crystal axe special attack.",
+        "Banked methods carry 54 logs per trip (inventory plus a log basket); trip times are estimates for each location.",
+        "Crystal shards (1/40 per log received in Prifddinas) are valued as crystal dust for divine super combat potions: 1 shard makes 2.5 potions. This needs 97 Herblore (boostable).",
+        "Yew and magic trees also give 0.5 leaves per log. Bird nests, clue nests and Forestry event items other than bark are not counted."
+      ]
     }
   ]
 }
