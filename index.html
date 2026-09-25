@@ -511,8 +511,6 @@
     const saved = store.get('boss');
     if (saved && bossList.some(b => b.id === saved)) sel.value = saved;
     $('boss-input').value = (data.bosses.find(b => b.id === sel.value) || bossList[0]).name;
-    $('kph').value = store.get('kph') || '';
-    $('cost').value = store.get('cost') || '';
     $('perfect').value = store.get('perfect') || '';  // set per boss in selectBoss
     $('delve').value = store.get('delve') || '8';
     const key = k => 'raid:' + current.id + ':' + k;
@@ -537,7 +535,9 @@
     });
 
     sel.addEventListener('change', () => { const b = data.bosses.find(x => x.id === sel.value); store.set(isMisc(b) ? 'miscboss' : 'boss', sel.value); enabled.clear(); selectBoss(); showView('calc'); });
-    ['kph', 'cost', 'perfect'].forEach(id => $(id).addEventListener('input', () => { store.set(id, $(id).value); render(); }));
+    // Kills per hour and supply cost are remembered separately for each boss or activity
+    ['kph', 'cost'].forEach(id => $(id).addEventListener('input', () => { store.set(id + ':' + current.id, $(id).value); render(); }));
+    $('perfect').addEventListener('input', () => { store.set('perfect', $('perfect').value); render(); });
 
     const m = data.meta;
     $('footer').innerHTML = `
@@ -873,6 +873,8 @@
 
   function selectBoss() {
     current = DATA.bosses.find(b => b.id === $('boss').value) || DATA.bosses[0];
+    $('kph').value = store.get('kph:' + current.id) || '';
+    $('cost').value = store.get('cost:' + current.id) || '';
     const conds = [...new Set(current.drops.filter(d => d.includeByDefault === false).map(d => d.condition))];
     $('conditions').innerHTML = conds.map((c, i) => {
       const items = current.drops.filter(d => d.condition === c).map(d => d.item);
