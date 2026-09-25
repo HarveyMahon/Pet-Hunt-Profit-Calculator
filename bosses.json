@@ -5500,7 +5500,9 @@
         }
       ],
       "wikiAverage": 78770.0,
-      "notes": "Includes the Unsired (1/100 per kill) and what it gives at the Font of Consumption. The pet comes from the Unsired, which works out at 1/2,560 per kill."
+      "notes": "Includes the Unsired (1/100 per kill) and what it gives at the Font of Consumption. The pet comes from the Unsired, which works out at 1/2,560 per kill.",
+      "defaultKph": 39,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "alchemical_hydra",
@@ -6137,7 +6139,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 180584.03
+      "wikiAverage": 180584.03,
+      "defaultKph": 25,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "amoxliatl",
@@ -6417,7 +6421,9 @@
           "includeByDefault": false
         }
       ],
-      "wikiAverage": 17816.99
+      "wikiAverage": 17816.99,
+      "defaultKph": 40,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "araxxor",
@@ -7034,7 +7040,9 @@
         }
       ],
       "wikiAverage": 45248.5,
-      "notes": "Normal looting. The Wiki also lists a 1/1,500 pet rate for the alternative option, which isn't modelled."
+      "notes": "Normal looting. The Wiki also lists a 1/1,500 pet rate for the alternative option, which isn't modelled.",
+      "defaultKph": 39,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "artio",
@@ -7375,7 +7383,9 @@
         }
       ],
       "wikiAverage": 38871.16,
-      "notes": "Singles version of Callisto, which shares its pet at a lower rate (1/2,800)."
+      "notes": "Singles version of Callisto, which shares its pet at a lower rate (1/2,800).",
+      "defaultKph": 52,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "brutus",
@@ -7925,7 +7935,9 @@
         }
       ],
       "wikiAverage": 139219.98,
-      "notes": "Solo kill (it can also be fought in a team, which isn't modelled here)."
+      "notes": "Solo kill (it can also be fought in a team, which isn't modelled here).",
+      "defaultKph": 25,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "calvarion",
@@ -8273,7 +8285,9 @@
         }
       ],
       "wikiAverage": 45193.78,
-      "notes": "Singles version of Vet'ion, which shares its pet at a lower rate (1/2,800)."
+      "notes": "Singles version of Vet'ion, which shares its pet at a lower rate (1/2,800).",
+      "defaultKph": 55,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "cerberus",
@@ -9023,7 +9037,9 @@
           "table": "tertiary"
         }
       ],
-      "unit": "kill"
+      "unit": "kill",
+      "defaultKph": 50,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "chambers_of_xeric",
@@ -9332,7 +9348,9 @@
         "howItWorks": "Team points T (plus 5,000 per player for a Challenge Mode target time). Unique roll k has chance clamp(T - 570,000*(k-1), 0, 570,000) / 867,600, for k = 1..6; you receive each with chance 1/teamSize. Common drops need no unique for you: 2 distinct items from 33 equally weighted, quantity = maxQty * min(T/teamSize, 131,071) / 131,071. Pet: 1/53 per unique you receive. Raid scale only sets the default points estimate.",
         "defaultScale": 1
       },
-      "drops": []
+      "drops": [],
+      "defaultKph": 1.5,
+      "kphSource": "Estimate for solo raids at scale 1 (the Wiki guide assumes teams at 3 an hour)"
     },
     {
       "id": "chaos_elemental",
@@ -9834,7 +9852,9 @@
         }
       ],
       "wikiAverage": 36807.9,
-      "notes": "Tick the Krystilia option to include Wilderness slayer drops."
+      "notes": "Tick the Krystilia option to include Wilderness slayer drops.",
+      "defaultKph": 60,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "commander_zilyana",
@@ -10204,7 +10224,9 @@
           "expectedPerKill": 0.004,
           "table": "Tertiary"
         }
-      ]
+      ],
+      "defaultKph": 27,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "corporeal_beast",
@@ -10551,7 +10573,9 @@
           "expectedPerKill": 0.001,
           "table": "Tertiary"
         }
-      ]
+      ],
+      "defaultKph": 10,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "corrupted_gauntlet",
@@ -10773,7 +10797,9 @@
           "table": "Tertiary"
         }
       ],
-      "notes": "Counted per Corrupted Hunllef completion."
+      "notes": "Counted per Corrupted Hunllef completion.",
+      "defaultKph": 6,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "dagannoth_prime",
@@ -11375,7 +11401,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 28183.27
+      "wikiAverage": 28183.27,
+      "defaultKph": 8.333,
+      "kphSource": "Wiki money-making guide (solo tribrid: 25 kills an hour across all three kings)"
     },
     {
       "id": "dagannoth_rex",
@@ -11921,7 +11949,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 44653.56
+      "wikiAverage": 44653.56,
+      "defaultKph": 28,
+      "kphSource": "Wiki money-making guide (Rex only)"
     },
     {
       "id": "dagannoth_supreme",
@@ -12516,7 +12546,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 34612.62
+      "wikiAverage": 34612.62,
+      "defaultKph": 8.333,
+      "kphSource": "Wiki money-making guide (solo tribrid: 25 kills an hour across all three kings)"
     },
     {
       "id": "doom_of_mokhaiotl",
@@ -14604,7 +14636,9 @@
           ]
         }
       ],
-      "drops": []
+      "drops": [],
+      "defaultKph": 6,
+      "kphSource": "Wiki money-making guide (delves 1-8)"
     },
     {
       "id": "duke_sucellus",
@@ -14955,7 +14989,9 @@
       ],
       "notes": "Post-quest (not awakened) kills. Standard loot quantities are about 50% higher on a perfect kill (no avoidable damage taken); set your expected perfect-kill percentage in the calculator.",
       "perfectKillOption": true,
-      "defaultPerfectPercent": 50
+      "defaultPerfectPercent": 50,
+      "defaultKph": 34,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "the_gauntlet",
@@ -15170,7 +15206,9 @@
           "expectedPerKill": 0.0005,
           "table": "Tertiary"
         }
-      ]
+      ],
+      "defaultKph": 7,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "graardor",
@@ -15744,7 +15782,9 @@
           "table": "tertiary"
         }
       ],
-      "unit": "kill"
+      "unit": "kill",
+      "defaultKph": 27,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "giant_mole",
@@ -16122,7 +16162,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 21091.18
+      "wikiAverage": 21091.18,
+      "defaultKph": 50,
+      "kphSource": "Wiki money-making guide (Dharok's)"
     },
     {
       "id": "grotesque_guardians",
@@ -16444,7 +16486,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 74423.71
+      "wikiAverage": 74423.71,
+      "defaultKph": 24,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "the_hueycoatl",
@@ -16720,7 +16764,9 @@
           "table": "MVP only",
           "teamScaling": "mvpOnly"
         }
-      ]
+      ],
+      "defaultKph": 7,
+      "kphSource": "Wiki money-making guide (solo)"
     },
     {
       "id": "kalphite_queen",
@@ -17258,7 +17304,9 @@
           "expectedPerKill": 0.0005,
           "table": "Tertiary"
         }
-      ]
+      ],
+      "defaultKph": 22,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "king_black_dragon",
@@ -17643,7 +17691,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 20725.27
+      "wikiAverage": 20725.27,
+      "defaultKph": 30,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "kraken",
@@ -18217,7 +18267,9 @@
           "table": "tertiary"
         }
       ],
-      "unit": "kill"
+      "unit": "kill",
+      "defaultKph": 60,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "kreearra",
@@ -18601,7 +18653,9 @@
           "expectedPerKill": 0.000199501,
           "table": "Tertiary"
         }
-      ]
+      ],
+      "defaultKph": 27,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "kril_tsutsaroth",
@@ -18964,7 +19018,9 @@
           "expectedPerKill": 0.004,
           "table": "Tertiary"
         }
-      ]
+      ],
+      "defaultKph": 26,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "the_leviathan",
@@ -19324,7 +19380,9 @@
       ],
       "perfectKillOption": true,
       "notes": "Post-quest (not awakened) kills. Standard loot quantities are about 50% higher on a perfect kill (no avoidable damage taken); set your expected perfect-kill percentage in the calculator.",
-      "defaultPerfectPercent": 50
+      "defaultPerfectPercent": 50,
+      "defaultKph": 24,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "mad_angel",
@@ -19714,7 +19772,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 29071.0
+      "wikiAverage": 29071.0,
+      "defaultKph": 40,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "maggot_king",
@@ -19917,7 +19977,9 @@
           "table": "Tertiary"
         }
       ],
-      "notes": "Normal looting (open-stomach). Taking eggs gives a different pet chance and isn't modelled."
+      "notes": "Normal looting (open-stomach). Taking eggs gives a different pet chance and isn't modelled.",
+      "defaultKph": 25,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "nex",
@@ -20152,7 +20214,9 @@
           "table": "Tertiary",
           "teamScaling": "none"
         }
-      ]
+      ],
+      "defaultKph": 10,
+      "kphSource": "Wiki money-making guide (team)"
     },
     {
       "id": "the_nightmare",
@@ -20481,7 +20545,9 @@
           "table": "Tertiary",
           "teamScaling": "tertiaryMvp"
         }
-      ]
+      ],
+      "defaultKph": 12,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "phantom_muspah",
@@ -21167,7 +21233,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 265246.7
+      "wikiAverage": 265246.7,
+      "defaultKph": 25,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "phosanis_nightmare",
@@ -21444,7 +21512,9 @@
           "expectedPerKill": 0.00025,
           "table": "Tertiary"
         }
-      ]
+      ],
+      "defaultKph": 9.5,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "royal_titans",
@@ -22560,7 +22630,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 27096.78
+      "wikiAverage": 27096.78,
+      "defaultKph": 30,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "scorpia",
@@ -22838,7 +22910,9 @@
         }
       ],
       "wikiAverage": 32035.92,
-      "notes": "Tick the Krystilia option to include Wilderness slayer drops."
+      "notes": "Tick the Krystilia option to include Wilderness slayer drops.",
+      "defaultKph": 72,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "scurrius",
@@ -23033,7 +23107,9 @@
         }
       ],
       "wikiAverage": 9535.59,
-      "notes": "Solo or top-damage (MVP) drop table."
+      "notes": "Solo or top-damage (MVP) drop table.",
+      "defaultKph": 40,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "shellbane_gryphon",
@@ -23857,7 +23933,9 @@
         "splinterItem": "Sunfire splinters",
         "splinters": 4000,
         "howItWorks": "gamble: pet chance per run = 1 - (1 - 1/petRate)(1 - extraPetChance), quiver worth 0. exchange: pet 1/petRate, plus 4,000 sunfire splinters per run."
-      }
+      },
+      "defaultKph": 2.5,
+      "kphSource": "Wiki money-making guide (full Colosseum runs)"
     },
     {
       "id": "spindel",
@@ -24184,7 +24262,9 @@
         }
       ],
       "wikiAverage": 79395.52,
-      "notes": "Singles version of Venenatis, which shares its pet at a lower rate (1/2,800)."
+      "notes": "Singles version of Venenatis, which shares its pet at a lower rate (1/2,800).",
+      "defaultKph": 60,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "tempoross",
@@ -24343,7 +24423,9 @@
           "table": "Other"
         }
       ],
-      "notes": "Counted per reward-pool roll, with fish for Fishing level 81+. Caskets and spirit flakes are valued at 0."
+      "notes": "Counted per reward-pool roll, with fish for Fishing level 81+. Caskets and spirit flakes are valued at 0.",
+      "defaultKph": 60,
+      "kphSource": "Wiki money-making guide (reward permits per hour)"
     },
     {
       "id": "theatre_of_blood",
@@ -24637,7 +24719,9 @@
         ],
         "howItWorks": "Per player per raid: each unique = teamUniqueChance / teamSize x weight. Common items = (1 - teamUniqueChance / teamSize) x commonRolls x chancePerRoll, with quantity x commonMultiplier / teamSize (or targetTimeCommonMultiplier for Hard Mode within the target time). Tertiary chances and petRate are per player."
       },
-      "drops": []
+      "drops": [],
+      "defaultKph": 3,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "thermonuclear_smoke_devil",
@@ -25050,7 +25134,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 25462.86
+      "wikiAverage": 25462.86,
+      "defaultKph": 80,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "tombs_of_amascut",
@@ -25230,7 +25316,9 @@
         ],
         "howItWorks": "P = points per player (excluding the starting 5,000, capped at 59,000); team points T = P x team size. Unique scaled level u = L (L<=310), 310+(L-310)/3 (<=430), 350+(L-430)/6 (above). Team unique chance = min(0.55, T / (100 x (10,500 - 20u))); yours = that / team size. Common: (1 - your unique chance) x 3 rolls x 1/27 per item, qty = P / divisor x (1 if L<300 else 1.15 + 0.01 x floor((L-300)/5)). Pet: scaled level v = L (<=400), 400+(L-400)/3 (<=550), 450 above; chance = P / (100 x (350,000 - 700v))."
       },
-      "drops": []
+      "drops": [],
+      "defaultKph": 2,
+      "kphSource": "Estimate for solo raids at level 300 (the Wiki guide gives 1.5 an hour at level 450)"
     },
     {
       "id": "tzkal_zuk",
@@ -25272,7 +25360,9 @@
           "Tokkul"
         ],
         "multiplier": 2
-      }
+      },
+      "defaultKph": 0.5,
+      "kphSource": "Estimate: about 2 hours per Inferno run"
     },
     {
       "id": "tztok_jad",
@@ -25314,7 +25404,9 @@
           "Tokkul"
         ],
         "multiplier": 2
-      }
+      },
+      "defaultKph": 1,
+      "kphSource": "Estimate from the Wiki Fight Cave strategies (runs often take about an hour)"
     },
     {
       "id": "vardorvis",
@@ -25674,7 +25766,9 @@
       ],
       "notes": "Post-quest (not awakened) kills. Standard loot quantities are about 50% higher on a perfect kill (no avoidable damage taken); set your expected perfect-kill percentage in the calculator.",
       "perfectKillOption": true,
-      "defaultPerfectPercent": 50
+      "defaultPerfectPercent": 50,
+      "defaultKph": 32,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "venenatis",
@@ -26064,7 +26158,9 @@
         }
       ],
       "wikiAverage": 245878.03,
-      "notes": "Solo kill (it can also be fought in a team, which isn't modelled here)."
+      "notes": "Solo kill (it can also be fought in a team, which isn't modelled here).",
+      "defaultKph": 26,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "vetion",
@@ -26461,7 +26557,9 @@
         }
       ],
       "wikiAverage": 134241.98,
-      "notes": "Solo kill (it can also be fought in a team, which isn't modelled here)."
+      "notes": "Solo kill (it can also be fought in a team, which isn't modelled here).",
+      "defaultKph": 37,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "vorkath",
@@ -27453,7 +27551,9 @@
           "table": "tertiary"
         }
       ],
-      "unit": "kill"
+      "unit": "kill",
+      "defaultKph": 30,
+      "kphSource": "Wiki money-making guide (dragon hunter crossbow)"
     },
     {
       "id": "the_whisperer",
@@ -27813,7 +27913,9 @@
       ],
       "notes": "Post-quest (not awakened) kills. Standard loot quantities are about 50% higher on a perfect kill (no avoidable damage taken); set your expected perfect-kill percentage in the calculator.",
       "perfectKillOption": true,
-      "defaultPerfectPercent": 50
+      "defaultPerfectPercent": 50,
+      "defaultKph": 20,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "wintertodt",
@@ -27909,7 +28011,9 @@
           "table": "Other"
         }
       ],
-      "notes": "Counted per reward-cart roll. Logs, ores, herbs, seeds, gems and fish depend on your skill levels and aren't included, so real loot is higher than shown."
+      "notes": "Counted per reward-cart roll. Logs, ores, herbs, seeds, gems and fish depend on your skill levels and aren't included, so real loot is higher than shown.",
+      "defaultKph": 28,
+      "kphSource": "Wiki Wintertodt strategies (about 28 reward rolls an hour)"
     },
     {
       "id": "yama",
@@ -28159,7 +28263,9 @@
           "table": "Tertiary"
         }
       ],
-      "notes": "Standard fight with no contract, for players dealing at least 15% of the damage."
+      "notes": "Standard fight with no contract, for players dealing at least 15% of the damage.",
+      "defaultKph": 10,
+      "kphSource": "Wiki money-making guide (solo)"
     },
     {
       "id": "zalcano",
@@ -28347,7 +28453,9 @@
         }
       ],
       "wikiAverage": 241177.72,
-      "notes": "Quantities scale with your contribution; the midpoint is used."
+      "notes": "Quantities scale with your contribution; the midpoint is used.",
+      "defaultKph": 48,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "zulrah",
@@ -29174,7 +29282,9 @@
           "table": "tertiary"
         }
       ],
-      "unit": "kill"
+      "unit": "kill",
+      "defaultKph": 20,
+      "kphSource": "Wiki money-making guide"
     },
     {
       "id": "bloodhound",
