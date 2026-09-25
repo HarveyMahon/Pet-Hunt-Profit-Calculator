@@ -157,6 +157,18 @@ def validate_latest(latest):
     return data
 
 
+GE_CAP = 2_147_483_647
+
+
+def apply_off_ge(items):
+    """Items that trade above the Grand Exchange's max-cash cap keep their recorded off-GE value
+    while the GE price is stuck at (or within 1% of) the cap."""
+    for item in items.values():
+        off = item.get("offGe")
+        if off and item.get("price", 0) >= GE_CAP * 0.99:
+            item["price"] = off["price"]
+
+
 def apply_derived(items):
     """Price items that are valued from other items (e.g. Tokkul, vestiges, bludgeon pieces)."""
     for item in items.values():
@@ -260,6 +272,7 @@ def run(force):
         raise problem(f"{len(wild)} of {priced} prices moved more than {WILD_CHANGE_FACTOR}x since the last update "
                       f"(limit {MAX_WILD_CHANGE_SHARE:.0%}). The data looks wrong, so it was not saved.")
 
+    apply_off_ge(items)
     apply_derived(items)
 
     # 4) All checks passed: save

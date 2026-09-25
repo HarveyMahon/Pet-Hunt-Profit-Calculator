@@ -4574,8 +4574,14 @@
       "tradeable": true
     },
     "3rd Age druidic robe top": {
-      "price": 2147483646,
-      "tradeable": true
+      "price": 4000000000,
+      "tradeable": true,
+      "offGe": {
+        "price": 4000000000,
+        "source": "PriceCheck.gg street price of 3.975B (30 verified trades, updated about 5 months ago)",
+        "asOf": "2026-09-25"
+      },
+      "valueNote": "Above the 2.147B GE cap: ~4B off the GE (PriceCheck.gg 3.975B)"
     },
     "3rd Age druidic robe bottoms": {
       "price": 1922790926,
@@ -4606,12 +4612,24 @@
       "tradeable": true
     },
     "3rd Age pickaxe": {
-      "price": 2147483647,
-      "tradeable": true
+      "price": 9000000000,
+      "tradeable": true,
+      "offGe": {
+        "price": 9000000000,
+        "source": "PriceCheck.gg street price (30 verified trades, updated about 3 months ago); osrsbestinslot.com estimates 8.53B–9.42B",
+        "asOf": "2026-09-25"
+      },
+      "valueNote": "Above the 2.147B GE cap: ~9B off the GE (PriceCheck.gg; osrsbestinslot 8.5–9.4B)"
     },
     "3rd Age axe": {
-      "price": 2147483646,
-      "tradeable": true
+      "price": 2900000000,
+      "tradeable": true,
+      "offGe": {
+        "price": 2900000000,
+        "source": "Between PriceCheck.gg (3.075B, 30 verified trades, updated about 6 months ago) and osrsbestinslot.com (2.48B–2.75B)",
+        "asOf": "2026-09-25"
+      },
+      "valueNote": "Above the 2.147B GE cap: ~2.9B off the GE (PriceCheck.gg 3.1B; osrsbestinslot 2.5–2.75B)"
     },
     "Purple sweets": {
       "price": 4947,
