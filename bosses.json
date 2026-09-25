@@ -4232,15 +4232,582 @@
       "price": 99,
       "tradeable": true
     },
-    "Master clue casket (Wiki average)": {
-      "price": 634251.01,
-      "tradeable": false,
-      "valueNote": "Fixed value: the Wiki's average master reward casket (634,251 gp, as of 25 Sep 2026)"
-    },
     "Mimic 3rd age bonus (Wiki average)": {
       "price": 178867.69,
       "tradeable": false,
       "valueNote": "Fixed value: the Wiki's extra expected value per master casket when the Mimic fight is enabled"
+    },
+    "Occult ornament kit": {
+      "price": 2292559,
+      "tradeable": true
+    },
+    "Torture ornament kit": {
+      "price": 57754,
+      "tradeable": true
+    },
+    "Anguish ornament kit": {
+      "price": 206850,
+      "tradeable": true
+    },
+    "Tormented ornament kit": {
+      "price": 43453,
+      "tradeable": true
+    },
+    "Dragon defender ornament kit": {
+      "price": 22082,
+      "tradeable": true
+    },
+    "Dragon kiteshield ornament kit": {
+      "price": 3863797,
+      "tradeable": true
+    },
+    "Dragon platebody ornament kit": {
+      "price": 5117035,
+      "tradeable": true
+    },
+    "Hood of darkness": {
+      "price": 7425,
+      "tradeable": true
+    },
+    "Robe top of darkness": {
+      "price": 73001,
+      "tradeable": true
+    },
+    "Gloves of darkness": {
+      "price": 5364,
+      "tradeable": true
+    },
+    "Robe bottom of darkness": {
+      "price": 48915,
+      "tradeable": true
+    },
+    "Boots of darkness": {
+      "price": 5761,
+      "tradeable": true
+    },
+    "Samurai kasa": {
+      "price": 25038,
+      "tradeable": true
+    },
+    "Samurai shirt": {
+      "price": 31937,
+      "tradeable": true
+    },
+    "Samurai gloves": {
+      "price": 28204,
+      "tradeable": true
+    },
+    "Samurai greaves": {
+      "price": 20923,
+      "tradeable": true
+    },
+    "Samurai boots": {
+      "price": 7067,
+      "tradeable": true
+    },
+    "Arceuus hood": {
+      "price": 2038,
+      "tradeable": true
+    },
+    "Hosidius hood": {
+      "price": 2111,
+      "tradeable": true
+    },
+    "Lovakengj hood": {
+      "price": 2491,
+      "tradeable": true
+    },
+    "Piscarilius hood": {
+      "price": 3106,
+      "tradeable": true
+    },
+    "Shayzien hood": {
+      "price": 2841,
+      "tradeable": true
+    },
+    "Old demon mask": {
+      "price": 17447,
+      "tradeable": true
+    },
+    "Lesser demon mask": {
+      "price": 3026,
+      "tradeable": true
+    },
+    "Greater demon mask": {
+      "price": 3546,
+      "tradeable": true
+    },
+    "Black demon mask": {
+      "price": 15430,
+      "tradeable": true
+    },
+    "Jungle demon mask": {
+      "price": 12994,
+      "tradeable": true
+    },
+    "Left eye patch": {
+      "price": 2643,
+      "tradeable": true
+    },
+    "Bowl wig": {
+      "price": 21432,
+      "tradeable": true
+    },
+    "Ale of the gods": {
+      "price": 148917,
+      "tradeable": true
+    },
+    "Obsidian cape (r)": {
+      "price": 375300,
+      "tradeable": true
+    },
+    "Fancy tiara": {
+      "price": 9566,
+      "tradeable": true
+    },
+    "Half moon spectacles": {
+      "price": 19112,
+      "tradeable": true
+    },
+    "Armadyl godsword ornament kit": {
+      "price": 94808,
+      "tradeable": true
+    },
+    "Bandos godsword ornament kit": {
+      "price": 2045586,
+      "tradeable": true
+    },
+    "Saradomin godsword ornament kit": {
+      "price": 5002965,
+      "tradeable": true
+    },
+    "Zamorak godsword ornament kit": {
+      "price": 218506,
+      "tradeable": true
+    },
+    "Ankou mask": {
+      "price": 8189346,
+      "tradeable": true
+    },
+    "Ankou top": {
+      "price": 15553470,
+      "tradeable": true
+    },
+    "Ankou gloves": {
+      "price": 2396761,
+      "tradeable": true
+    },
+    "Ankou's leggings": {
+      "price": 5997368,
+      "tradeable": true
+    },
+    "Ankou socks": {
+      "price": 2098071,
+      "tradeable": true
+    },
+    "Mummy's head": {
+      "price": 990525,
+      "tradeable": true
+    },
+    "Mummy's body": {
+      "price": 1290204,
+      "tradeable": true
+    },
+    "Mummy's hands": {
+      "price": 329947,
+      "tradeable": true
+    },
+    "Mummy's legs": {
+      "price": 839766,
+      "tradeable": true
+    },
+    "Mummy's feet": {
+      "price": 390617,
+      "tradeable": true
+    },
+    "Bucket helm (g)": {
+      "price": 2551142,
+      "tradeable": true
+    },
+    "Ring of coins": {
+      "price": 11267667,
+      "tradeable": true
+    },
+    "Cabbage": {
+      "price": 32,
+      "tradeable": true
+    },
+    "Anti-venom+(4)": {
+      "price": 13825,
+      "tradeable": true
+    },
+    "Gilded full helm": {
+      "price": 7551349,
+      "tradeable": true
+    },
+    "Gilded platebody": {
+      "price": 8778518,
+      "tradeable": true
+    },
+    "Gilded platelegs": {
+      "price": 5893600,
+      "tradeable": true
+    },
+    "Gilded plateskirt": {
+      "price": 869493,
+      "tradeable": true
+    },
+    "Gilded kiteshield": {
+      "price": 6266130,
+      "tradeable": true
+    },
+    "Gilded med helm": {
+      "price": 1544525,
+      "tradeable": true
+    },
+    "Gilded chainbody": {
+      "price": 2085883,
+      "tradeable": true
+    },
+    "Gilded sq shield": {
+      "price": 1239152,
+      "tradeable": true
+    },
+    "Gilded 2h sword": {
+      "price": 3726466,
+      "tradeable": true
+    },
+    "Gilded spear": {
+      "price": 806505,
+      "tradeable": true
+    },
+    "Gilded hasta": {
+      "price": 782823,
+      "tradeable": true
+    },
+    "Gilded scimitar": {
+      "price": 11761485,
+      "tradeable": true
+    },
+    "Gilded boots": {
+      "price": 932839,
+      "tradeable": true
+    },
+    "Gilded coif": {
+      "price": 444097,
+      "tradeable": true
+    },
+    "Gilded d'hide vambraces": {
+      "price": 4218404,
+      "tradeable": true
+    },
+    "Gilded d'hide body": {
+      "price": 1695005,
+      "tradeable": true
+    },
+    "Gilded d'hide chaps": {
+      "price": 5857018,
+      "tradeable": true
+    },
+    "Gilded pickaxe": {
+      "price": 3504239,
+      "tradeable": true
+    },
+    "Gilded axe": {
+      "price": 4541367,
+      "tradeable": true
+    },
+    "Gilded spade": {
+      "price": 2814053,
+      "tradeable": true
+    },
+    "3rd Age full helmet": {
+      "price": 27956722,
+      "tradeable": true
+    },
+    "3rd Age platebody": {
+      "price": 143320384,
+      "tradeable": true
+    },
+    "3rd Age platelegs": {
+      "price": 71599571,
+      "tradeable": true
+    },
+    "3rd Age plateskirt": {
+      "price": 29617959,
+      "tradeable": true
+    },
+    "3rd Age kiteshield": {
+      "price": 70779139,
+      "tradeable": true
+    },
+    "3rd Age range coif": {
+      "price": 16168506,
+      "tradeable": true
+    },
+    "3rd Age range top": {
+      "price": 24781979,
+      "tradeable": true
+    },
+    "3rd Age range legs": {
+      "price": 14906513,
+      "tradeable": true
+    },
+    "3rd Age vambraces": {
+      "price": 11563313,
+      "tradeable": true
+    },
+    "3rd Age mage hat": {
+      "price": 16252486,
+      "tradeable": true
+    },
+    "3rd Age robe top": {
+      "price": 133195105,
+      "tradeable": true
+    },
+    "3rd Age robe": {
+      "price": 31206700,
+      "tradeable": true
+    },
+    "3rd Age amulet": {
+      "price": 43000944,
+      "tradeable": true
+    },
+    "3rd Age druidic robe top": {
+      "price": 2147483646,
+      "tradeable": true
+    },
+    "3rd Age druidic robe bottoms": {
+      "price": 1922790926,
+      "tradeable": true
+    },
+    "3rd Age druidic cloak": {
+      "price": 968623976,
+      "tradeable": true
+    },
+    "3rd Age longsword": {
+      "price": 1082824290,
+      "tradeable": true
+    },
+    "3rd Age bow": {
+      "price": 1054252599,
+      "tradeable": true
+    },
+    "3rd Age wand": {
+      "price": 323662443,
+      "tradeable": true
+    },
+    "3rd Age druidic staff": {
+      "price": 607234909,
+      "tradeable": true
+    },
+    "3rd Age cloak": {
+      "price": 278044873,
+      "tradeable": true
+    },
+    "3rd Age pickaxe": {
+      "price": 2147483647,
+      "tradeable": true
+    },
+    "3rd Age axe": {
+      "price": 2147483646,
+      "tradeable": true
+    },
+    "Purple sweets": {
+      "price": 4947,
+      "tradeable": true
+    },
+    "Red firelighter": {
+      "price": 79,
+      "tradeable": true
+    },
+    "Green firelighter": {
+      "price": 81,
+      "tradeable": true
+    },
+    "Blue firelighter": {
+      "price": 81,
+      "tradeable": true
+    },
+    "Purple firelighter": {
+      "price": 79,
+      "tradeable": true
+    },
+    "White firelighter": {
+      "price": 82,
+      "tradeable": true
+    },
+    "Holy blessing": {
+      "price": 3388,
+      "tradeable": true
+    },
+    "Unholy blessing": {
+      "price": 10669,
+      "tradeable": true
+    },
+    "Peaceful blessing": {
+      "price": 2734,
+      "tradeable": true
+    },
+    "War blessing": {
+      "price": 6976,
+      "tradeable": true
+    },
+    "Honourable blessing": {
+      "price": 3495,
+      "tradeable": true
+    },
+    "Ancient blessing": {
+      "price": 4188,
+      "tradeable": true
+    },
+    "Charge dragonstone jewellery scroll": {
+      "price": 184,
+      "tradeable": true
+    },
+    "Nardah teleport": {
+      "price": 11747,
+      "tradeable": true
+    },
+    "Mos le'harmless teleport": {
+      "price": 949,
+      "tradeable": true
+    },
+    "Mort'ton teleport": {
+      "price": 12138,
+      "tradeable": true
+    },
+    "Feldip hills teleport": {
+      "price": 1058,
+      "tradeable": true
+    },
+    "Lunar isle teleport": {
+      "price": 2597,
+      "tradeable": true
+    },
+    "Digsite teleport": {
+      "price": 3986,
+      "tradeable": true
+    },
+    "Piscatoris teleport": {
+      "price": 3506,
+      "tradeable": true
+    },
+    "Pest control teleport": {
+      "price": 362,
+      "tradeable": true
+    },
+    "Tai bwo wannai teleport": {
+      "price": 3320,
+      "tradeable": true
+    },
+    "Lumberyard teleport": {
+      "price": 3328,
+      "tradeable": true
+    },
+    "Iorwerth camp teleport": {
+      "price": 5565,
+      "tradeable": true
+    },
+    "Master scroll book (empty)": {
+      "price": 60103,
+      "tradeable": true
+    },
+    "Saradomin page 1": {
+      "price": 1241,
+      "tradeable": true
+    },
+    "Saradomin page 2": {
+      "price": 744,
+      "tradeable": true
+    },
+    "Saradomin page 3": {
+      "price": 1151,
+      "tradeable": true
+    },
+    "Saradomin page 4": {
+      "price": 761,
+      "tradeable": true
+    },
+    "Zamorak page 1": {
+      "price": 3742,
+      "tradeable": true
+    },
+    "Zamorak page 2": {
+      "price": 3499,
+      "tradeable": true
+    },
+    "Zamorak page 3": {
+      "price": 3805,
+      "tradeable": true
+    },
+    "Zamorak page 4": {
+      "price": 3844,
+      "tradeable": true
+    },
+    "Guthix page 1": {
+      "price": 829,
+      "tradeable": true
+    },
+    "Guthix page 2": {
+      "price": 1272,
+      "tradeable": true
+    },
+    "Guthix page 3": {
+      "price": 1087,
+      "tradeable": true
+    },
+    "Guthix page 4": {
+      "price": 1072,
+      "tradeable": true
+    },
+    "Bandos page 1": {
+      "price": 785,
+      "tradeable": true
+    },
+    "Bandos page 2": {
+      "price": 835,
+      "tradeable": true
+    },
+    "Bandos page 3": {
+      "price": 1006,
+      "tradeable": true
+    },
+    "Bandos page 4": {
+      "price": 1074,
+      "tradeable": true
+    },
+    "Armadyl page 1": {
+      "price": 2870,
+      "tradeable": true
+    },
+    "Armadyl page 2": {
+      "price": 2674,
+      "tradeable": true
+    },
+    "Armadyl page 3": {
+      "price": 2401,
+      "tradeable": true
+    },
+    "Armadyl page 4": {
+      "price": 2318,
+      "tradeable": true
+    },
+    "Ancient page 1": {
+      "price": 2237,
+      "tradeable": true
+    },
+    "Ancient page 2": {
+      "price": 2193,
+      "tradeable": true
+    },
+    "Ancient page 3": {
+      "price": 2251,
+      "tradeable": true
+    },
+    "Ancient page 4": {
+      "price": 2020,
+      "tradeable": true
     }
   },
   "bosses": [
@@ -28599,21 +29166,1225 @@
       "petRate": 1000,
       "unit": "master casket",
       "wikiUrl": "https://oldschool.runescape.wiki/w/Bloodhound",
-      "notes": "1/1,000 per master reward casket. Each casket is valued at the Wiki's average of 634,251 gp (a fixed figure, without the Mimic); tick the Mimic option to add its 3rd age bonus. How the master clues are obtained is not counted.",
+      "notes": "1/1,000 per master reward casket. Each casket gives 6 rolls on average (5 to 7), using the Wiki's per-roll rates. Tick the Mimic option to add the Wiki's extra 3rd age value from the Mimic fight. How the master clues are obtained is not counted, and a few 3rd age items trade above the Grand Exchange's 2.147B price cap.",
       "drops": [
         {
-          "item": "Master clue casket (Wiki average)",
+          "item": "Occult ornament kit",
           "qtyMin": 1,
           "qtyMax": 1,
-          "expectedPerKill": 1,
-          "table": "main"
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Torture ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Anguish ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Tormented ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Dragon defender ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Dragon kiteshield ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00023501762632197415,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Dragon platebody ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Hood of darkness",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Robe top of darkness",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Gloves of darkness",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Robe bottom of darkness",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Boots of darkness",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Samurai kasa",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Samurai shirt",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Samurai gloves",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Samurai greaves",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Samurai boots",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Arceuus hood",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Hosidius hood",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Lovakengj hood",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Piscarilius hood",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Shayzien hood",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Old demon mask",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Lesser demon mask",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Greater demon mask",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Black demon mask",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Jungle demon mask",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Left eye patch",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Bowl wig",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Ale of the gods",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Obsidian cape (r)",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Fancy tiara",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Half moon spectacles",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.007050528789659225,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Armadyl godsword ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0017626321974148062,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Bandos godsword ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0017626321974148062,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Saradomin godsword ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0017626321974148062,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Zamorak godsword ornament kit",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0017626321974148062,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Ankou mask",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Ankou top",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Ankou gloves",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Ankou's leggings",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Ankou socks",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Mummy's head",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Mummy's body",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Mummy's hands",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Mummy's legs",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Mummy's feet",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.0004700352526439483,
+          "table": "Master clue uniques"
+        },
+        {
+          "item": "Bucket helm (g)",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Ring of coins",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Cabbage",
+          "qtyMin": 3,
+          "qtyMax": 3,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Anti-venom+(4)",
+          "qtyMin": 15,
+          "qtyMax": 15,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Torstol",
+          "qtyMin": 50,
+          "qtyMax": 50,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded full helm",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded platebody",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded platelegs",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded plateskirt",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded kiteshield",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded med helm",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded chainbody",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded sq shield",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded 2h sword",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded spear",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded hasta",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 4.005982266851832e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded scimitar",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded boots",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded coif",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded d'hide vambraces",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded d'hide body",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded d'hide chaps",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded pickaxe",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded axe",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Gilded spade",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.00044065804935370154,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age full helmet",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age platebody",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age platelegs",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age plateskirt",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age kiteshield",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age range coif",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age range top",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age range legs",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age vambraces",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age mage hat",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age robe top",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age robe",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age amulet",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age druidic robe top",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age druidic robe bottoms",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age druidic cloak",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age longsword",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age bow",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age wand",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age druidic staff",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age cloak",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age pickaxe",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "3rd Age axe",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1.915904562407398e-05,
+          "table": "Mega-rare table"
+        },
+        {
+          "item": "Dragon dagger",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Dragon mace",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Dragon longsword",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Dragon scimitar",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Dragon battleaxe",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Dragon halberd",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Nature rune",
+          "qtyMin": 100,
+          "qtyMax": 200,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Death rune",
+          "qtyMin": 100,
+          "qtyMax": 200,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Blood rune",
+          "qtyMin": 100,
+          "qtyMax": 200,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Soul rune",
+          "qtyMin": 100,
+          "qtyMax": 200,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Onyx bolts (e)",
+          "qtyMin": 15,
+          "qtyMax": 25,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Manta ray",
+          "qtyMin": 15,
+          "qtyMax": 25,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Wine of Zamorak",
+          "qtyMin": 35,
+          "qtyMax": 50,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Limpwurt root",
+          "qtyMin": 40,
+          "qtyMax": 60,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Grimy ranarr weed",
+          "qtyMin": 5,
+          "qtyMax": 10,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Grimy toadflax",
+          "qtyMin": 25,
+          "qtyMax": 35,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Grimy snapdragon",
+          "qtyMin": 5,
+          "qtyMax": 10,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Runite ore",
+          "qtyMin": 5,
+          "qtyMax": 8,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Runite bar",
+          "qtyMin": 5,
+          "qtyMax": 7,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Black dragonhide",
+          "qtyMin": 5,
+          "qtyMax": 25,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Standard table"
+        },
+        {
+          "item": "Tooth half of key",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.099009900990099,
+          "table": "Standard table"
+        },
+        {
+          "item": "Loop half of key",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.099009900990099,
+          "table": "Standard table"
+        },
+        {
+          "item": "Palm tree seed",
+          "qtyMin": 1,
+          "qtyMax": 2,
+          "expectedPerKill": 0.06593406593406594,
+          "table": "Standard table"
+        },
+        {
+          "item": "Yew seed",
+          "qtyMin": 1,
+          "qtyMax": 2,
+          "expectedPerKill": 0.06593406593406594,
+          "table": "Standard table"
+        },
+        {
+          "item": "Magic seed",
+          "qtyMin": 1,
+          "qtyMax": 2,
+          "expectedPerKill": 0.06593406593406594,
+          "table": "Standard table"
+        },
+        {
+          "item": "Coins",
+          "qtyMin": 20000,
+          "qtyMax": 35000,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Coins",
+          "qtyMin": 10000,
+          "qtyMax": 15000,
+          "expectedPerKill": 0.06928406466512703,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Coins",
+          "qtyMin": 15000,
+          "qtyMax": 30000,
+          "expectedPerKill": 0.015748031496062992,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Purple sweets",
+          "qtyMin": 14,
+          "qtyMax": 33,
+          "expectedPerKill": 0.198019801980198,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Purple sweets",
+          "qtyMin": 8,
+          "qtyMax": 12,
+          "expectedPerKill": 0.06928406466512703,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Red firelighter",
+          "qtyMin": 20,
+          "qtyMax": 38,
+          "expectedPerKill": 0.0395778364116095,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Green firelighter",
+          "qtyMin": 20,
+          "qtyMax": 38,
+          "expectedPerKill": 0.0395778364116095,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Blue firelighter",
+          "qtyMin": 20,
+          "qtyMax": 38,
+          "expectedPerKill": 0.0395778364116095,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Purple firelighter",
+          "qtyMin": 20,
+          "qtyMax": 38,
+          "expectedPerKill": 0.0395778364116095,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "White firelighter",
+          "qtyMin": 20,
+          "qtyMax": 38,
+          "expectedPerKill": 0.0395778364116095,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Holy blessing",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.009894459102902375,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Unholy blessing",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.009894459102902375,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Peaceful blessing",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.009894459102902375,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "War blessing",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.009894459102902375,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Honourable blessing",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.009894459102902375,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Ancient blessing",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.009894459102902375,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Charge dragonstone jewellery scroll",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Nardah teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Mos le'harmless teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Mort'ton teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Feldip hills teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Lunar isle teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Digsite teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Piscatoris teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Pest control teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Tai bwo wannai teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Lumberyard teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Iorwerth camp teleport",
+          "qtyMin": 5,
+          "qtyMax": 15,
+          "expectedPerKill": 0.031479538300104935,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Master scroll book (empty)",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.017991004497751123,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Saradomin page 1",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Saradomin page 2",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Saradomin page 3",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Saradomin page 4",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Zamorak page 1",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Zamorak page 2",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Zamorak page 3",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Zamorak page 4",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Guthix page 1",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Guthix page 2",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Guthix page 3",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Guthix page 4",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Bandos page 1",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Bandos page 2",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Bandos page 3",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Bandos page 4",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Armadyl page 1",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Armadyl page 2",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Armadyl page 3",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Armadyl page 4",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Ancient page 1",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Ancient page 2",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Ancient page 3",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
+        },
+        {
+          "item": "Ancient page 4",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.008539709649871904,
+          "table": "Shared clue items"
         },
         {
           "item": "Mimic 3rd age bonus (Wiki average)",
           "qtyMin": 1,
           "qtyMax": 1,
           "expectedPerKill": 1,
-          "table": "main",
+          "table": "Mimic",
           "condition": "Mimic fight enabled",
           "includeByDefault": false
         }
