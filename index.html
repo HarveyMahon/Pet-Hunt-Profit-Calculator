@@ -182,7 +182,7 @@
   <section id="overview-view" class="view">
     <div class="table-head">
       <h2>Loot by the pet drop rate</h2>
-      <p class="note" style="margin:0">Average loot collected over the number of kills, raids, runs or actions that matches each pet's drop rate. Bosses with extra options use their default settings, and skilling pets use the top method on their page. Time to pet and supplies use Wiki money-making guide figures (hover for the source), or your own kills per hour and supply cost, marked *, if you've entered them in a breakdown. Select a row to see its full breakdown and change the settings.</p>
+      <p class="note" style="margin:0">Average loot collected over the number of kills, raids, runs or actions that matches each pet's drop rate. Bosses with extra options use their default settings, and skilling pets use the top method on their page. Profit is that loot minus the supplies used, with losses in red. Time to pet and supply costs use Wiki money-making guide figures (hover for the loot, supplies and sources), or your own kills per hour and supply cost, marked *, if you've entered them in a breakdown. Select a row to see its full breakdown and change the settings.</p>
     </div>
     <div class="scroller"><table id="overview"><thead></thead><tbody></tbody></table></div>
   </section>
@@ -654,7 +654,7 @@
   }
   const nameKey = n => n.replace(/^the\s+/i, '');
   const OVS = {
-    overview: { table: 'overview', first: 'Source', sort: { key: 'total', dir: -1 }, rows: [] },
+    overview: { table: 'overview', first: 'Source', sort: { key: 'profit', dir: -1 }, rows: [] },
   };
   function buildOverview() {
     const all = DATA.bosses.map(b => {
@@ -678,28 +678,28 @@
       const neg = -Object.values(top.parts).filter(v => v < 0).reduce((a, v) => a + v, 0) * top.hours;
       return { id: 'skill-' + p.id, skillId: p.id, name: `${top.name} (${p.skill})`, pet: p.name, total: pos, supplies: neg, costNote: 'Supplies used by the top method (see its page)', hours: top.hours, timeUnit: p.timeUnit === 'day' ? 'day' : 'h', timeNote: top.rateSource || '' };
     }).filter(Boolean);
+    [...all, ...skill].forEach(r => { r.profit = r.total - (r.supplies || 0); });
     OVS.overview.rows = [...all, ...skill];
     renderOverview('overview');
     if (!DATA.bosses.some(isMisc)) $('tab-misc').hidden = true;
   }
   function renderOverview(which = 'overview') {
     const S = OVS[which], ovSort = S.sort;
-    const cols = [{ key: 'name', label: S.first }, { key: 'pet', label: 'Pet' }, { key: 'hours', label: 'Time to pet' }, { key: 'total', label: 'Loot by pet drop rate' }, { key: 'supplies', label: 'Supplies by pet rate' }];
+    const cols = [{ key: 'name', label: S.first }, { key: 'pet', label: 'Pet' }, { key: 'hours', label: 'Time to pet' }, { key: 'profit', label: 'Profit by pet rate' }];
     const thead = $(S.table).tHead, tbody = $(S.table).tBodies[0];
     thead.innerHTML = '<tr>' + cols.map(c => {
       const active = c.key === ovSort.key;
-      return `<th scope="col"${['total', 'hours', 'supplies'].includes(c.key) ? ' style="text-align:right"' : ''}><button type="button" data-key="${c.key}"${active ? ` aria-sort="${ovSort.dir > 0 ? 'ascending' : 'descending'}"` : ''}>${c.label}<span class="arr">${active ? (ovSort.dir > 0 ? '▲' : '▼') : ''}</span></button></th>`;
+      return `<th scope="col"${['profit', 'hours'].includes(c.key) ? ' style="text-align:right"' : ''}><button type="button" data-key="${c.key}"${active ? ` aria-sort="${ovSort.dir > 0 ? 'ascending' : 'descending'}"` : ''}>${c.label}<span class="arr">${active ? (ovSort.dir > 0 ? '▲' : '▼') : ''}</span></button></th>`;
     }).join('') + '</tr>';
     thead.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
       const k = btn.dataset.key;
-      if (k === ovSort.key) ovSort.dir = -ovSort.dir; else S.sort = { key: k, dir: k === 'total' || k === 'supplies' ? -1 : 1 };  // hours sort fastest first
+      if (k === ovSort.key) ovSort.dir = -ovSort.dir; else S.sort = { key: k, dir: k === 'profit' ? -1 : 1 };  // hours sort fastest first
       renderOverview(which);
       thead.querySelector(`button[data-key="${k}"]`).focus();
     }));
     const srt = S.sort;
     const cmp = (a, b) => {
-      if (srt.key === 'total') return (a.total - b.total) * srt.dir;
-      if (srt.key === 'supplies') return ((a.supplies == null) - (b.supplies == null)) || ((a.supplies ?? 0) - (b.supplies ?? 0)) * srt.dir;
+      if (srt.key === 'profit') return (a.profit - b.profit) * srt.dir;
       if (srt.key === 'hours') {
         // hours first (numeric), then farming runs in days, then rows with no rate
         const rank = r => r.hours == null ? 2 : r.timeUnit === 'day' ? 1 : 0;
@@ -714,8 +714,7 @@
         <td class="item"><button type="button" class="open" data-id="${esc(r.id)}">${esc(r.name)}</button></td>
         <td class="pet">${esc(r.pet)}</td>
         <td class="num time" title="${esc(r.timeNote || '')}">${r.hours == null ? '<span class="untr">—</span>' : `${r.hours >= 100 ? int(r.hours) : r.hours.toFixed(1)}${r.timeUnit === 'day' ? ' days' : ' h'}${r.timeOwn ? '<sup>*</sup>' : ''}`}</td>
-        <td class="num">${r.total < 0 ? costGp(-r.total) : gp(r.total)}</td>
-        <td class="num" title="${esc(r.costNote || '')}">${r.supplies == null ? '<span class="untr">—</span>' : r.supplies > 0.5 ? costGp(r.supplies) + (r.costOwn ? '<sup>*</sup>' : '') : gp(0)}</td>
+        <td class="num" title="${esc(`Loot ${Math.round(r.total).toLocaleString('en-GB')} gp, supplies ${r.supplies == null ? 'unknown' : Math.round(r.supplies).toLocaleString('en-GB') + ' gp'}. ${r.costNote || ''}`)}">${money(r.profit)}${r.costOwn ? '<sup>*</sup>' : ''}${r.supplies == null ? '<span class="untr" title="No supply cost yet"> †</span>' : ''}</td>
       </tr>`).join('');
     tbody.querySelectorAll('tr').forEach(tr => tr.addEventListener('click', () => {
       const id = tr.dataset.id;
