@@ -1,0 +1,3 @@
+# Local cache of the Wiki's item mapping (update_prices.py re-downloads it when missing)
+item_mapping.json
+__pycache__/

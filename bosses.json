@@ -28,13 +28,18 @@
       "Tombs of Amascut uses a points-based 'raidOption' (type 'toa'); see its howItWorks.",
       "Royal Titans stores two loot tables under 'lootChoice' (the app uses the more valuable) and a 'duoOption'.",
       "Nex and The Hueycoatl use 'teamOption' with per-drop 'teamScaling' (rate, quantity, mvpOnly, none).",
-      "Items with 'derivedFrom' are priced from another item (price = that item's price / divisor), e.g. Tokkul from Uncut onyx."
+      "Items with 'derivedFrom' are priced from other items: price = sum(item price x factor) over its terms (e.g. Tokkul = Uncut onyx / 260,000; vestiges = ring - 3 chromium ingots). Items marked referenceOnly are only used for these formulas."
     ]
   },
   "items": {
     "Abyssal ashes": {
       "price": 2014,
       "tradeable": true
+    },
+    "Abyssal bludgeon": {
+      "price": 15999393,
+      "tradeable": true,
+      "referenceOnly": true
     },
     "Abyssal dagger": {
       "price": 1396074,
@@ -308,10 +313,27 @@
       "price": 105,
       "tradeable": true
     },
+    "Bellator ring": {
+      "price": 20581295,
+      "tradeable": true,
+      "referenceOnly": true
+    },
     "Bellator vestige": {
       "price": 20451152,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as Bellator ring minus 3 chromium ingots"
+      "valueNote": "Untradeable: valued as Bellator ring minus 3 chromium ingots",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Bellator ring",
+            "factor": 1
+          },
+          {
+            "item": "Chromium ingot",
+            "factor": -3
+          }
+        ]
+      }
     },
     "Belle's folly (tarnished)": {
       "price": 80964,
@@ -388,17 +410,41 @@
     "Bludgeon axon": {
       "price": 5333131,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/3 of an Abyssal bludgeon"
+      "valueNote": "Untradeable: valued as 1/3 of an Abyssal bludgeon",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Abyssal bludgeon",
+            "factor": 0.3333333333333333
+          }
+        ]
+      }
     },
     "Bludgeon claw": {
       "price": 5333131,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/3 of an Abyssal bludgeon"
+      "valueNote": "Untradeable: valued as 1/3 of an Abyssal bludgeon",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Abyssal bludgeon",
+            "factor": 0.3333333333333333
+          }
+        ]
+      }
     },
     "Bludgeon spine": {
       "price": 5333131,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/3 of an Abyssal bludgeon"
+      "valueNote": "Untradeable: valued as 1/3 of an Abyssal bludgeon",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Abyssal bludgeon",
+            "factor": 0.3333333333333333
+          }
+        ]
+      }
     },
     "Blue dragonhide": {
       "price": 1740,
@@ -423,6 +469,11 @@
     "Brimstone key": {
       "price": 0,
       "tradeable": false
+    },
+    "Brimstone ring": {
+      "price": 1662177,
+      "tradeable": true,
+      "referenceOnly": true
     },
     "Bronze arrow": {
       "price": 5,
@@ -559,6 +610,11 @@
     "Coins": {
       "price": 1,
       "tradeable": true
+    },
+    "Confliction gauntlets": {
+      "price": 57788463,
+      "tradeable": true,
+      "referenceOnly": true
     },
     "Cosmic rune": {
       "price": 132,
@@ -943,7 +999,15 @@
     "Executioner's axe head": {
       "price": 105016395,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe"
+      "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Soulreaper axe",
+            "factor": 0.25
+          }
+        ]
+      }
     },
     "Eye of Ayak (uncharged)": {
       "price": 39284992,
@@ -952,7 +1016,15 @@
     "Eye of the Duke": {
       "price": 105016395,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe"
+      "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Soulreaper axe",
+            "factor": 0.25
+          }
+        ]
+      }
     },
     "Fangs of Venenatis": {
       "price": 52670,
@@ -1229,17 +1301,41 @@
     "Hydra's eye": {
       "price": 554059,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/3 of a Brimstone ring"
+      "valueNote": "Untradeable: valued as 1/3 of a Brimstone ring",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Brimstone ring",
+            "factor": 0.3333333333333333
+          }
+        ]
+      }
     },
     "Hydra's fang": {
       "price": 554059,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/3 of a Brimstone ring"
+      "valueNote": "Untradeable: valued as 1/3 of a Brimstone ring",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Brimstone ring",
+            "factor": 0.3333333333333333
+          }
+        ]
+      }
     },
     "Hydra's heart": {
       "price": 554059,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/3 of a Brimstone ring"
+      "valueNote": "Untradeable: valued as 1/3 of a Brimstone ring",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Brimstone ring",
+            "factor": 0.3333333333333333
+          }
+        ]
+      }
     },
     "Ice element staff crown": {
       "price": 4175939,
@@ -1440,7 +1536,15 @@
     "Leviathan's lure": {
       "price": 105016395,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe"
+      "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Soulreaper axe",
+            "factor": 0.25
+          }
+        ]
+      }
     },
     "Lightbearer": {
       "price": 4364028,
@@ -1502,10 +1606,27 @@
       "price": 0,
       "tradeable": false
     },
+    "Magus ring": {
+      "price": 23134748,
+      "tradeable": true,
+      "referenceOnly": true
+    },
     "Magus vestige": {
       "price": 23004605,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as Magus ring minus 3 chromium ingots"
+      "valueNote": "Untradeable: valued as Magus ring minus 3 chromium ingots",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Magus ring",
+            "factor": 1
+          },
+          {
+            "item": "Chromium ingot",
+            "factor": -3
+          }
+        ]
+      }
     },
     "Mahogany logs": {
       "price": 123,
@@ -1622,7 +1743,23 @@
     "Mokhaiotl cloth": {
       "price": 35747053,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as Confliction gauntlets minus a Tormented bracelet and 10,000 demon tears"
+      "valueNote": "Untradeable: valued as Confliction gauntlets minus a Tormented bracelet and 10,000 demon tears",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Confliction gauntlets",
+            "factor": 1
+          },
+          {
+            "item": "Tormented bracelet",
+            "factor": -1
+          },
+          {
+            "item": "Demon tear",
+            "factor": -10000
+          }
+        ]
+      }
     },
     "Mokhaiotl waystone": {
       "price": 43558,
@@ -1723,17 +1860,46 @@
     "Noxious blade": {
       "price": 12623054,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/3 of a Noxious halberd"
+      "valueNote": "Untradeable: valued as 1/3 of a Noxious halberd",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Noxious halberd",
+            "factor": 0.3333333333333333
+          }
+        ]
+      }
+    },
+    "Noxious halberd": {
+      "price": 37869163,
+      "tradeable": true,
+      "referenceOnly": true
     },
     "Noxious point": {
       "price": 12623054,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/3 of a Noxious halberd"
+      "valueNote": "Untradeable: valued as 1/3 of a Noxious halberd",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Noxious halberd",
+            "factor": 0.3333333333333333
+          }
+        ]
+      }
     },
     "Noxious pommel": {
       "price": 12623054,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/3 of a Noxious halberd"
+      "valueNote": "Untradeable: valued as 1/3 of a Noxious halberd",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Noxious halberd",
+            "factor": 0.3333333333333333
+          }
+        ]
+      }
     },
     "Oak logs": {
       "price": 41.0,
@@ -2258,7 +2424,15 @@
     "Siren's staff": {
       "price": 105016395,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe"
+      "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Soulreaper axe",
+            "factor": 0.25
+          }
+        ]
+      }
     },
     "Sirenic tablet": {
       "price": 0.0,
@@ -2339,6 +2513,11 @@
     "Soulflame horn": {
       "price": 3528716,
       "tradeable": true
+    },
+    "Soulreaper axe": {
+      "price": 420065581,
+      "tradeable": true,
+      "referenceOnly": true
     },
     "Spectral sigil": {
       "price": 22618883,
@@ -2624,8 +2803,12 @@
       "price": 10.5667,
       "tradeable": false,
       "derivedFrom": {
-        "item": "Uncut onyx",
-        "divisor": 260000
+        "terms": [
+          {
+            "item": "Uncut onyx",
+            "factor": 3.846153846153846e-06
+          }
+        ]
       },
       "valueNote": "Untradeable: valued at 1/260,000 of an Uncut onyx"
     },
@@ -2656,6 +2839,11 @@
     "Tooth half of key (moon key)": {
       "price": 0.0,
       "tradeable": false
+    },
+    "Tormented bracelet": {
+      "price": 19561410,
+      "tradeable": true,
+      "referenceOnly": true
     },
     "Torn prayer scroll": {
       "price": 46781,
@@ -2725,10 +2913,27 @@
       "price": 666,
       "tradeable": true
     },
+    "Ultor ring": {
+      "price": 105519525,
+      "tradeable": true,
+      "referenceOnly": true
+    },
     "Ultor vestige": {
       "price": 105389382,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as Ultor ring minus 3 chromium ingots"
+      "valueNote": "Untradeable: valued as Ultor ring minus 3 chromium ingots",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Ultor ring",
+            "factor": 1
+          },
+          {
+            "item": "Chromium ingot",
+            "factor": -3
+          }
+        ]
+      }
     },
     "Uncut diamond": {
       "price": 2432,
@@ -2770,6 +2975,11 @@
       "price": 1902,
       "tradeable": true
     },
+    "Venator ring": {
+      "price": 48316877,
+      "tradeable": true,
+      "referenceOnly": true
+    },
     "Venator shard": {
       "price": 11922465,
       "tradeable": true
@@ -2781,7 +2991,19 @@
     "Venator vestige": {
       "price": 48186734,
       "tradeable": false,
-      "valueNote": "Untradeable: valued as Venator ring minus 3 chromium ingots"
+      "valueNote": "Untradeable: valued as Venator ring minus 3 chromium ingots",
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Venator ring",
+            "factor": 1
+          },
+          {
+            "item": "Chromium ingot",
+            "factor": -3
+          }
+        ]
+      }
     },
     "Vial of blood": {
       "price": 8633,

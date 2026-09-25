@@ -1,0 +1,52 @@
+name: Weekly price update
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # every Monday at 06:17 UTC
+  workflow_dispatch:        # run it by hand from the Actions tab
+    inputs:
+      force:
+        description: "Ignore the 6-hour minimum gap between updates"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: price-update
+  cancel-in-progress: false
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch prices from the OSRS Wiki (2 requests)
+        id: update
+        continue-on-error: true
+        run: python update_prices.py ${{ inputs.force && '--force' || '' }}
+
+      - name: Commit updated prices and log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bosses.json price_update_log.json
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Weekly price update ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      - name: Mark the run as failed if the update failed
+        if: steps.update.outcome == 'failure'
+        run: |
+          echo "The price update failed; see price_update_log.json for the Wiki's response."
+          exit 1
