@@ -4005,6 +4005,21 @@
         ]
       },
       "valueNote": "Crystal shard valued as crystal dust for divine super combat potions (1 shard makes 2.5 potions), as on the beaver page"
+    },
+    "Red chinchompa": {
+      "price": 1408,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Black chinchompa": {
+      "price": 3288,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Steel dart": {
+      "price": 4,
+      "tradeable": true,
+      "referenceOnly": true
     }
   },
   "bosses": [
@@ -29665,6 +29680,120 @@
         "Level 99 Thieving; pet chance per successful theft = 1 / (base chance - 25 x 99), using the Wiki's base chances (Pyramid Plunder uses the Wiki's per-run chance).",
         "Rates per hour come from the Wiki's training guide or money-making guide for each method (hover a method's name to see its source).",
         "Full rogue equipment where it doubles loot. Food, dodgy necklaces and other small costs are not counted unless listed.",
+        "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
+      ]
+    },
+    {
+      "id": "baby-chinchompa",
+      "name": "Baby chinchompa",
+      "skill": "Hunter",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Baby_chinchompa",
+      "level": 99,
+      "levelFactor": 25,
+      "petFormula": "Chance per catch = 1 / (base chance - 25 x Hunter level)",
+      "rollsLabel": "Pet rolls/hr",
+      "ranking": {
+        "label": "equal weight on hours to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "red-chins",
+          "name": "Red chinchompas",
+          "location": "Tlati Rainforest",
+          "baseChance": 98373,
+          "actionsPerHour": 585,
+          "unit": "catches",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Red chinchompa",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "Eagles' Peak (box traps); Children of the Sun",
+          "rateSource": "Wiki training guide: 155,000 XP/hr at 99 without tick manipulation (265 XP each)",
+          "note": "Chinchompas stack in the inventory, so no banking trips."
+        },
+        {
+          "id": "black-chins",
+          "name": "Black chinchompas",
+          "location": "Wilderness Hunter area (level 32-36)",
+          "baseChance": 82758,
+          "actionsPerHour": 350,
+          "unit": "catches",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Black chinchompa",
+              "perAction": 1
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Steel dart",
+              "perAction": 0.125
+            }
+          ],
+          "requirements": "Eagles' Peak (box traps)",
+          "rateSource": "Wiki money-making guide: about 350 per hour with minimal player-killer interference",
+          "note": "Wilderness: player-killer risk not counted. Stray chinchompas shot with steel darts."
+        },
+        {
+          "id": "red-chins-tick",
+          "name": "Red chinchompas (tick manipulation)",
+          "location": "Tlati Rainforest",
+          "baseChance": 98373,
+          "actionsPerHour": 830,
+          "unit": "catches",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Red chinchompa",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "Eagles' Peak (box traps); Children of the Sun",
+          "rateSource": "Wiki training guide: 220,000 XP/hr at 99 with tick manipulation (265 XP each)",
+          "tickManipulation": true,
+          "tickLabel": "Tick manipulation",
+          "note": "Trap resetting with tick manipulation; chinchompas stack, so they are kept."
+        },
+        {
+          "id": "black-chins-tick",
+          "name": "Black chinchompas (tick manipulation)",
+          "location": "Wilderness Hunter area (level 32-36)",
+          "baseChance": 82758,
+          "actionsPerHour": 714,
+          "unit": "catches",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Black chinchompa",
+              "perAction": 1
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Steel dart",
+              "perAction": 0.125
+            }
+          ],
+          "requirements": "Eagles' Peak (box traps)",
+          "rateSource": "Wiki training guide: 225,000 XP/hr at 99 solo with tick manipulation (315 XP each)",
+          "tickManipulation": true,
+          "tickLabel": "Tick manipulation",
+          "note": "Trap resetting with tick manipulation; chinchompas stack, so they are kept. Player-killer risk not counted."
+        }
+      ],
+      "assumptions": [
+        "Level 99 Hunter with 5 box traps; pet chance per catch = 1 / (base chance - 25 x 99), using the Wiki's base chances (red 1/95,898, black 1/80,283 at 99).",
+        "Catches per hour come from the Wiki's training guide or money-making guide (hover a method's name to see its source).",
+        "Chinchompas are stackable, so tick manipulation does not stop you keeping them; those methods are still only listed under \"Show every method\".",
         "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
       ]
     }
