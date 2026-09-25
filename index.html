@@ -697,7 +697,14 @@
   const OVS = {
     overview: { table: 'overview', first: 'Source', sort: { key: 'profit', dir: -1 }, rows: [] },
   };
-  const ownedSet = () => { try { return new Set(JSON.parse(store.get('owned') || '[]')); } catch (e) { return new Set(); } };
+  // Owned pets are stored by pet name, so a pet shared by two sources (Youngllef, Venenatis spiderling...) ticks both rows
+  const petKey = r => (r.pet || r.id).toLowerCase();
+  const ownedSet = () => {
+    let list; try { list = JSON.parse(store.get('owned') || '[]'); } catch (e) { list = []; }
+    // Older saves stored row ids: convert any that match a row to its pet name
+    const rows = OVS.overview.rows, byId = new Map(rows.map(r => [r.id, petKey(r)]));
+    return new Set(list.map(k => byId.get(k) || k));
+  };
   const ovFilter = () => ['all', 'boss', 'skill', 'misc'].includes(store.get('ovfilter')) ? store.get('ovfilter') : 'all';
   function setupOverviewControls() {
     const seg = $('ov-filter');
@@ -807,17 +814,18 @@
         const rank = r => r.hours == null ? 2 : r.timeUnit === 'day' ? 1 : 0;
         return rank(a) - rank(b) || ((a.hours ?? 0) - (b.hours ?? 0)) * srt.dir;
       }
-      const petKey = t => t.replace(/^pet\s+/i, '');
-      const x = srt.key === 'name' ? nameKey(a.name) : petKey(a.pet), y = srt.key === 'name' ? nameKey(b.name) : petKey(b.pet);
+      const petSort = t => t.replace(/^pet\s+/i, '');
+      const x = srt.key === 'name' ? nameKey(a.name) : petSort(a.pet), y = srt.key === 'name' ? nameKey(b.name) : petSort(b.pet);
       return x.localeCompare(y, 'en', { sensitivity: 'base', ignorePunctuation: true }) * srt.dir || nameKey(a.name).localeCompare(nameKey(b.name));
     };
     const owned = ownedSet(), hideOwned = $('hide-owned').checked, filt = ovFilter();
-    const shown = S.rows.filter(r => (filt === 'all' || r.cat === filt) && !(hideOwned && owned.has(r.id)));
+    const shown = S.rows.filter(r => (filt === 'all' || r.cat === filt) && !(hideOwned && owned.has(petKey(r))));
     const inFilter = S.rows.filter(r => filt === 'all' || r.cat === filt);
-    $('owned-count').textContent = `${inFilter.filter(r => owned.has(r.id)).length} of ${inFilter.length} owned`;
+    const petsIn = new Set(inFilter.map(petKey));
+    $('owned-count').textContent = `${[...petsIn].filter(k => owned.has(k)).length} of ${petsIn.size} pets owned`;
     tbody.innerHTML = shown.length ? [...shown].sort(cmp).map(r => `
-      <tr data-id="${esc(r.id)}"${owned.has(r.id) ? ' class="owned"' : ''}>
-        <td class="own"><input type="checkbox" data-own="${esc(r.id)}" aria-label="I own ${esc(r.pet)}"${owned.has(r.id) ? ' checked' : ''}></td>
+      <tr data-id="${esc(r.id)}"${owned.has(petKey(r)) ? ' class="owned"' : ''}>
+        <td class="own"><input type="checkbox" data-own="${esc(petKey(r))}" aria-label="I own ${esc(r.pet)}"${owned.has(petKey(r)) ? ' checked' : ''}></td>
         <td class="item"><button type="button" class="open" data-id="${esc(r.id)}">${esc(r.name)}</button></td>
         <td class="pet">${esc(r.pet)}</td>
         <td class="num time" title="${esc(r.timeNote || '')}">${r.hours == null ? '<span class="untr">—</span>' : `${r.hours >= 100 ? int(r.hours) : r.hours.toFixed(1)}${r.timeUnit === 'day' ? ' days' : ' h'}${r.timeOwn ? '<sup>*</sup>' : ''}`}</td>
