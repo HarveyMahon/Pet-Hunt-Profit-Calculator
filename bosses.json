@@ -3938,6 +3938,73 @@
         ]
       },
       "valueNote": "Untradeable: valued by buying soft clay packs (1 mineral = 10 soft clay)"
+    },
+    "Blood pint": {
+      "price": 101,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Blood shard": {
+      "price": 8081503,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Bronze cannonball": {
+      "price": 8,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Cooked mystery meat": {
+      "price": 185,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Dragon cannonball": {
+      "price": 1276,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Enhanced crystal teleport seed": {
+      "price": 3054273,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Iron cannonball": {
+      "price": 14,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Mithril cannonball": {
+      "price": 148,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Pharaoh's sceptre (uncharged)": {
+      "price": 8452387,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Wildblood seed": {
+      "price": 68,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Crystal shard (as divine potions)": {
+      "price": 15105.0,
+      "tradeable": false,
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Divine super combat potion(4)",
+            "factor": 2.5
+          },
+          {
+            "item": "Super combat potion(4)",
+            "factor": -2.5
+          }
+        ]
+      },
+      "valueNote": "Crystal shard valued as crystal dust for divine super combat potions (1 shard makes 2.5 potions), as on the beaver page"
     }
   },
   "bosses": [
@@ -29214,6 +29281,390 @@
         "Level 99 Fishing; pet chance per catch = 1 / (base chance - 25 x 99), using the Wiki's base chances. No shark lures (they make the pet rarer).",
         "Catches per hour come from the Wiki's training guide or money-making guide for each method (hover a method's name to see its source); where the Wiki gives only experience per hour, it is divided by the experience per catch.",
         "Fish are sold raw. Tick-manipulation methods are not ranked and only appear under \"Show every method\".",
+        "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
+      ]
+    },
+    {
+      "id": "rocky",
+      "name": "Rocky",
+      "skill": "Thieving",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Rocky",
+      "level": 99,
+      "levelFactor": 25,
+      "petFormula": "Chance per successful theft = 1 / (base chance - 25 x Thieving level)",
+      "rollsLabel": "Pet rolls/hr",
+      "ranking": {
+        "label": "equal weight on hours to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "port-roberts",
+          "name": "Port Roberts stalls",
+          "location": "Port Roberts (cannonball and ore stalls)",
+          "baseChance": 36490,
+          "actionsPerHour": 1203,
+          "unit": "steals",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Bronze cannonball",
+              "perAction": 0.20572916666666666
+            },
+            {
+              "item": "Iron cannonball",
+              "perAction": 0.16666666666666666
+            },
+            {
+              "item": "Steel cannonball",
+              "perAction": 0.14583333333333334
+            },
+            {
+              "item": "Mithril cannonball",
+              "perAction": 0.0625
+            },
+            {
+              "item": "Adamant cannonball",
+              "perAction": 0.0625
+            },
+            {
+              "item": "Rune cannonball",
+              "perAction": 0.020833333333333332
+            },
+            {
+              "item": "Dragon cannonball",
+              "perAction": 0.0026041666666666665
+            },
+            {
+              "item": "Iron ore",
+              "perAction": 0.1111111111111111
+            },
+            {
+              "item": "Coal",
+              "perAction": 0.06666666666666667
+            },
+            {
+              "item": "Silver ore",
+              "perAction": 0.044444444444444446
+            },
+            {
+              "item": "Gold ore",
+              "perAction": 0.044444444444444446
+            },
+            {
+              "item": "Mithril ore",
+              "perAction": 0.044444444444444446
+            },
+            {
+              "item": "Adamantite ore",
+              "perAction": 0.017777777777777778
+            },
+            {
+              "item": "Runite ore",
+              "perAction": 0.0044444444444444444
+            }
+          ],
+          "inputs": [],
+          "requirements": "50 Sailing; 87 Thieving",
+          "note": "Stealing 4 times from the cannonball stall and 2 times from the ore stall in time with the guards; loot banked at the deposit box.",
+          "rateSource": "Wiki training guide: 255,437 XP/hr at 87-99 (4 x 223 XP + 2 x 191 XP per cycle)"
+        },
+        {
+          "id": "tzhaar-hur",
+          "name": "TzHaar-Hur",
+          "location": "Mor Ul Rek (inner city)",
+          "baseChance": 176743,
+          "actionsPerHour": 2321,
+          "unit": "pickpockets",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Tokkul",
+              "perAction": 9.333333333333334
+            },
+            {
+              "item": "Uncut sapphire",
+              "perAction": 0.05128205128205128
+            },
+            {
+              "item": "Uncut emerald",
+              "perAction": 0.041025641025641026
+            },
+            {
+              "item": "Uncut ruby",
+              "perAction": 0.03076923076923077
+            },
+            {
+              "item": "Uncut diamond",
+              "perAction": 0.010256410256410256
+            }
+          ],
+          "inputs": [],
+          "requirements": "Fire cape; ice gloves; Thieving cape and hard Ardougne Diary",
+          "note": "Full rogue equipment doubles the loot; gems banked with a gem bag.",
+          "rateSource": "Wiki training guide: about 240,000 XP/hr at 99 when banking gems (103.4 XP each)"
+        },
+        {
+          "id": "ardy-knights",
+          "name": "Knights of Ardougne",
+          "location": "Ardougne market",
+          "baseChance": 257211,
+          "actionsPerHour": 2900,
+          "unit": "pickpockets",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coins",
+              "perAction": 100
+            }
+          ],
+          "inputs": [],
+          "requirements": "Medium Ardougne Diary; dodgy necklaces",
+          "note": "50 coins per pickpocket, doubled by full rogue equipment.",
+          "rateSource": "Wiki training guide: 252,900 XP/hr tick-perfect at 95+, about 245,000 allowing for mistakes (84.3 XP each)"
+        },
+        {
+          "id": "master-farmers",
+          "name": "Master Farmers",
+          "location": "Outside Civitas illa Fortis",
+          "baseChance": 257211,
+          "actionsPerHour": 2733,
+          "unit": "pickpockets",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Watermelon seed",
+              "perAction": 0.010582010582010581
+            },
+            {
+              "item": "Snape grass seed",
+              "perAction": 0.007692307692307693
+            },
+            {
+              "item": "Ranarr seed",
+              "perAction": 0.007549733871881016
+            },
+            {
+              "item": "Toadflax seed",
+              "perAction": 0.004514672686230248
+            },
+            {
+              "item": "Avantoe seed",
+              "perAction": 0.0021119324181626186
+            },
+            {
+              "item": "Kwuarm seed",
+              "perAction": 0.0014398848092152627
+            },
+            {
+              "item": "Snapdragon seed",
+              "perAction": 0.0010785159620362382
+            },
+            {
+              "item": "Cadantine seed",
+              "perAction": 0.0006720430107526882
+            },
+            {
+              "item": "Lantadyme seed",
+              "perAction": 0.00047996160307175426
+            },
+            {
+              "item": "Dwarf weed seed",
+              "perAction": 0.0002880184331797235
+            },
+            {
+              "item": "Torstol seed",
+              "perAction": 0.0002157036576869234
+            }
+          ],
+          "inputs": [],
+          "requirements": "Hard Ardougne Diary; 85 Farming for the best seed rates",
+          "note": "Full rogue equipment doubles the loot; only the valuable seeds are counted.",
+          "rateSource": "Wiki training guide: 115,000-120,000 XP/hr at 99 (43 XP each)"
+        },
+        {
+          "id": "blackjacking",
+          "name": "Blackjacking Menaphite Thugs",
+          "location": "Pollnivneach",
+          "baseChance": 257211,
+          "actionsPerHour": 1927,
+          "unit": "pickpockets",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coins",
+              "perAction": 115.8
+            }
+          ],
+          "inputs": [],
+          "requirements": "The Feud; a blackjack",
+          "note": "Coins per pickpocket from the Wiki (about 219k an hour with rogue equipment); food not counted.",
+          "rateSource": "Wiki training guide: 265,000 XP/hr at 99 (137.5 XP each)"
+        },
+        {
+          "id": "pyramid-plunder",
+          "name": "Pyramid Plunder",
+          "location": "Sophanem",
+          "baseChance": 6893,
+          "actionsPerHour": 12.7,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Pharaoh's sceptre (uncharged)",
+              "perAction": 0.007933126084441874
+            }
+          ],
+          "inputs": [],
+          "requirements": "Icthlarin's Little Helper started; a charged pharaoh's sceptre",
+          "chancePerAction": 0.0006234413965087282,
+          "note": "Pet chance is per run, opening the Grand Gold Chest in all 8 rooms (about 1/1,604 at level 99). Artefacts are not banked; only pharaoh's sceptres are counted.",
+          "rateSource": "Wiki: 270,000 XP/hr at 91+ and about 21,300 XP per run (335 runs from 91 to 99)"
+        },
+        {
+          "id": "vyres",
+          "name": "Vyres",
+          "location": "Darkmeyer",
+          "baseChance": 99175,
+          "actionsPerHour": 720,
+          "unit": "pickpockets",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coins",
+              "perAction": 414.9431818181818
+            },
+            {
+              "item": "Blood shard",
+              "perAction": 0.0004
+            },
+            {
+              "item": "Death rune",
+              "perAction": 0.24242424242424243
+            },
+            {
+              "item": "Blood rune",
+              "perAction": 0.12121212121212122
+            },
+            {
+              "item": "Blood pint",
+              "perAction": 0.09090909090909091
+            },
+            {
+              "item": "Uncut ruby",
+              "perAction": 0.07575757575757576
+            },
+            {
+              "item": "Diamond",
+              "perAction": 0.015151515151515152
+            },
+            {
+              "item": "Cooked mystery meat",
+              "perAction": 0.015151515151515152
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Cosmic rune",
+              "perAction": 0.4166666666666667
+            }
+          ],
+          "requirements": "Sins of the Father; hard Ardougne Diary",
+          "note": "Full rogue equipment; Shadow Veil costs cosmic runes.",
+          "rateSource": "Wiki money-making guide: 720 pickpockets per hour"
+        },
+        {
+          "id": "elves",
+          "name": "Elves",
+          "location": "Prifddinas",
+          "baseChance": 99175,
+          "actionsPerHour": 560,
+          "unit": "pickpockets",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Enhanced crystal teleport seed",
+              "perAction": 0.001953125
+            },
+            {
+              "item": "Crystal shard (as divine potions)",
+              "perAction": 0.05714285714285714
+            },
+            {
+              "item": "Coins",
+              "perAction": 516.796875
+            },
+            {
+              "item": "Death rune",
+              "perAction": 0.25
+            },
+            {
+              "item": "Nature rune",
+              "perAction": 0.234375
+            },
+            {
+              "item": "Fire orb",
+              "perAction": 0.03125
+            },
+            {
+              "item": "Diamond",
+              "perAction": 0.015625
+            },
+            {
+              "item": "Gold ore",
+              "perAction": 0.015625
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Cosmic rune",
+              "perAction": 0.5357142857142857
+            }
+          ],
+          "requirements": "Song of the Elves",
+          "note": "Full rogue equipment; crystal shards valued as divine super combat potions.",
+          "rateSource": "Wiki money-making guide: 560 pickpockets per hour"
+        },
+        {
+          "id": "sorceress-garden",
+          "name": "Sorceress's Garden (Summer)",
+          "location": "Al Kharid",
+          "baseChance": 10339,
+          "actionsPerHour": 93,
+          "unit": "sq'irks",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "65 Thieving",
+          "note": "Sq'irk juice is handed in for experience, so there is no profit.",
+          "rateSource": "Wiki training guide: about 140,000 XP/hr (3,000 XP per 2 sq'irks)"
+        },
+        {
+          "id": "valuables",
+          "name": "Stealing valuables",
+          "location": "Civitas illa Fortis",
+          "baseChance": 206777,
+          "actionsPerHour": 1600,
+          "unit": "steals",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coins",
+              "perAction": 60
+            }
+          ],
+          "inputs": [],
+          "requirements": "Children of the Sun",
+          "note": "Includes time pickpocketing wealthy citizens for house keys; about 96k coins an hour from valuables.",
+          "rateSource": "Estimate from the Wiki: about 2,000 steals and 120k coins per hour of burgling, plus 15 minutes of key collection per hour"
+        }
+      ],
+      "assumptions": [
+        "Level 99 Thieving; pet chance per successful theft = 1 / (base chance - 25 x 99), using the Wiki's base chances (Pyramid Plunder uses the Wiki's per-run chance).",
+        "Rates per hour come from the Wiki's training guide or money-making guide for each method (hover a method's name to see its source).",
+        "Full rogue equipment where it doubles loot. Food, dodgy necklaces and other small costs are not counted unless listed.",
         "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
       ]
     }
