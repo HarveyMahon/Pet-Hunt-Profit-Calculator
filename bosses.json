@@ -28510,12 +28510,38 @@
           "levelBoost": 7,
           "requirements": "Woodcutting Guild access",
           "note": "No Forestry events in the guild; its invisible +7 boost is included."
+        },
+        {
+          "id": "2t-teak-prif",
+          "name": "2-tick teaks",
+          "location": "Prifddinas (north-east)",
+          "tree": "teak",
+          "rollTicks": 2,
+          "tickManipulation": true,
+          "inventory": "drop",
+          "prifddinas": true,
+          "forestry": false,
+          "requirements": "Song of the Elves",
+          "note": "Logs are dropped (no banking while tick manipulating), so the only profit is crystal shards. Uses rabbits for the 2-tick cycle."
+        },
+        {
+          "id": "2t-mahogany-prif",
+          "name": "2-tick mahogany",
+          "location": "Prifddinas (north-east)",
+          "tree": "mahogany",
+          "rollTicks": 2,
+          "tickManipulation": true,
+          "inventory": "drop",
+          "prifddinas": true,
+          "forestry": false,
+          "requirements": "Song of the Elves",
+          "note": "Logs are dropped (no banking while tick manipulating), so the only profit is crystal shards. Uses rabbits for the 2-tick cycle."
         }
       ],
       "assumptions": [
         "Level 99 Woodcutting with a crystal axe (no felling axe or rations, as they cost logs without speeding up the pet). Success chances use the Wiki's crystal axe chart for each tree.",
-        "A chop roll every 4 ticks (2.4 s); no tick manipulation. The pet is rolled on every log received.",
-        "Every method banks its logs, carrying 54 logs per trip (inventory plus a log basket); trip times are estimates for each location.",
+        "A chop roll every 4 ticks (2.4 s). The two 2-tick methods (teak and mahogany in Prifddinas) roll every 2 ticks at 95% efficiency, from the Wiki's 2-tick teak rates; their logs are dropped, so their only profit is crystal shards.",
+        "Every other method banks its logs, carrying 54 logs per trip (inventory plus a log basket); trip times are estimates for each location.",
         "Forestry events (not in the Woodcutting Guild): 5 per hour at 2.5 minutes each, with no chopping during them, earning 1,500 anima-infused bark per hour. Bark is valued by buying felling axe handles (10,000 bark + 500 oak logs) and selling them.",
         "No group bonus from other players on the same tree, and no dragon or crystal axe special attack.",
         "Crystal shards (1/40 per log received in Prifddinas) are valued as crystal dust for divine super combat potions: 1 shard makes 2.5 potions. This needs 97 Herblore (boostable).",
