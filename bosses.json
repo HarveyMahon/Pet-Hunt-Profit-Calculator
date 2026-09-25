@@ -3849,6 +3849,95 @@
       "price": 24,
       "tradeable": true,
       "referenceOnly": true
+    },
+    "Sandworms": {
+      "price": 107,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Raw dark crab": {
+      "price": 948,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Raw lobster": {
+      "price": 118,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Raw karambwan": {
+      "price": 262,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Lava scale shard": {
+      "price": 75,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Uncut opal": {
+      "price": 78,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Uncut jade": {
+      "price": 82,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Uncut red topaz": {
+      "price": 1085,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Soft clay": {
+      "price": 139,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Amethyst": {
+      "price": 2860,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Stardust": {
+      "price": 92.6667,
+      "tradeable": false,
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Soft clay",
+            "factor": 0.6666666666666666
+          }
+        ]
+      },
+      "valueNote": "Untradeable: valued by buying soft clay packs (150 stardust = 100 soft clay)"
+    },
+    "Golden nugget": {
+      "price": 1390,
+      "tradeable": false,
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Soft clay",
+            "factor": 10
+          }
+        ]
+      },
+      "valueNote": "Untradeable: valued by buying soft clay packs (1 nugget = 10 soft clay)"
+    },
+    "Unidentified minerals": {
+      "price": 1390,
+      "tradeable": false,
+      "derivedFrom": {
+        "terms": [
+          {
+            "item": "Soft clay",
+            "factor": 10
+          }
+        ]
+      },
+      "valueNote": "Untradeable: valued by buying soft clay packs (1 mineral = 10 soft clay)"
     }
   },
   "bosses": [
@@ -28523,7 +28612,8 @@
           "prifddinas": true,
           "forestry": false,
           "requirements": "Song of the Elves",
-          "note": "Logs are dropped (no banking while tick manipulating), so the only profit is crystal shards. Uses rabbits for the 2-tick cycle."
+          "note": "Logs are dropped (no banking while tick manipulating), so the only profit is crystal shards. Uses rabbits for the 2-tick cycle.",
+          "tickLabel": "2-tick"
         },
         {
           "id": "2t-mahogany-prif",
@@ -28536,7 +28626,8 @@
           "prifddinas": true,
           "forestry": false,
           "requirements": "Song of the Elves",
-          "note": "Logs are dropped (no banking while tick manipulating), so the only profit is crystal shards. Uses rabbits for the 2-tick cycle."
+          "note": "Logs are dropped (no banking while tick manipulating), so the only profit is crystal shards. Uses rabbits for the 2-tick cycle.",
+          "tickLabel": "2-tick"
         }
       ],
       "assumptions": [
@@ -28548,6 +28639,582 @@
         "Crystal shards (1/40 per log received in Prifddinas) are valued as crystal dust for divine super combat potions: 1 shard makes 2.5 potions. This needs 97 Herblore (boostable).",
         "With a Forestry kit and secateurs attachments, trees with leaves (oak, willow, maple, yew, magic) give 0.5 leaves per log, using 0.25 secateurs per log. Bird nests, clue nests and Forestry event items other than bark are not counted.",
         "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet. Tick-manipulation methods are not ranked and are only listed under \"Show every method\"."
+      ],
+      "rollsLabel": "Logs/hr"
+    },
+    {
+      "id": "rock-golem",
+      "name": "Rock golem",
+      "skill": "Mining",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Rock_golem",
+      "level": 99,
+      "levelFactor": 25,
+      "petFormula": "Chance per pet roll = 1 / (base chance - 25 x Mining level)",
+      "rollsLabel": "Pet rolls/hr",
+      "ranking": {
+        "label": "equal weight on hours to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "gem-shilo",
+          "name": "Gem rocks",
+          "location": "Shilo Village mine (underground)",
+          "baseChance": 211886,
+          "actionsPerHour": 1150,
+          "unit": "gems",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Uncut opal",
+              "perAction": 0.4686
+            },
+            {
+              "item": "Uncut jade",
+              "perAction": 0.2326
+            },
+            {
+              "item": "Uncut red topaz",
+              "perAction": 0.1176
+            },
+            {
+              "item": "Uncut sapphire",
+              "perAction": 0.0714
+            },
+            {
+              "item": "Uncut emerald",
+              "perAction": 0.0394
+            },
+            {
+              "item": "Uncut ruby",
+              "perAction": 0.0389
+            },
+            {
+              "item": "Uncut diamond",
+              "perAction": 0.0315
+            }
+          ],
+          "inputs": [],
+          "requirements": "Medium Karamja Diary; charged amulet of glory",
+          "rateSource": "Wiki training guide: 75,000 XP/hr at 99 without tick manipulation (65 XP per gem)"
+        },
+        {
+          "id": "motherlode",
+          "name": "Motherlode Mine",
+          "location": "Motherlode Mine (upper level)",
+          "baseChance": 247200,
+          "actionsPerHour": 750,
+          "unit": "pay-dirt",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coal",
+              "perAction": 0.246
+            },
+            {
+              "item": "Gold ore",
+              "perAction": 0.2422
+            },
+            {
+              "item": "Mithril ore",
+              "perAction": 0.2693
+            },
+            {
+              "item": "Adamantite ore",
+              "perAction": 0.1885
+            },
+            {
+              "item": "Runite ore",
+              "perAction": 0.0227
+            },
+            {
+              "item": "Golden nugget",
+              "perAction": 0.0273
+            }
+          ],
+          "inputs": [],
+          "requirements": "Upper level and larger sack unlocked",
+          "rateSource": "Wiki: about 60,000 XP/hr at 99 (78 XP per pay-dirt incl. ores); ore mix from the Wiki money-making guide"
+        },
+        {
+          "id": "volcanic-mine",
+          "name": "Volcanic Mine",
+          "location": "Fossil Island",
+          "baseChance": 60000,
+          "actionsPerHour": 300,
+          "unit": "ore fragments",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Runite ore",
+              "perAction": 0.06354775828460038
+            }
+          ],
+          "inputs": [],
+          "requirements": "Bone Voyage; permanent access (3,000 numulite); a team of 3-5",
+          "note": "About 16,300 points per hour, spent on runite ore (855 points each). Fragments per hour are an estimate.",
+          "rateSource": "Estimate: about 300 ore fragments per hour, in line with the Wiki calling it only slightly slower than gem rocks for the pet"
+        },
+        {
+          "id": "blast-mine",
+          "name": "Blast Mine",
+          "location": "Lovakengj",
+          "baseChance": 123600,
+          "actionsPerHour": 330,
+          "unit": "hard rock excavations",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Runite ore",
+              "perAction": 0.1337
+            },
+            {
+              "item": "Adamantite ore",
+              "perAction": 0.4093
+            },
+            {
+              "item": "Mithril ore",
+              "perAction": 0.4744
+            },
+            {
+              "item": "Gold ore",
+              "perAction": 0.2949
+            },
+            {
+              "item": "Coal",
+              "perAction": 0.1874
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Dynamite",
+              "perAction": 1
+            }
+          ],
+          "requirements": "Chisel, tinderbox and dynamite",
+          "rateSource": "Wiki money-making guide: 330 dynamite per hour"
+        },
+        {
+          "id": "amethyst",
+          "name": "Amethyst",
+          "location": "Mining Guild",
+          "baseChance": 46350,
+          "actionsPerHour": 90,
+          "unit": "amethyst",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Amethyst",
+              "perAction": 1
+            },
+            {
+              "item": "Unidentified minerals",
+              "perAction": 0.05
+            }
+          ],
+          "inputs": [],
+          "requirements": "92 Mining",
+          "rateSource": "Wiki money-making guide: 80-100 amethyst per hour"
+        },
+        {
+          "id": "stars",
+          "name": "Crashed stars",
+          "location": "Anywhere (Shooting Stars)",
+          "baseChance": 521550,
+          "actionsPerHour": 961,
+          "unit": "stardust",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Stardust",
+              "perAction": 1
+            },
+            {
+              "item": "Uncut sapphire",
+              "perAction": 0.009737098344693282
+            },
+            {
+              "item": "Uncut emerald",
+              "perAction": 0.004868549172346641
+            },
+            {
+              "item": "Uncut ruby",
+              "perAction": 0.0024342745861733205
+            },
+            {
+              "item": "Uncut diamond",
+              "perAction": 0.0006085686465433301
+            }
+          ],
+          "inputs": [],
+          "requirements": "Crystal pickaxe",
+          "note": "Stardust valued by buying soft clay packs.",
+          "rateSource": "Wiki training guide: 961 stardust per hour at 99 with a crystal pickaxe"
+        },
+        {
+          "id": "runite",
+          "name": "Runite rocks",
+          "location": "Various (world hopping)",
+          "baseChance": 42377,
+          "actionsPerHour": 65,
+          "unit": "ores",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Runite ore",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "",
+          "rateSource": "Wiki money-making guide: 65 ores per hour"
+        },
+        {
+          "id": "3t-gem-shilo",
+          "name": "3-tick gem rocks",
+          "location": "Shilo Village mine (underground)",
+          "baseChance": 211886,
+          "actionsPerHour": 1650,
+          "unit": "gems",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Uncut opal",
+              "perAction": 0.4686
+            },
+            {
+              "item": "Uncut jade",
+              "perAction": 0.2326
+            },
+            {
+              "item": "Uncut red topaz",
+              "perAction": 0.1176
+            },
+            {
+              "item": "Uncut sapphire",
+              "perAction": 0.0714
+            },
+            {
+              "item": "Uncut emerald",
+              "perAction": 0.0394
+            },
+            {
+              "item": "Uncut ruby",
+              "perAction": 0.0389
+            },
+            {
+              "item": "Uncut diamond",
+              "perAction": 0.0315
+            }
+          ],
+          "inputs": [],
+          "requirements": "Medium Karamja Diary; charged amulet of glory",
+          "tickManipulation": true,
+          "note": "Gems kept in a gem bag and banked at the deposit box, as in the Wiki profit figure.",
+          "rateSource": "Wiki training guide: 110,000 XP/hr at 99 (the Wiki uses 1,650 gems per hour)",
+          "tickLabel": "3-tick"
+        },
+        {
+          "id": "3t-granite",
+          "name": "3-tick granite",
+          "location": "Desert Quarry",
+          "baseChance": 741600,
+          "actionsPerHour": 2000,
+          "unit": "granite",
+          "inventory": "drop",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "Waterskins or desert protection",
+          "tickManipulation": true,
+          "note": "Granite is dropped, so there is no profit.",
+          "rateSource": "Estimate from the Wiki training guide: 126,000 XP/hr at 99",
+          "tickLabel": "3-tick"
+        }
+      ],
+      "assumptions": [
+        "Level 99 Mining with the best pickaxe for each method; pet chance per roll = 1 / (base chance - 25 x 99), using the Wiki's base chances.",
+        "Rolls per hour come from the Wiki's training guide or money-making guide for each method (hover a method's name to see its source); where the Wiki gives only experience per hour, it is divided by the experience per roll.",
+        "Tick-manipulation methods are not ranked and only appear under \"Show every method\".",
+        "Stardust, golden nuggets and unidentified minerals are valued by buying soft clay packs. Volcanic Mine points are spent on runite ore.",
+        "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
+      ]
+    },
+    {
+      "id": "heron",
+      "name": "Heron",
+      "skill": "Fishing",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Heron",
+      "level": 99,
+      "levelFactor": 25,
+      "petFormula": "Chance per catch = 1 / (base chance - 25 x Fishing level)",
+      "rollsLabel": "Pet rolls/hr",
+      "ranking": {
+        "label": "equal weight on hours to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "angler-diabolic",
+          "name": "Anglerfish (diabolic worms)",
+          "location": "Port Piscarilius",
+          "baseChance": 78649,
+          "actionsPerHour": 450,
+          "unit": "anglerfish",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Raw anglerfish",
+              "perAction": 1
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Diabolic worms",
+              "perAction": 1
+            }
+          ],
+          "requirements": "Diabolic worms (from Yama)",
+          "note": "Each catch uses a diabolic worm, which currently costs more than the fish.",
+          "rateSource": "Wiki money-making guide: 300-450 per hour depending on level"
+        },
+        {
+          "id": "angler-sandworms",
+          "name": "Anglerfish (sandworms)",
+          "location": "Port Piscarilius",
+          "baseChance": 78649,
+          "actionsPerHour": 190,
+          "unit": "anglerfish",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Raw anglerfish",
+              "perAction": 1
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Sandworms",
+              "perAction": 1
+            }
+          ],
+          "requirements": "",
+          "rateSource": "Wiki training guide: about 23,000 XP/hr (120 XP per fish)"
+        },
+        {
+          "id": "karambwan",
+          "name": "Karambwan",
+          "location": "Karamja (fairy ring DKP)",
+          "baseChance": 170874,
+          "actionsPerHour": 800,
+          "unit": "karambwan",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Raw karambwan",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "Tai Bwo Wannai Trio; fish barrel",
+          "note": "Karambwanji bait caught yourself; its time is included.",
+          "rateSource": "Wiki training guide: 40,000 XP/hr at 99 including catching bait (50 XP per fish)"
+        },
+        {
+          "id": "monkfish",
+          "name": "Monkfish",
+          "location": "Piscatoris Fishing Colony",
+          "baseChance": 138583,
+          "actionsPerHour": 350,
+          "unit": "monkfish",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Raw monkfish",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "Swan Song",
+          "rateSource": "Wiki training guide: 350 per hour at 99"
+        },
+        {
+          "id": "minnows",
+          "name": "Minnows",
+          "location": "Fishing Guild platform",
+          "baseChance": 977778,
+          "actionsPerHour": 2113,
+          "unit": "catches",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Raw shark",
+              "perAction": 0.2957879791765263
+            }
+          ],
+          "inputs": [],
+          "requirements": "Fishing Contest; full angler's outfit",
+          "note": "The pet is rolled once per catch, not per minnow. 25,000 minnows an hour become 625 raw sharks.",
+          "rateSource": "Wiki training guide: 56,000 XP/hr at 99 (26.5 XP per catch)"
+        },
+        {
+          "id": "dark-crabs",
+          "name": "Dark crabs",
+          "location": "Wilderness Resource Area",
+          "baseChance": 149434,
+          "actionsPerHour": 308,
+          "unit": "dark crabs",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Raw dark crab",
+              "perAction": 1
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Dark fishing bait",
+              "perAction": 1
+            },
+            {
+              "item": "Coins",
+              "perAction": 50
+            }
+          ],
+          "requirements": "Elite Wilderness Diary",
+          "note": "Noted at Piles for 50 coins each. Deep Wilderness: player-killer risk not counted.",
+          "rateSource": "Wiki money-making guide: 308 per hour"
+        },
+        {
+          "id": "infernal-eels",
+          "name": "Infernal eels",
+          "location": "Mor Ul Rek",
+          "baseChance": 165000,
+          "actionsPerHour": 358,
+          "unit": "eels",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Onyx bolt tips",
+              "perAction": 0.05714285714285714
+            },
+            {
+              "item": "Lava scale shard",
+              "perAction": 0.34285714285714286
+            },
+            {
+              "item": "Tokkul",
+              "perAction": 14.085714285714287
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Fishing bait",
+              "perAction": 1
+            }
+          ],
+          "requirements": "Fire cape; ice gloves; oily fishing rod",
+          "note": "Eels smashed with a hammer; Tokkul valued as 1/260,000 of an uncut onyx.",
+          "rateSource": "Wiki training guide: 357.89 eels per hour at 99"
+        },
+        {
+          "id": "sacred-eels",
+          "name": "Sacred eels",
+          "location": "Zul-Andra",
+          "baseChance": 99000,
+          "actionsPerHour": 219,
+          "unit": "eels",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Zulrah's scales",
+              "perAction": 7
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Fishing bait",
+              "perAction": 1
+            }
+          ],
+          "requirements": "Partial Regicide; 96 Cooking for 7 scales per eel",
+          "rateSource": "Wiki training guide: 219.05 eels per hour at 99"
+        },
+        {
+          "id": "sharks",
+          "name": "Sharks",
+          "location": "Fishing Guild",
+          "baseChance": 82243,
+          "actionsPerHour": 160,
+          "unit": "sharks",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Raw shark",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "Harpoon",
+          "rateSource": "Wiki money-making guide: 160 per hour"
+        },
+        {
+          "id": "lobsters",
+          "name": "Lobsters",
+          "location": "Fishing Guild",
+          "baseChance": 116129,
+          "actionsPerHour": 222,
+          "unit": "lobsters",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Raw lobster",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "Lobster pot",
+          "rateSource": "Wiki money-making guide: 222 per hour"
+        },
+        {
+          "id": "aerial",
+          "name": "Aerial fishing",
+          "location": "Lake Molch",
+          "baseChance": 636833,
+          "actionsPerHour": 2400,
+          "unit": "fish",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "35 Hunter",
+          "note": "Molch pearls and other Alry rewards are not counted.",
+          "rateSource": "Wiki training guide: 2,400 fish per hour"
+        },
+        {
+          "id": "2t-tuna-sword",
+          "name": "2-tick tuna/swordfish",
+          "location": "Port Piscarilius",
+          "baseChance": 257770,
+          "actionsPerHour": 1475,
+          "unit": "fish",
+          "inventory": "drop",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "Crystal harpoon",
+          "tickManipulation": true,
+          "note": "Fish are dropped while tick manipulating, so there is no profit.",
+          "rateSource": "Wiki training guide: 132,800 XP/hr at 99 with a crystal harpoon (about 90 XP per fish)",
+          "tickLabel": "2-tick"
+        }
+      ],
+      "assumptions": [
+        "Level 99 Fishing; pet chance per catch = 1 / (base chance - 25 x 99), using the Wiki's base chances. No shark lures (they make the pet rarer).",
+        "Catches per hour come from the Wiki's training guide or money-making guide for each method (hover a method's name to see its source); where the Wiki gives only experience per hour, it is divided by the experience per catch.",
+        "Fish are sold raw. Tick-manipulation methods are not ranked and only appear under \"Show every method\".",
+        "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
       ]
     }
   ]
