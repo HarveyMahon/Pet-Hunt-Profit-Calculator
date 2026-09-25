@@ -7545,7 +7545,9 @@
         }
       ],
       "wikiAverage": 635.93,
-      "notes": "Members-world drops."
+      "notes": "Members-world drops.",
+      "defaultKph": 300,
+      "kphSource": "Rate provided by the site owner"
     },
     {
       "id": "callisto",
@@ -22098,7 +22100,9 @@
         "contributionShare": 0.5,
         "howItWorks": "Drops with contributionScales 'quantity' have quantities x share; 'rate' drops have chance x share; tertiary drops are unchanged."
       },
-      "drops": []
+      "drops": [],
+      "defaultKph": 24,
+      "kphSource": "Rate provided by the site owner"
     },
     {
       "id": "sarachnis",
@@ -23724,7 +23728,9 @@
           "table": "Tertiary"
         }
       ],
-      "wikiAverage": 161739.21
+      "wikiAverage": 161739.21,
+      "defaultKph": 0.5,
+      "kphSource": "Rate provided by the site owner (including getting totems)"
     },
     {
       "id": "sol_heredit",
@@ -30516,7 +30522,9 @@
           "condition": "Mimic fight enabled",
           "includeByDefault": false
         }
-      ]
+      ],
+      "defaultKph": 2,
+      "kphSource": "Rate provided by the site owner"
     },
     {
       "id": "chompy-birds",
@@ -30535,7 +30543,9 @@
           "expectedPerKill": 1,
           "table": "supplies"
         }
-      ]
+      ],
+      "defaultKph": 200,
+      "kphSource": "Rate provided by the site owner"
     },
     {
       "id": "soul-wars",
@@ -30610,7 +30620,9 @@
           "expectedPerKill": 0.3333333333333333,
           "table": "main"
         }
-      ]
+      ],
+      "defaultKph": 6,
+      "kphSource": "Rate provided by the site owner"
     },
     {
       "id": "barbarian-assault",
@@ -30860,7 +30872,9 @@
           "expectedPerKill": 6.25e-05,
           "table": "main"
         }
-      ]
+      ],
+      "defaultKph": 4,
+      "kphSource": "Rate provided by the site owner"
     }
   ],
   "skillingPets": [
