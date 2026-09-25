@@ -4174,6 +4174,11 @@
       "price": 8166,
       "tradeable": true,
       "referenceOnly": true
+    },
+    "Rewards Guardian search (Wiki average)": {
+      "price": 5303.44,
+      "tradeable": false,
+      "valueNote": "Fixed value: the Wiki's average Rewards Guardian search (5,303.44 gp, as of 25 Sep 2026); abyssal pearls and untradeable uniques count as 0"
     }
   },
   "bosses": [
@@ -31236,6 +31241,69 @@
         "Profit counts produce sold on the Grand Exchange minus seeds, protection payments and compost where listed. Farming experience, tree logs, and untradeable seeds are not counted.",
         "The Wiki suggests combining runs (trees plus cactus, belladonna, hespori, seaweed and mushrooms) for the fastest pet; each run here is shown on its own.",
         "Methods are ranked by the average of their rank for days to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
+      ]
+    },
+    {
+      "id": "abyssal-protector",
+      "name": "Abyssal protector",
+      "skill": "Runecraft",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Abyssal_protector",
+      "level": 99,
+      "levelFactor": 0,
+      "petFormula": "Fixed 1/4,000 per Rewards Guardian search",
+      "rollsLabel": "Searches/hr",
+      "ranking": {
+        "label": "equal weight on hours to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "gotr",
+          "name": "Guardians of the Rift (points only)",
+          "location": "Temple of the Eye",
+          "baseChance": 4000,
+          "chancePerAction": 0.00025,
+          "actionsPerHour": 36,
+          "unit": "searches",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Rewards Guardian search (Wiki average)",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "Temple of the Eye; 27 Runecraft",
+          "note": "Full points each game (600 elemental and 600 catalytic energy), so 6 searches per game. Abyssal pearls are kept for the Raiments of the Eye and other rewards.",
+          "rateSource": "Wiki: up to 1,200 energy per game (6 searches when split evenly); about 6 games per hour is an estimate"
+        },
+        {
+          "id": "gotr-pearls",
+          "name": "Guardians of the Rift (spending pearls)",
+          "location": "Temple of the Eye",
+          "baseChance": 4000,
+          "chancePerAction": 0.00025,
+          "actionsPerHour": 39.37,
+          "unit": "searches",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Rewards Guardian search (Wiki average)",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "Temple of the Eye; 27 Runecraft",
+          "note": "As above, but every 25 abyssal pearls are spent on an extra search (about 2.14 pearls come from each search), about 9% more searches.",
+          "rateSource": "Wiki: 2.14 pearls per search and 25 pearls per extra search; about 6 games per hour is an estimate"
+        }
+      ],
+      "assumptions": [
+        "The Abyssal protector is a fixed 1/4,000 per Rewards Guardian search, whatever your level; searches bought with abyssal pearls can also give it.",
+        "Maximum points each game: 1,200 energy split evenly, giving 6 searches. About 6 games an hour is an estimate (hover a method to see its source); the Abyssal lantern with yew logs would add about 10% more.",
+        "Each search is valued at the Wiki's average of 5,303 gp (runes and talismans), a fixed figure. Abyssal pearls, pouches and other untradeable rewards count as 0, and runes you craft during games are not counted."
       ]
     }
   ]
