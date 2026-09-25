@@ -7557,7 +7557,9 @@
       "wikiAverage": 635.93,
       "notes": "Members-world drops.",
       "defaultKph": 300,
-      "kphSource": "Rate provided by the site owner"
+      "kphSource": "Rate provided by the site owner",
+      "defaultCost": 300,
+      "costSource": "Cost provided by the site owner"
     },
     {
       "id": "callisto",
@@ -22172,7 +22174,9 @@
       },
       "drops": [],
       "defaultKph": 24,
-      "kphSource": "Rate provided by the site owner"
+      "kphSource": "Rate provided by the site owner",
+      "defaultCost": 14332,
+      "costSource": "Cost provided by the site owner"
     },
     {
       "id": "sarachnis",
@@ -23561,7 +23565,9 @@
         }
       ],
       "defaultKph": 70,
-      "kphSource": "Rate provided by the site owner"
+      "kphSource": "Rate provided by the site owner",
+      "defaultCost": 10000,
+      "costSource": "Cost provided by the site owner"
     },
     {
       "id": "skotizo",
@@ -23808,7 +23814,9 @@
       ],
       "wikiAverage": 161739.21,
       "defaultKph": 0.5,
-      "kphSource": "Rate provided by the site owner (including getting totems)"
+      "kphSource": "Rate provided by the site owner (including getting totems)",
+      "defaultCost": 20000,
+      "costSource": "Cost provided by the site owner"
     },
     {
       "id": "sol_heredit",
@@ -25458,7 +25466,9 @@
         "multiplier": 2
       },
       "defaultKph": 0.5,
-      "kphSource": "Estimate: about 2 hours per Inferno run"
+      "kphSource": "Estimate: about 2 hours per Inferno run",
+      "defaultCost": 300000,
+      "costSource": "Cost provided by the site owner"
     },
     {
       "id": "tztok_jad",
@@ -25502,7 +25512,9 @@
         "multiplier": 2
       },
       "defaultKph": 1,
-      "kphSource": "Estimate from the Wiki Fight Cave strategies (runs often take about an hour)"
+      "kphSource": "Estimate from the Wiki Fight Cave strategies (runs often take about an hour)",
+      "defaultCost": 100000,
+      "costSource": "Cost provided by the site owner"
     },
     {
       "id": "vardorvis",
@@ -28119,7 +28131,9 @@
       ],
       "notes": "Counted per reward-cart roll. Logs, ores, herbs, seeds, gems and fish depend on your skill levels and aren't included, so real loot is higher than shown.",
       "defaultKph": 28,
-      "kphSource": "Wiki Wintertodt strategies (about 28 reward rolls an hour)"
+      "kphSource": "Wiki Wintertodt strategies (about 28 reward rolls an hour)",
+      "defaultCost": 0,
+      "costSource": "Cost provided by the site owner"
     },
     {
       "id": "yama",
@@ -30630,7 +30644,9 @@
         }
       ],
       "defaultKph": 2,
-      "kphSource": "Rate provided by the site owner"
+      "kphSource": "Rate provided by the site owner",
+      "defaultCost": 20000,
+      "costSource": "Cost provided by the site owner"
     },
     {
       "id": "chompy-birds",
@@ -30727,7 +30743,9 @@
         }
       ],
       "defaultKph": 6,
-      "kphSource": "Rate provided by the site owner"
+      "kphSource": "Rate provided by the site owner",
+      "defaultCost": 10000,
+      "costSource": "Cost provided by the site owner"
     },
     {
       "id": "barbarian-assault",
