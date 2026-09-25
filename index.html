@@ -139,6 +139,7 @@
   .calc-head .source { justify-self: end; }
   .tabs { display: flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 3px; }
   .tab { all: unset; cursor: pointer; padding: 7px 14px; border-radius: 6px; font-size: 14px; font-weight: 500; color: var(--muted); }
+  @media (max-width: 560px) { .tabs { flex-wrap: wrap; } .tab { padding: 6px 10px; font-size: 13px; } }
   .tab[aria-current="page"] { background: var(--surface-2); color: var(--text); box-shadow: inset 0 0 0 1px var(--line); }
   .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   #overview, #misc-overview { min-width: 560px; }
@@ -170,10 +171,10 @@
     <div class="title-row">
       <h1>Pet Hunt <span>Profit</span> Calculator</h1>
       <nav class="tabs" aria-label="Views">
-        <button type="button" class="tab" id="tab-overview" data-view="overview">All pets</button>
-        <button type="button" class="tab" id="tab-calc" data-view="calc">Calculator</button>
-        <button type="button" class="tab" id="tab-skill" data-view="skill">Skilling pets</button>
-        <button type="button" class="tab" id="tab-misc" data-view="misc">Miscellaneous pets</button>
+        <button type="button" class="tab" id="tab-overview" data-view="overview">Summary</button>
+        <button type="button" class="tab" id="tab-calc" data-view="calc">Boss Pets</button>
+        <button type="button" class="tab" id="tab-skill" data-view="skill">Skilling Pets</button>
+        <button type="button" class="tab" id="tab-misc" data-view="misc">Miscellaneous Pets</button>
       </nav>
     </div>
   </header>
