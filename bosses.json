@@ -30631,6 +30631,266 @@
         "The Colossal Wyrm course is not listed: the Wiki does not have its current pet rate. (Termites would be valued at 8 amylase crystals.)",
         "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
       ]
+    },
+    {
+      "id": "soup",
+      "name": "Soup",
+      "skill": "Sailing",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Soup",
+      "level": 99,
+      "levelFactor": 0,
+      "petFormula": "Fixed chance per activity (not affected by Sailing level)",
+      "rollsLabel": "Pet rolls/hr",
+      "ranking": {
+        "label": "equal weight on hours to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "courier-aldarin",
+          "name": "Courier tasks (Aldarin–Sunset Coast)",
+          "location": "Aldarin and the Sunset Coast",
+          "baseChance": 4691,
+          "chancePerAction": 0.00021317416329140907,
+          "actionsPerHour": 30,
+          "unit": "tasks",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coins",
+              "perAction": 1110.2666666666667
+            }
+          ],
+          "inputs": [],
+          "requirements": "46 Sailing",
+          "note": "Level 46-50 courier tasks between Aldarin and the Sunset Coast (about 1/4,691 per task). Only coin bags are counted (4 in 5 tasks, tiny or small bags); reward bags, experience and shark paint are not.",
+          "rateSource": "Pet chance from the Wiki; 30 tasks per hour is an estimate, as the Wiki gives no completion rate"
+        },
+        {
+          "id": "tempor-swordfish",
+          "name": "The Tempor Tantrum (Swordfish)",
+          "location": "Barracuda Trials",
+          "baseChance": 16000,
+          "chancePerAction": 6.25e-05,
+          "actionsPerHour": 30.51,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "30 Sailing",
+          "note": "1/16,000 per completion, even if the target time is missed. Rewards are not counted.",
+          "rateSource": "Wiki Sailing training guide: 108-second target time plus 10 seconds between runs"
+        },
+        {
+          "id": "tempor-shark",
+          "name": "The Tempor Tantrum (Shark)",
+          "location": "Barracuda Trials",
+          "baseChance": 8000,
+          "chancePerAction": 0.000125,
+          "actionsPerHour": 19.89,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "30 Sailing; Shark rank unlocked",
+          "note": "1/8,000 per completion, even if the target time is missed. Rewards are not counted.",
+          "rateSource": "Wiki Sailing training guide: 171-second target time plus 10 seconds between runs"
+        },
+        {
+          "id": "tempor-marlin",
+          "name": "The Tempor Tantrum (Marlin)",
+          "location": "Barracuda Trials",
+          "baseChance": 5334,
+          "chancePerAction": 0.00018747656542932134,
+          "actionsPerHour": 12.86,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "30 Sailing; Marlin rank unlocked",
+          "note": "1/5,334 per completion, even if the target time is missed. Rewards are not counted.",
+          "rateSource": "Wiki Sailing training guide: 270-second target time plus 10 seconds between runs"
+        },
+        {
+          "id": "jubbly-swordfish",
+          "name": "The Jubbly Jive (Swordfish)",
+          "location": "Barracuda Trials",
+          "baseChance": 11500,
+          "chancePerAction": 8.695652173913044e-05,
+          "actionsPerHour": 27.07,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "55 Sailing",
+          "note": "1/11,500 per completion, even if the target time is missed. Rewards are not counted.",
+          "rateSource": "Wiki Sailing training guide: 123-second target time plus 10 seconds between runs"
+        },
+        {
+          "id": "jubbly-shark",
+          "name": "The Jubbly Jive (Shark)",
+          "location": "Barracuda Trials",
+          "baseChance": 5750,
+          "chancePerAction": 0.00017391304347826088,
+          "actionsPerHour": 18.95,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "55 Sailing; Shark rank unlocked",
+          "note": "1/5,750 per completion, even if the target time is missed. Rewards are not counted.",
+          "rateSource": "Wiki Sailing training guide: 180-second target time plus 10 seconds between runs"
+        },
+        {
+          "id": "jubbly-marlin",
+          "name": "The Jubbly Jive (Marlin)",
+          "location": "Barracuda Trials",
+          "baseChance": 3834,
+          "chancePerAction": 0.0002608242044861763,
+          "actionsPerHour": 10.88,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "55 Sailing; Marlin rank unlocked",
+          "note": "1/3,834 per completion, even if the target time is missed. Rewards are not counted.",
+          "rateSource": "Wiki Sailing training guide: 321-second target time plus 10 seconds between runs"
+        },
+        {
+          "id": "gwenith-swordfish",
+          "name": "The Gwenith Glide (Swordfish)",
+          "location": "Barracuda Trials",
+          "baseChance": 9000,
+          "chancePerAction": 0.00011111111111111112,
+          "actionsPerHour": 27.69,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "72 Sailing",
+          "note": "1/9,000 per completion, even if the target time is missed. Rewards are not counted.",
+          "rateSource": "Wiki Sailing training guide: 120-second target time plus 10 seconds between runs"
+        },
+        {
+          "id": "gwenith-shark",
+          "name": "The Gwenith Glide (Shark)",
+          "location": "Barracuda Trials",
+          "baseChance": 4500,
+          "chancePerAction": 0.00022222222222222223,
+          "actionsPerHour": 15.52,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "72 Sailing; Shark rank unlocked",
+          "note": "1/4,500 per completion, even if the target time is missed. Rewards are not counted.",
+          "rateSource": "Wiki Sailing training guide: 222-second target time plus 10 seconds between runs"
+        },
+        {
+          "id": "gwenith-marlin",
+          "name": "The Gwenith Glide (Marlin)",
+          "location": "Barracuda Trials",
+          "baseChance": 3000,
+          "chancePerAction": 0.0003333333333333333,
+          "actionsPerHour": 9.5,
+          "unit": "runs",
+          "inventory": "bank",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "72 Sailing; Marlin rank unlocked",
+          "note": "1/3,000 per completion, even if the target time is missed. Rewards are not counted.",
+          "rateSource": "Wiki Sailing training guide: 369-second target time plus 10 seconds between runs"
+        },
+        {
+          "id": "wreck-merchant",
+          "name": "Merchant shipwrecks",
+          "location": "Shipwreck salvaging",
+          "baseChance": 300000,
+          "chancePerAction": 3.3333333333333333e-06,
+          "actionsPerHour": 280,
+          "unit": "salvage",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coins",
+              "perAction": 838.9464285714286
+            }
+          ],
+          "inputs": [],
+          "requirements": "87 Sailing; sloop with salvaging hooks and a salvaging station; crewmates",
+          "note": "The pet is only rolled on salvage you hook yourself (a third of it, 1/160,000), plus 1/800,000 per salvage sorted. Loot is the Wiki money-making guide's value (234,905 gp/hr), fixed rather than updated weekly.",
+          "rateSource": "Wiki money-making guide: 280 salvage per hour, hooking 1/3 yourself"
+        },
+        {
+          "id": "wreck-fremennik",
+          "name": "Fremennik shipwrecks",
+          "location": "Shipwreck salvaging",
+          "baseChance": 370470,
+          "chancePerAction": 2.699275362318841e-06,
+          "actionsPerHour": 310,
+          "unit": "salvage",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coins",
+              "perAction": 801.1064516129032
+            }
+          ],
+          "inputs": [],
+          "requirements": "80 Sailing; sloop with salvaging hooks and a salvaging station; crewmates",
+          "note": "The pet is only rolled on salvage you hook yourself (a third of it, 1/230,000), plus 1/800,000 per salvage sorted. Loot is the Wiki money-making guide's value (248,343 gp/hr), fixed rather than updated weekly.",
+          "rateSource": "Wiki money-making guide: 310 salvage per hour, hooking 1/3 yourself"
+        },
+        {
+          "id": "wreck-mercenary",
+          "name": "Mercenary shipwrecks",
+          "location": "Shipwreck salvaging",
+          "baseChance": 315152,
+          "chancePerAction": 3.173076923076923e-06,
+          "actionsPerHour": 315,
+          "unit": "salvage",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coins",
+              "perAction": 1106.5428571428572
+            }
+          ],
+          "inputs": [],
+          "requirements": "73 Sailing; sloop with salvaging hooks and a salvaging station; crewmates",
+          "note": "The pet is only rolled on salvage you hook yourself (half of it, 1/260,000), plus 1/800,000 per salvage sorted. Loot is the Wiki money-making guide's value (348,561 gp/hr), fixed rather than updated weekly.",
+          "rateSource": "Wiki money-making guide: 315 salvage per hour, hooking 1/2 yourself"
+        },
+        {
+          "id": "wreck-pirate",
+          "name": "Pirate shipwrecks",
+          "location": "Shipwreck salvaging",
+          "baseChance": 406154,
+          "chancePerAction": 2.462121212121212e-06,
+          "actionsPerHour": 360,
+          "unit": "salvage",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Coins",
+              "perAction": 618.5638888888889
+            }
+          ],
+          "inputs": [],
+          "requirements": "64 Sailing; sloop with salvaging hooks and a salvaging station; crewmates",
+          "note": "The pet is only rolled on salvage you hook yourself (a third of it, 1/275,000), plus 1/800,000 per salvage sorted. Loot is the Wiki money-making guide's value (222,683 gp/hr), fixed rather than updated weekly.",
+          "rateSource": "Wiki money-making guide: 360 salvage per hour, hooking 1/3 yourself"
+        }
+      ],
+      "assumptions": [
+        "Soup's chances are fixed per activity and do not improve with Sailing level; they come from the Wiki's Soup page.",
+        "Barracuda Trials use the Wiki's target times plus 10 seconds between runs, with no profit counted. Courier tasks per hour are an estimate (hover a method's name to see each source).",
+        "Courier tasks count only their coin bags. Shipwreck loot uses each Wiki money-making guide's hourly profit, which is fixed rather than refreshed by the weekly price update.",
+        "Deep sea trawling, sea charting and trimming sails are not listed.",
+        "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
+      ]
     }
   ]
 }
