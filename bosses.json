@@ -4020,6 +4020,26 @@
       "price": 4,
       "tradeable": true,
       "referenceOnly": true
+    },
+    "Extended stamina potion(4)": {
+      "price": 7871,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Stamina potion(4)": {
+      "price": 3676,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Amulet of glory(6)": {
+      "price": 10310,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Amulet of glory": {
+      "price": 11601,
+      "tradeable": true,
+      "referenceOnly": true
     }
   },
   "bosses": [
@@ -29794,6 +29814,400 @@
         "Level 99 Hunter with 5 box traps; pet chance per catch = 1 / (base chance - 25 x 99), using the Wiki's base chances (red 1/95,898, black 1/80,283 at 99).",
         "Catches per hour come from the Wiki's training guide or money-making guide (hover a method's name to see its source).",
         "Chinchompas are stackable, so tick manipulation does not stop you keeping them; those methods are still only listed under \"Show every method\".",
+        "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
+      ]
+    },
+    {
+      "id": "rift-guardian",
+      "name": "Rift guardian",
+      "skill": "Runecraft",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Rift_guardian",
+      "level": 99,
+      "levelFactor": 25,
+      "petFormula": "Chance per essence crafted = 1 / (base chance - 25 x Runecraft level)",
+      "rollsLabel": "Pet rolls/hr",
+      "ranking": {
+        "label": "equal weight on hours to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "lava",
+          "name": "Lava runes",
+          "location": "Fire Altar",
+          "baseChance": 1795758,
+          "actionsPerHour": 9720,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Lava rune",
+              "perAction": 1.6
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Earth rune",
+              "perAction": 1
+            },
+            {
+              "item": "Pure essence",
+              "perAction": 1
+            },
+            {
+              "item": "Binding necklace",
+              "perAction": 0.000992063492063492
+            },
+            {
+              "item": "Astral rune",
+              "perAction": 0.031746031746031744
+            },
+            {
+              "item": "Extended stamina potion(4)",
+              "perAction": 0.0001800411522633745
+            }
+          ],
+          "requirements": "Colossal pouch; Magic Imbue (Lunar Diplomacy, 82 Magic)",
+          "note": "Binding necklace, Magic Imbue and extended stamina potions counted.",
+          "rateSource": "Wiki training guide: 102,060 XP/hr at 99 with the colossal pouch (10.5 XP per essence)"
+        },
+        {
+          "id": "mind",
+          "name": "Mind runes",
+          "location": "Mind Altar",
+          "baseChance": 1795758,
+          "actionsPerHour": 7818,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Mind rune",
+              "perAction": 12.8
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Pure essence",
+              "perAction": 1
+            }
+          ],
+          "requirements": "Mind Altar Teleport",
+          "note": "8 mind runes per essence at 99. The Wiki names this the fastest way to the pet without runners.",
+          "rateSource": "Wiki: up to about 43,000 XP/hr at 99 with the Mind Altar Teleport (5.5 XP per essence)"
+        },
+        {
+          "id": "double-nature",
+          "name": "Double nature runes",
+          "location": "Nature Altar",
+          "baseChance": 1795758,
+          "actionsPerHour": 7260,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Nature rune",
+              "perAction": 3.2
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Pure essence",
+              "perAction": 1
+            },
+            {
+              "item": "Astral rune",
+              "perAction": 0.001893939393939394
+            },
+            {
+              "item": "Cosmic rune",
+              "perAction": 0.001893939393939394
+            }
+          ],
+          "requirements": "91 Runecraft; Achievement Diary cape teleport; colossal pouch",
+          "note": "",
+          "rateSource": "Wiki money-making guide: 110 trips per hour of 66 essence"
+        },
+        {
+          "id": "wrath",
+          "name": "Wrath runes",
+          "location": "Wrath Altar",
+          "baseChance": 1795758,
+          "actionsPerHour": 5280,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Wrath rune",
+              "perAction": 1.6
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Pure essence",
+              "perAction": 1
+            }
+          ],
+          "requirements": "95 Runecraft; Dragon Slayer II",
+          "note": "",
+          "rateSource": "Wiki money-making guide: 80 trips per hour of 66 essence"
+        },
+        {
+          "id": "astral",
+          "name": "Astral runes",
+          "location": "Astral Altar (Lunar Isle)",
+          "baseChance": 1795758,
+          "actionsPerHour": 5016,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Astral rune",
+              "perAction": 3.2
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Pure essence",
+              "perAction": 1
+            },
+            {
+              "item": "Law rune",
+              "perAction": 0.015151515151515152
+            },
+            {
+              "item": "Astral rune",
+              "perAction": 0.032196969696969696
+            },
+            {
+              "item": "Cosmic rune",
+              "perAction": 0.001893939393939394
+            },
+            {
+              "item": "Stamina potion(4)",
+              "perAction": 0.0015151515151515152
+            }
+          ],
+          "requirements": "Lunar Diplomacy; Moonclan Teleport",
+          "note": "",
+          "rateSource": "Wiki money-making guide: 76 trips per hour of 66 essence"
+        },
+        {
+          "id": "double-law",
+          "name": "Double law runes (Abyss)",
+          "location": "Law Altar via the Abyss",
+          "baseChance": 1795758,
+          "actionsPerHour": 3685,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Law rune",
+              "perAction": 3.2
+            },
+            {
+              "item": "Amulet of glory",
+              "perAction": 0.0024875621890547263
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Pure essence",
+              "perAction": 1
+            },
+            {
+              "item": "Stamina potion(4)",
+              "perAction": 0.0011940298507462687
+            },
+            {
+              "item": "Monkfish",
+              "perAction": 0.0029850746268656717
+            },
+            {
+              "item": "Amulet of glory(6)",
+              "perAction": 0.0024875621890547263
+            }
+          ],
+          "requirements": "95 Runecraft; Abyss access",
+          "note": "Glory charges (the uncharged amulet is sold back), stamina potions and food counted.",
+          "rateSource": "Wiki money-making guide: 55 laps per hour of 67 essence"
+        },
+        {
+          "id": "death-abyss",
+          "name": "Death runes (Abyss)",
+          "location": "Death Altar via the Abyss",
+          "baseChance": 1795758,
+          "actionsPerHour": 3350,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Death rune",
+              "perAction": 3.2
+            },
+            {
+              "item": "Amulet of glory",
+              "perAction": 0.0024875621890547263
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Pure essence",
+              "perAction": 1
+            },
+            {
+              "item": "Stamina potion(4)",
+              "perAction": 0.0011940298507462687
+            },
+            {
+              "item": "Monkfish",
+              "perAction": 0.0029850746268656717
+            },
+            {
+              "item": "Amulet of glory(6)",
+              "perAction": 0.0024875621890547263
+            }
+          ],
+          "requirements": "99 Runecraft for double deaths; Mourning's End Part II",
+          "note": "Glory charges (the uncharged amulet is sold back), stamina potions and food counted.",
+          "rateSource": "Wiki money-making guide: 50 laps per hour of 67 essence"
+        },
+        {
+          "id": "ourania",
+          "name": "Ourania Altar (ZMI)",
+          "location": "Ourania Cave",
+          "baseChance": 1487213,
+          "actionsPerHour": 4000,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Air rune",
+              "perAction": 0.0375
+            },
+            {
+              "item": "Mind rune",
+              "perAction": 0.0375
+            },
+            {
+              "item": "Water rune",
+              "perAction": 0.0375
+            },
+            {
+              "item": "Earth rune",
+              "perAction": 0.05
+            },
+            {
+              "item": "Fire rune",
+              "perAction": 0.05
+            },
+            {
+              "item": "Body rune",
+              "perAction": 0.0625
+            },
+            {
+              "item": "Cosmic rune",
+              "perAction": 0.08750000000000001
+            },
+            {
+              "item": "Chaos rune",
+              "perAction": 0.11249999999999999
+            },
+            {
+              "item": "Astral rune",
+              "perAction": 0.15
+            },
+            {
+              "item": "Nature rune",
+              "perAction": 0.18375
+            },
+            {
+              "item": "Law rune",
+              "perAction": 0.216
+            },
+            {
+              "item": "Death rune",
+              "perAction": 0.11750000000000001
+            },
+            {
+              "item": "Blood rune",
+              "perAction": 0.057499999999999996
+            },
+            {
+              "item": "Soul rune",
+              "perAction": 0.022000000000000002
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Pure essence",
+              "perAction": 1
+            },
+            {
+              "item": "Stamina potion(4)",
+              "perAction": 0.003076923076923077
+            },
+            {
+              "item": "Mind rune",
+              "perAction": 0.923
+            },
+            {
+              "item": "Astral rune",
+              "perAction": 0.0461
+            },
+            {
+              "item": "Law rune",
+              "perAction": 0.0230769
+            }
+          ],
+          "requirements": "Lunar Diplomacy (Ourania Teleport, NPC Contact)",
+          "note": "Random runes from the Wiki's level-99 rune mix; Raiments of the Eye do not apply.",
+          "rateSource": "Wiki money-making guide: 4,000 essence per hour"
+        },
+        {
+          "id": "blood-arceuus",
+          "name": "Blood runes (Arceuus)",
+          "location": "Arceuus (Dark Altar)",
+          "baseChance": 804984,
+          "actionsPerHour": 1474,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Blood rune",
+              "perAction": 1.6
+            }
+          ],
+          "inputs": [],
+          "requirements": "77 Runecraft; 38 Mining and Crafting; medium Kourend & Kebos Diary",
+          "note": "Dense essence is mined yourself; the pet rolls per essence fragment crafted.",
+          "rateSource": "Wiki training guide: 1,474 blood runes per hour (no outfit)"
+        },
+        {
+          "id": "soul-arceuus",
+          "name": "Soul runes (Arceuus)",
+          "location": "Arceuus (Dark Altar)",
+          "baseChance": 782999,
+          "actionsPerHour": 1451,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Soul rune",
+              "perAction": 1.6
+            }
+          ],
+          "inputs": [],
+          "requirements": "90 Runecraft; 38 Mining and Crafting; medium Kourend & Kebos Diary",
+          "note": "Dense essence is mined yourself; the pet rolls per essence fragment crafted.",
+          "rateSource": "Wiki training guide: 1,451 soul runes per hour (no outfit)"
+        }
+      ],
+      "assumptions": [
+        "Level 99 Runecraft; pet chance per essence crafted = 1 / (base chance - 25 x 99), using the Wiki's base chances. Crafting during Guardians of the Rift cannot give the pet, so it is not listed.",
+        "Essence per hour comes from the Wiki's training guide or money-making guide for each method (hover a method's name to see its source).",
+        "Full Raiments of the Eye (60% more runes) everywhere except the Ourania Altar; no abyssal lantern bonus. Runners are not used.",
         "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
       ]
     }
