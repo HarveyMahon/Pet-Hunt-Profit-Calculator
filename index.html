@@ -18,6 +18,7 @@
     --gp-low: #f2e25c;
     --gp-mid: #f4f1ea;
     --gp-high: #4fe08a;
+    --cost: #ff6b6b;
     --display: "Alegreya SC", Georgia, serif;
     --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
     --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -122,6 +123,7 @@
   th button[aria-sort] { color: var(--text); }
   th button .arr { width: 10px; color: var(--accent); }
   td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .cost { color: var(--cost); }
   td.item { font-weight: 500; }
   td.item .tag { margin-left: 8px; font-size: 11px; color: var(--faint); font-weight: 400; }
   td.tables { color: var(--muted); font-size: 13px; }
@@ -275,6 +277,10 @@
   function gpClass(n) { const a = Math.abs(n); return a >= 1e7 ? 'gp-high' : a >= 1e5 ? 'gp-mid' : 'gp-low'; }
   function gp(n, full) {
     return `<span class="${gpClass(n)}" title="${Math.round(n).toLocaleString('en-GB')} gp">${full ? Math.round(n).toLocaleString('en-GB') : gpShort(n)}</span>`;
+  }
+  // Costs are shown in red and in parentheses, accounting style
+  function costGp(c) {
+    return c > 0.5 ? `<span class="cost" title="${Math.round(c).toLocaleString('en-GB')} gp cost">(${gpShort(c)})</span>` : gp(0);
   }
   const int = n => Math.round(n).toLocaleString('en-GB');
   function qtyFmt(n) {
@@ -773,9 +779,9 @@
     const richest = pool.reduce((a, b) => b.total > a.total ? b : a);
     $('skill-summary').innerHTML = `
       <div class="stat hero"><span class="k">Pet</span><span class="pet">${esc(pet.name)}</span><span class="s">${esc(pet.skill)} ${pet.level}</span></div>
-      <div class="stat"><span class="k">Best balance</span><span class="v">${pet.costOnly ? gp(-best.total) + '<span class="hint"> cost</span>' : gp(best.total)}</span><span class="s">${esc(best.name)}, ${esc(best.location)} · ${hrs(best.hours)} to pet</span></div>
-      <div class="stat"><span class="k">Fastest pet${R.excludeTickManipulation ? ' (no tick manipulation)' : ''}</span><span class="v">${hrs(fastest.hours)}</span><span class="s">${esc(fastest.name)}, ${esc(fastest.location)} · ${gpShort(pet.costOnly ? -fastest.total : fastest.total)} ${pet.costOnly ? 'cost' : 'profit'}</span></div>
-      <div class="stat"><span class="k">${pet.costOnly ? 'Cheapest by the pet rate' : 'Most profit by the pet rate'}</span><span class="v">${pet.costOnly ? gp(-richest.total) : gp(richest.total)}</span><span class="s">${esc(richest.name)}, ${esc(richest.location)} · ${hrs(richest.hours)} to pet</span></div>`;
+      <div class="stat"><span class="k">Best balance</span><span class="v">${pet.costOnly ? costGp(-best.total) + '<span class="hint"> cost</span>' : gp(best.total)}</span><span class="s">${esc(best.name)}, ${esc(best.location)} · ${hrs(best.hours)} to pet</span></div>
+      <div class="stat"><span class="k">Fastest pet${R.excludeTickManipulation ? ' (no tick manipulation)' : ''}</span><span class="v">${hrs(fastest.hours)}</span><span class="s">${esc(fastest.name)}, ${esc(fastest.location)} · ${pet.costOnly ? costGp(-fastest.total) + ' cost' : gpShort(fastest.total) + ' profit'}</span></div>
+      <div class="stat"><span class="k">${pet.costOnly ? 'Cheapest by the pet rate' : 'Most profit by the pet rate'}</span><span class="v">${pet.costOnly ? costGp(-richest.total) : gp(richest.total)}</span><span class="s">${esc(richest.name)}, ${esc(richest.location)} · ${hrs(richest.hours)} to pet</span></div>`;
     const showAll = $('skill-all').checked;
     $('skill-heading').textContent = showAll ? `All ${res.rows.length} methods` : `${res.top.length} best methods`;
     const rows = showAll ? res.rows : res.top;
@@ -788,13 +794,13 @@
         <td class="rank">${r.rank || '–'}</td>
         <td class="method"${r.rateSource ? ` title="Rate: ${esc(r.rateSource)}"` : ''}>${esc(r.name)}${r.tickManipulation ? `<span class="badge">${esc(r.tickLabel || 'Tick manipulation')}</span>` : ''}<span class="where">${esc(r.location)} · ${r.inventory === 'drop' ? 'dropping' : 'banking'}${r.forestry ? ' · Forestry events' : ''}</span><span class="req">${esc(r.requirements || '')}${r.requirements && r.note ? ' — ' : ''}${esc(r.note || '')}</span></td>
         <td class="num">${hrs(r.hours)}</td>
-        <td class="num" title="${esc(parts(r))}">${pet.costOnly ? gp(-r.total) : gp(r.total)}</td>
+        <td class="num" title="${esc(parts(r))}">${pet.costOnly ? costGp(-r.total) : gp(r.total)}</td>
         <td class="num">${r.chopsPerHour < 100 ? r.chopsPerHour.toFixed(1) : int(r.chopsPerHour)}${r.unit ? `<span class="where">${esc(r.unit)}</span>` : ''}</td>
         <td class="num">1/${int(1 / r.petChance)}</td>
       </tr>`).join('');
     $('skill-assumptions').innerHTML = (pet.assumptions || []).map(a => `<li>${esc(a)}</li>`).join('')
       + (pet.setup ? `<li>Current values: anima-infused bark ${res.barkValue.toFixed(1)} gp each; crystal shard ${int(res.shardValue)} gp each.</li>` : '')
-      + '<li>Hover a profit figure to see where it comes from.</li>';
+      + `<li>Hover a ${pet.costOnly ? 'cost' : 'profit'} figure to see where it comes from.</li>`;
   }
   function openBoss(id) {
     const b = DATA.bosses.find(x => x.id === id); if (!b) return;
