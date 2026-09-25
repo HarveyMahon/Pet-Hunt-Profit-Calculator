@@ -135,9 +135,9 @@
       "id": 449
     },
     "Aether catalyst": {
-      "price": 360,
+      "price": 361,
       "tradeable": true,
-      "id": 30771
+      "referenceOnly": true
     },
     "Air battlestaff": {
       "price": 8869,
@@ -4038,6 +4038,11 @@
     },
     "Amulet of glory": {
       "price": 11601,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Aether rune": {
+      "price": 785,
       "tradeable": true,
       "referenceOnly": true
     }
@@ -29896,6 +29901,50 @@
           "requirements": "Mind Altar Teleport",
           "note": "8 mind runes per essence at 99. The Wiki names this the fastest way to the pet without runners.",
           "rateSource": "Wiki: up to about 43,000 XP/hr at 99 with the Mind Altar Teleport (5.5 XP per essence)"
+        },
+        {
+          "id": "aether",
+          "name": "Aether runes",
+          "location": "Soul Altar area (Aether altar)",
+          "baseChance": 1795758,
+          "actionsPerHour": 4650,
+          "unit": "essence",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Aether rune",
+              "perAction": 1.6
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Soul rune",
+              "perAction": 1
+            },
+            {
+              "item": "Pure essence",
+              "perAction": 1
+            },
+            {
+              "item": "Aether catalyst",
+              "perAction": 1.6
+            },
+            {
+              "item": "Binding necklace",
+              "perAction": 0.0030241935483870967
+            },
+            {
+              "item": "Astral rune",
+              "perAction": 0.034274193548387094
+            },
+            {
+              "item": "Cosmic rune",
+              "perAction": 0.0020161290322580645
+            }
+          ],
+          "requirements": "90 Runecraft; binding necklace; Magic Imbue (82 Magic)",
+          "note": "Combination rune: soul runes, aether catalysts (one per rune made) and binding necklaces counted.",
+          "rateSource": "Wiki money-making guide: 75 trips per hour of 62 essence"
         },
         {
           "id": "double-nature",
