@@ -13,7 +13,8 @@
       "shark": "Shark table (merged)",
       "rare": "Rare drop table (merged)",
       "gem": "Gem table (merged)",
-      "tertiary": "Tertiary"
+      "tertiary": "Tertiary",
+      "supplies": "Supplies used (cost)"
     },
     "calculation": "Value per unit = sum(price x average quantity x expectedPerKill). expectedPerKill already includes multiple rolls and merged secondary tables (rare drop table, gem, seed, herb, shark and similar), using the Wiki's effective rates. Profit at pet rate = value per unit x petRate. 'unit' is usually a kill; skilling bosses and minigames use a reward roll or a completion.",
     "notes": [
@@ -4194,6 +4195,52 @@
       "price": 23300.88,
       "tradeable": false,
       "valueNote": "Fixed value: the Wiki's average expert hunters' loot sack (23,301 gp, as of 25 Sep 2026)"
+    },
+    "Ranarr weed": {
+      "price": 5954,
+      "tradeable": true
+    },
+    "Berserker helm": {
+      "price": 40814,
+      "tradeable": true
+    },
+    "Warrior helm": {
+      "price": 39484,
+      "tradeable": true
+    },
+    "Granite shield": {
+      "price": 34979,
+      "tradeable": true
+    },
+    "Granite helm": {
+      "price": 39043,
+      "tradeable": true
+    },
+    "Mithril brutal": {
+      "price": 243,
+      "tradeable": true
+    },
+    "Adamant bolts": {
+      "price": 174,
+      "tradeable": true
+    },
+    "Blighted vengeance sack": {
+      "price": 78,
+      "tradeable": true
+    },
+    "Blighted manta ray": {
+      "price": 99,
+      "tradeable": true
+    },
+    "Master clue casket (Wiki average)": {
+      "price": 634251.01,
+      "tradeable": false,
+      "valueNote": "Fixed value: the Wiki's average master reward casket (634,251 gp, as of 25 Sep 2026)"
+    },
+    "Mimic 3rd age bonus (Wiki average)": {
+      "price": 178867.69,
+      "tradeable": false,
+      "valueNote": "Fixed value: the Wiki's extra expected value per master casket when the Mimic fight is enabled"
     }
   },
   "bosses": [
@@ -28543,6 +28590,378 @@
         }
       ],
       "unit": "kill"
+    },
+    {
+      "id": "bloodhound",
+      "category": "misc",
+      "name": "Master clue scrolls",
+      "petName": "Bloodhound",
+      "petRate": 1000,
+      "unit": "master casket",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Bloodhound",
+      "notes": "1/1,000 per master reward casket. Each casket is valued at the Wiki's average of 634,251 gp (a fixed figure, without the Mimic); tick the Mimic option to add its 3rd age bonus. How the master clues are obtained is not counted.",
+      "drops": [
+        {
+          "item": "Master clue casket (Wiki average)",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1,
+          "table": "main"
+        },
+        {
+          "item": "Mimic 3rd age bonus (Wiki average)",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 1,
+          "table": "main",
+          "condition": "Mimic fight enabled",
+          "includeByDefault": false
+        }
+      ]
+    },
+    {
+      "id": "chompy-birds",
+      "category": "misc",
+      "name": "Chompy bird hunting",
+      "petName": "Chompy chick",
+      "petRate": 250.25,
+      "unit": "chompy bird",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Chompy_chick",
+      "notes": "1/500 when a chompy bird is killed and again when it is plucked (about 1/250 per bird); needs the elite Western Provinces Diary. Loot is ignored; only the cost of 2 mithril brutal arrows per bird is counted.",
+      "drops": [
+        {
+          "item": "Mithril brutal",
+          "qtyMin": -2,
+          "qtyMax": -2,
+          "expectedPerKill": 1,
+          "table": "supplies"
+        }
+      ]
+    },
+    {
+      "id": "soul-wars",
+      "category": "misc",
+      "name": "Soul Wars",
+      "petName": "Lil' creator",
+      "petRate": 400,
+      "unit": "spoils of war crate",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Lil'_creator",
+      "notes": "1/400 per spoils of war opened. Each spoils of war has three rolls on its loot table.",
+      "drops": [
+        {
+          "item": "Pure essence",
+          "qtyMin": 1000,
+          "qtyMax": 1000,
+          "expectedPerKill": 0.3333333333333333,
+          "table": "main"
+        },
+        {
+          "item": "Adamant bolts",
+          "qtyMin": 150,
+          "qtyMax": 170,
+          "expectedPerKill": 0.3333333333333333,
+          "table": "main"
+        },
+        {
+          "item": "Runite bolts",
+          "qtyMin": 150,
+          "qtyMax": 170,
+          "expectedPerKill": 0.3333333333333333,
+          "table": "main"
+        },
+        {
+          "item": "Blighted vengeance sack",
+          "qtyMin": 20,
+          "qtyMax": 30,
+          "expectedPerKill": 0.3333333333333333,
+          "table": "main"
+        },
+        {
+          "item": "Blighted ancient ice sack",
+          "qtyMin": 10,
+          "qtyMax": 15,
+          "expectedPerKill": 0.3333333333333333,
+          "table": "main"
+        },
+        {
+          "item": "Blighted karambwan",
+          "qtyMin": 35,
+          "qtyMax": 45,
+          "expectedPerKill": 0.3333333333333333,
+          "table": "main"
+        },
+        {
+          "item": "Blighted anglerfish",
+          "qtyMin": 25,
+          "qtyMax": 35,
+          "expectedPerKill": 0.3333333333333333,
+          "table": "main"
+        },
+        {
+          "item": "Blighted manta ray",
+          "qtyMin": 15,
+          "qtyMax": 25,
+          "expectedPerKill": 0.3333333333333333,
+          "table": "main"
+        },
+        {
+          "item": "Blighted super restore(4)",
+          "qtyMin": 4,
+          "qtyMax": 4,
+          "expectedPerKill": 0.3333333333333333,
+          "table": "main"
+        }
+      ]
+    },
+    {
+      "id": "barbarian-assault",
+      "category": "misc",
+      "name": "Barbarian Assault",
+      "petName": "Pet penance queen",
+      "petRate": 1000,
+      "unit": "high gamble",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Pet_penance_queen",
+      "notes": "1/1,000 per high gamble. Honour points are treated as free, and the 1/15 elite clue scroll is not counted.",
+      "drops": [
+        {
+          "item": "Ranarr weed",
+          "qtyMin": 20,
+          "qtyMax": 30,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Snapdragon",
+          "qtyMin": 20,
+          "qtyMax": 30,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Torstol",
+          "qtyMin": 20,
+          "qtyMax": 30,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Ranarr seed",
+          "qtyMin": 3,
+          "qtyMax": 4,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Snapdragon seed",
+          "qtyMin": 3,
+          "qtyMax": 4,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Torstol seed",
+          "qtyMin": 3,
+          "qtyMax": 4,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Watermelon seed",
+          "qtyMin": 50,
+          "qtyMax": 50,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Palm tree seed",
+          "qtyMin": 1,
+          "qtyMax": 2,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Magic seed",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Archer helm",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Berserker helm",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Warrior helm",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Farseer helm",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Granite shield",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Granite helm",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Rune kiteshield",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Coal",
+          "qtyMin": 750,
+          "qtyMax": 750,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Runite ore",
+          "qtyMin": 20,
+          "qtyMax": 20,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Runite bar",
+          "qtyMin": 15,
+          "qtyMax": 15,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Dragon bones",
+          "qtyMin": 50,
+          "qtyMax": 75,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Black dragonhide",
+          "qtyMin": 30,
+          "qtyMax": 50,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Uncut diamond",
+          "qtyMin": 25,
+          "qtyMax": 30,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Magic logs",
+          "qtyMin": 50,
+          "qtyMax": 100,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Mahogany plank",
+          "qtyMin": 60,
+          "qtyMax": 80,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Rune arrow",
+          "qtyMin": 400,
+          "qtyMax": 500,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Raw shark",
+          "qtyMin": 250,
+          "qtyMax": 300,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Shark",
+          "qtyMin": 75,
+          "qtyMax": 125,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Law rune",
+          "qtyMin": 250,
+          "qtyMax": 300,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Blood rune",
+          "qtyMin": 250,
+          "qtyMax": 300,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Limpwurt root",
+          "qtyMin": 30,
+          "qtyMax": 50,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Unicorn horn",
+          "qtyMin": 30,
+          "qtyMax": 50,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Coins",
+          "qtyMin": 50000,
+          "qtyMax": 75000,
+          "expectedPerKill": 0.03125,
+          "table": "main"
+        },
+        {
+          "item": "Dragon med helm",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 6.25e-05,
+          "table": "main"
+        },
+        {
+          "item": "Dragon chainbody",
+          "qtyMin": 1,
+          "qtyMax": 1,
+          "expectedPerKill": 6.25e-05,
+          "table": "main"
+        }
+      ]
     }
   ],
   "skillingPets": [
