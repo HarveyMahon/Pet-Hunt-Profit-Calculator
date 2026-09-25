@@ -28212,7 +28212,8 @@
       "ranking": {
         "label": "equal weight on hours to pet and total profit",
         "method": "averageRank",
-        "top": 5
+        "top": 5,
+        "excludeTickManipulation": true
       },
       "setup": {
         "axe": "Crystal axe (no felling axe or rations)",
@@ -28546,7 +28547,7 @@
         "No group bonus from other players on the same tree, and no dragon or crystal axe special attack.",
         "Crystal shards (1/40 per log received in Prifddinas) are valued as crystal dust for divine super combat potions: 1 shard makes 2.5 potions. This needs 97 Herblore (boostable).",
         "With a Forestry kit and secateurs attachments, trees with leaves (oak, willow, maple, yew, magic) give 0.5 leaves per log, using 0.25 secateurs per log. Bird nests, clue nests and Forestry event items other than bark are not counted.",
-        "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet."
+        "Methods are ranked by the average of their rank for hours to pet (fastest first) and their rank for total profit by the pet rate (highest first); ties go to the faster pet. Tick-manipulation methods are not ranked and are only listed under \"Show every method\"."
       ]
     }
   ]
