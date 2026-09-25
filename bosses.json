@@ -23483,7 +23483,9 @@
           "expectedPerKill": 0.005,
           "table": "Tertiary"
         }
-      ]
+      ],
+      "defaultKph": 70,
+      "kphSource": "Rate provided by the site owner"
     },
     {
       "id": "skotizo",
