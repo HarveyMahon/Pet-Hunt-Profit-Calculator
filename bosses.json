@@ -4179,6 +4179,21 @@
       "price": 5303.44,
       "tradeable": false,
       "valueNote": "Fixed value: the Wiki's average Rewards Guardian search (5,303.44 gp, as of 25 Sep 2026); abyssal pearls and untradeable uniques count as 0"
+    },
+    "Numulite": {
+      "price": 41,
+      "tradeable": true,
+      "referenceOnly": true
+    },
+    "Hunters' loot sack (master) (Wiki average)": {
+      "price": 28215.88,
+      "tradeable": false,
+      "valueNote": "Fixed value: the Wiki's average master hunters' loot sack (28,216 gp, as of 25 Sep 2026)"
+    },
+    "Hunters' loot sack (expert) (Wiki average)": {
+      "price": 23300.88,
+      "tradeable": false,
+      "valueNote": "Fixed value: the Wiki's average expert hunters' loot sack (23,301 gp, as of 25 Sep 2026)"
     }
   },
   "bosses": [
@@ -31304,6 +31319,155 @@
         "The Abyssal protector is a fixed 1/4,000 per Rewards Guardian search, whatever your level; searches bought with abyssal pearls can also give it.",
         "Maximum points each game: 1,200 energy split evenly, giving 6 searches. About 6 games an hour is an estimate (hover a method to see its source); the Abyssal lantern with yew logs would add about 10% more.",
         "Each search is valued at the Wiki's average of 5,303 gp (runes and talismans), a fixed figure. Abyssal pearls, pouches and other untradeable rewards count as 0, and runes you craft during games are not counted."
+      ]
+    },
+    {
+      "id": "herbi",
+      "name": "Herbi",
+      "skill": "Hunter",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Herbi",
+      "level": 99,
+      "levelFactor": 0,
+      "petFormula": "Fixed 1/6,500 per herbiboar harvested",
+      "rollsLabel": "Herbiboars/hr",
+      "ranking": {
+        "label": "equal weight on hours to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "herbiboar",
+          "name": "Herbiboar hunting",
+          "location": "Mushroom Forest, Fossil Island",
+          "baseChance": 6500,
+          "chancePerAction": 0.00015384615384615385,
+          "actionsPerHour": 60,
+          "unit": "herbiboars",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Grimy guam leaf",
+              "perAction": 0.575
+            },
+            {
+              "item": "Grimy ranarr weed",
+              "perAction": 0.246
+            },
+            {
+              "item": "Grimy irit leaf",
+              "perAction": 0.221
+            },
+            {
+              "item": "Grimy avantoe",
+              "perAction": 0.249
+            },
+            {
+              "item": "Grimy kwuarm",
+              "perAction": 0.327
+            },
+            {
+              "item": "Grimy snapdragon",
+              "perAction": 0.207
+            },
+            {
+              "item": "Grimy cadantine",
+              "perAction": 0.341
+            },
+            {
+              "item": "Grimy lantadyme",
+              "perAction": 0.327
+            },
+            {
+              "item": "Grimy dwarf weed",
+              "perAction": 0.28099999999999997
+            },
+            {
+              "item": "Grimy torstol",
+              "perAction": 0.226
+            },
+            {
+              "item": "Numulite",
+              "perAction": 13.366666666666667
+            }
+          ],
+          "inputs": [
+            {
+              "item": "Stamina potion(4)",
+              "perAction": 0.125
+            }
+          ],
+          "requirements": "80 Hunter; 31 Herblore; Bone Voyage; magic secateurs",
+          "note": "Herbs at 99 Herblore with magic secateurs, plus numulite, as in the Wiki money-making guide; stamina potions counted.",
+          "rateSource": "Wiki money-making guide: 60 herbiboars per hour"
+        }
+      ],
+      "assumptions": [
+        "Herbi is a fixed 1/6,500 per herbiboar harvested, whatever your level.",
+        "Herb yields assume 99 Herblore and magic secateurs, from the Wiki's money-making guide; herbs are sold grimy."
+      ]
+    },
+    {
+      "id": "quetzin",
+      "name": "Quetzin",
+      "skill": "Hunter",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Quetzin",
+      "level": 99,
+      "levelFactor": 0,
+      "petFormula": "Fixed 1/1,000 per expert or master hunters' loot sack",
+      "rollsLabel": "Rumours/hr",
+      "ranking": {
+        "label": "equal weight on hours to pet and total profit",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "master-rumours",
+          "name": "Master rumours",
+          "location": "Hunter Guild (Varlamore)",
+          "baseChance": 1000,
+          "chancePerAction": 0.001,
+          "actionsPerHour": 10,
+          "unit": "rumours",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Hunters' loot sack (master) (Wiki average)",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "91 Hunter; Children of the Sun",
+          "note": "One master hunters' loot sack per rumour (1/1,000 for Quetzin), valued at the Wiki's average of 28,216 gp, a fixed figure. Creature drops caught along the way are not counted.",
+          "rateSource": "Estimate: about 10 rumours per hour (the Wiki gives 250,000 XP/hr at 99 but not rumours per hour)"
+        },
+        {
+          "id": "expert-rumours",
+          "name": "Expert rumours",
+          "location": "Hunter Guild (Varlamore)",
+          "baseChance": 1000,
+          "chancePerAction": 0.001,
+          "actionsPerHour": 10,
+          "unit": "rumours",
+          "inventory": "bank",
+          "outputs": [
+            {
+              "item": "Hunters' loot sack (expert) (Wiki average)",
+              "perAction": 1
+            }
+          ],
+          "inputs": [],
+          "requirements": "72 Hunter; Children of the Sun",
+          "note": "One expert hunters' loot sack per rumour (1/1,000 for Quetzin), valued at the Wiki's average of 23,301 gp, a fixed figure. Creature drops caught along the way are not counted.",
+          "rateSource": "Estimate: about 10 rumours per hour (the Wiki gives 250,000 XP/hr at 99 but not rumours per hour)"
+        }
+      ],
+      "assumptions": [
+        "Quetzin is a fixed 1/1,000 per expert or master hunters' loot sack (15 times more common at 200 million Hunter experience, which is not assumed).",
+        "About 10 rumours an hour is an estimate; each loot sack is valued at the Wiki's average, a fixed figure."
       ]
     }
   ]
