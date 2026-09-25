@@ -32,11 +32,34 @@ jobs:
         continue-on-error: true
         run: python update_prices.py ${{ inputs.force && '--force' || '' }}
 
+      - uses: actions/setup-node@v4
+        if: steps.update.outcome == 'success'
+        with:
+          node-version: "20"
+
+      - name: Install a headless browser for the page check
+        if: steps.update.outcome == 'success'
+        run: |
+          npm install --no-save --no-audit --no-fund --prefix "$RUNNER_TEMP/pw" playwright@1
+          "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+
+      - name: Check the site still works with the new prices
+        id: check
+        if: steps.update.outcome == 'success'
+        continue-on-error: true
+        env:
+          NODE_PATH: ${{ runner.temp }}/pw/node_modules
+        run: node check_page.js
+
       - name: Commit updated prices and log
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ "${{ steps.check.outcome }}" = "failure" ]; then
+            echo "The page check failed, so the new bosses.json is not committed (the log still is)."
+            git checkout -- bosses.json
+          fi
           git add bosses.json price_update_log.json
           if git diff --cached --quiet; then
             echo "Nothing changed."
@@ -49,4 +72,10 @@ jobs:
         if: steps.update.outcome == 'failure'
         run: |
           echo "The price update failed; see price_update_log.json for the Wiki's response."
+          exit 1
+
+      - name: Mark the run as failed if the page check failed
+        if: steps.check.outcome == 'failure'
+        run: |
+          echo "The site showed errors with the new prices; see the 'Check the site' step above for what broke."
           exit 1
