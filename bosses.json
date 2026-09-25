@@ -31469,6 +31469,66 @@
         "Quetzin is a fixed 1/1,000 per expert or master hunters' loot sack (15 times more common at 200 million Hunter experience, which is not assumed).",
         "About 10 rumours an hour is an estimate; each loot sack is valued at the Wiki's average, a fixed figure."
       ]
+    },
+    {
+      "id": "mr-mcgroot",
+      "name": "Mr McGroot",
+      "skill": "Hunter",
+      "wikiUrl": "https://oldschool.runescape.wiki/w/Mr_McGroot",
+      "level": 99,
+      "levelFactor": 25,
+      "petFormula": "Chance per goat = 1 / (40,000 - 25 x Hunter level)",
+      "rollsLabel": "Goats/hr",
+      "costOnly": true,
+      "ranking": {
+        "label": "equal weight on hours to pet and total cost",
+        "method": "averageRank",
+        "top": 5,
+        "excludeTickManipulation": true
+      },
+      "methods": [
+        {
+          "id": "telegrab",
+          "name": "Telekinetic Grab",
+          "location": "Wyrmscraig goat pit",
+          "baseChance": 40000,
+          "actionsPerHour": 926,
+          "unit": "goats",
+          "inventory": "drop",
+          "outputs": [],
+          "inputs": [
+            {
+              "item": "Law rune",
+              "perAction": 1
+            },
+            {
+              "item": "Air rune",
+              "perAction": 1
+            }
+          ],
+          "requirements": "60 Hunter; Sheep Herder",
+          "note": "One law rune and one air rune per goat (a staff of air would save the air runes).",
+          "rateSource": "Wiki: 175,000 XP/hr at 99 with Telekinetic Grab (179 XP per goat looted + 10 per goat pitted)"
+        },
+        {
+          "id": "prod",
+          "name": "Cattleprod",
+          "location": "Wyrmscraig goat pit",
+          "baseChance": 40000,
+          "actionsPerHour": 804,
+          "unit": "goats",
+          "inventory": "drop",
+          "outputs": [],
+          "inputs": [],
+          "requirements": "60 Hunter; Sheep Herder",
+          "note": "The cattleprod and spikes are free from the supplies nearby.",
+          "rateSource": "Wiki: 160,000 XP/hr at 99 with a cattleprod (179 XP per goat looted + 20 per goat pitted)"
+        }
+      ],
+      "assumptions": [
+        "Level 99 Hunter; pet chance per goat = 1 / (40,000 - 25 x 99) = 1/37,525.",
+        "Goat furs and horns are assumed to be dropped, so the table shows only what each method costs by the pet rate (0 for the cattleprod)."
+      ]
     }
   ]
 }
