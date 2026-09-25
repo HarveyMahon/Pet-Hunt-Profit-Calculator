@@ -142,12 +142,12 @@
   @media (max-width: 560px) { .tabs { flex-wrap: wrap; } .tab { padding: 6px 10px; font-size: 13px; } }
   .tab[aria-current="page"] { background: var(--surface-2); color: var(--text); box-shadow: inset 0 0 0 1px var(--line); }
   .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  #overview, #misc-overview { min-width: 560px; }
-  #overview td.num, #misc-overview td.num { font-size: 15px; }
-  #overview tbody tr, #misc-overview tbody tr { cursor: pointer; }
-  #overview td.pet, #misc-overview td.pet { color: var(--muted); }
-  #overview .open, #misc-overview .open { all: unset; cursor: pointer; font-weight: 500; }
-  #overview .open:hover, #overview .open:focus-visible, #misc-overview .open:hover, #misc-overview .open:focus-visible { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  #overview { min-width: 560px; }
+  #overview td.num { font-size: 15px; }
+  #overview tbody tr { cursor: pointer; }
+  #overview td.pet { color: var(--muted); }
+  #overview .open { all: unset; cursor: pointer; font-weight: 500; }
+  #overview .open:hover, #overview .open:focus-visible { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   #overview .unit { color: var(--faint); font-size: 12px; margin-left: 6px; }
   .gp-low { color: var(--gp-low); } .gp-mid { color: var(--gp-mid); } .gp-high { color: var(--gp-high); }
 
@@ -187,13 +187,6 @@
     <div class="scroller"><table id="overview"><thead></thead><tbody></tbody></table></div>
   </section>
 
-  <section id="misc-view" class="view" hidden>
-    <div class="table-head">
-      <h2>Miscellaneous pets</h2>
-      <p class="note" style="margin:0">Average loot (or cost) over the number of caskets, gambles, crates or kills that matches each pet's drop rate. Select one to see its full breakdown.</p>
-    </div>
-    <div class="scroller"><table id="misc-overview"><thead></thead><tbody></tbody></table></div>
-  </section>
 
   <div id="calc-view" class="view" hidden>
   <div class="calc-head">
@@ -556,12 +549,12 @@
     $('tab-calc').addEventListener('click', openBossTab);
     setupSkill(data.skillingPets || []);
     $('tab-skill').addEventListener('click', () => showView('skill'));
-    $('tab-misc').addEventListener('click', () => showView('misc'));
+    $('tab-misc').addEventListener('click', openMiscTab);
     const h = (location.hash || '').slice(1);
     const hp = h.startsWith('skill') ? (data.skillingPets || []).find(p => 'skill-' + p.id === h) : null;
     if (hp) { SKILL = hp; $('skill-pet').value = hp.id; renderSkill(); showView('skill'); }
     else if (h === 'skilling' && SKILL) showView('skill');
-    else if (h === 'misc') showView('misc');
+    else if (h === 'misc') openMiscTab();
     else if (h && data.bosses.some(b => b.id === h)) openBoss(h); else showView('overview');
   }
 
@@ -658,7 +651,6 @@
   const nameKey = n => n.replace(/^the\s+/i, '');
   const OVS = {
     overview: { table: 'overview', first: 'Source', sort: { key: 'total', dir: -1 }, rows: [] },
-    misc: { table: 'misc-overview', first: 'Source', sort: { key: 'total', dir: -1 }, rows: [] },
   };
   function buildOverview() {
     const all = DATA.bosses.map(b => ({ id: b.id, name: b.name, pet: b.petName || '', misc: b.category === 'misc', ...defaultRun(b) }));
@@ -668,9 +660,8 @@
       return top ? { id: 'skill-' + p.id, skillId: p.id, name: `${top.name} (${p.skill})`, pet: p.name, total: top.total } : null;
     }).filter(Boolean);
     OVS.overview.rows = [...all, ...skill];
-    OVS.misc.rows = all.filter(r => r.misc);
-    renderOverview('overview'); renderOverview('misc');
-    if (!OVS.misc.rows.length) $('tab-misc').hidden = true;
+    renderOverview('overview');
+    if (!DATA.bosses.some(isMisc)) $('tab-misc').hidden = true;
   }
   function renderOverview(which = 'overview') {
     const S = OVS[which], ovSort = S.sort;
@@ -712,15 +703,14 @@
     $('overview-view').hidden = v !== 'overview';
     $('calc-view').hidden = v !== 'calc';
     $('skill-view').hidden = v !== 'skill';
-    $('misc-view').hidden = v !== 'misc';
     const miscCalc = v === 'calc' && isMisc(current);
-    $('tab-misc').setAttribute('aria-current', v === 'misc' || miscCalc ? 'page' : 'false');
+    $('tab-misc').setAttribute('aria-current', miscCalc ? 'page' : 'false');
     $('tab-overview').setAttribute('aria-current', v === 'overview' ? 'page' : 'false');
     $('tab-calc').setAttribute('aria-current', v === 'calc' && !miscCalc ? 'page' : 'false');
     $('boss-label').textContent = miscCalc ? 'Miscellaneous pet' : 'Boss';
     $('boss-input').placeholder = miscCalc ? 'Type to search' : 'Type to search bosses';
     $('tab-skill').setAttribute('aria-current', v === 'skill' ? 'page' : 'false');
-    const hash = v === 'calc' ? current.id : v === 'skill' && SKILL ? 'skill-' + SKILL.id : v === 'misc' ? 'misc' : 'all';
+    const hash = v === 'calc' ? current.id : v === 'skill' && SKILL ? 'skill-' + SKILL.id : 'all';
     try { history.replaceState(null, '', '#' + hash); } catch (e) {}
   }
 
@@ -848,6 +838,13 @@
     $('boss').value = id; $('boss-input').value = b.name;
     store.set(isMisc(b) ? 'miscboss' : 'boss', id); enabled.clear(); selectBoss();
     showView('calc'); window.scrollTo(0, 0);
+  }
+  // Miscellaneous Pets tab: show the last miscellaneous breakdown (or the first one)
+  function openMiscTab() {
+    if (isMisc(current) && !$('calc-view').hidden) return;
+    const saved = store.get('miscboss');
+    const b = DATA.bosses.find(x => x.id === saved && isMisc(x)) || DATA.bosses.find(isMisc);
+    if (b) openBoss(b.id);
   }
   // Boss Pets tab: return to the last boss if a miscellaneous breakdown is showing
   function openBossTab() {
