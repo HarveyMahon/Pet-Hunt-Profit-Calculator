@@ -511,7 +511,6 @@
     const saved = store.get('boss');
     if (saved && bossList.some(b => b.id === saved)) sel.value = saved;
     $('boss-input').value = (data.bosses.find(b => b.id === sel.value) || bossList[0]).name;
-    $('perfect').value = store.get('perfect') || '';  // set per boss in selectBoss
     $('delve').value = store.get('delve') || '8';
     const key = k => 'raid:' + current.id + ':' + k;
     $('mode').addEventListener('change', () => { store.set(key('mode'), $('mode').value); render(); });
@@ -537,7 +536,7 @@
     sel.addEventListener('change', () => { const b = data.bosses.find(x => x.id === sel.value); store.set(isMisc(b) ? 'miscboss' : 'boss', sel.value); enabled.clear(); selectBoss(); showView('calc'); });
     // Kills per hour and supply cost are remembered separately for each boss or activity
     ['kph', 'cost'].forEach(id => $(id).addEventListener('input', () => { store.set(id + ':' + current.id, $(id).value); render(); }));
-    $('perfect').addEventListener('input', () => { store.set('perfect', $('perfect').value); render(); });
+    $('perfect').addEventListener('input', () => { store.set('perfect:' + current.id, $('perfect').value); render(); });
 
     const m = data.meta;
     $('footer').innerHTML = `
@@ -891,7 +890,7 @@
     $('diary-extra').hidden = !current.diaryOption;
     if (current.diaryOption) { $('diary-label').textContent = current.diaryOption.label; $('diary').checked = store.get('diary:' + current.diaryOption.key) === '1'; }
     if (current.slayerOption) { $('slayer-label').textContent = current.slayerOption.label; const sv = store.get('slayer:' + current.id); $('slayer').checked = sv == null ? !!current.slayerOption.default : sv === '1'; }
-    if (current.perfectKillOption) { const pv = store.get('perfect'); $('perfect').value = pv != null && pv !== '' ? pv : (current.defaultPerfectPercent ?? ''); }
+    if (current.perfectKillOption) { const pv = store.get('perfect:' + current.id); $('perfect').value = pv != null && pv !== '' ? pv : (current.defaultPerfectPercent ?? ''); }
     if (current.quiverOption) {
       const qv = store.get('quiver:' + current.id) || current.quiverOption.default;
       $('quiver-gamble').checked = qv === 'gamble'; $('quiver-exchange').checked = qv !== 'gamble';
