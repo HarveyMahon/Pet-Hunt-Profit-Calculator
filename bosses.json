@@ -4,7 +4,7 @@
     "description": "Local drop-table and price snapshot for the OSRS Pet Hunt Profit Calculator. The app reads only this file; prices are refreshed by running update_prices.py, not by the app.",
     "dropSource": "Old School RuneScape Wiki drop tables",
     "dropsRetrieved": "2026-09-25",
-    "pricesUpdated": "2026-09-25",
+    "pricesUpdated": "2026-09-28",
     "priceSource": "prices.runescape.wiki /latest (average of instant buy and sell)",
     "tableLabels": {
       "always": "100% drop",
@@ -32,22 +32,22 @@
       "Items with 'derivedFrom' are priced from other items: price = sum(item price x factor) over its terms (e.g. Tokkul = Uncut onyx / 260,000; vestiges = ring - 3 chromium ingots). Items marked referenceOnly are only used for these formulas.",
       "'skillingPets' holds skilling pets modelled per training method (trees, success chances, logistics) rather than drop tables; the app lists the 5 methods with the best average of their rank for hours to the pet and their rank for total profit at the pet rate."
     ],
-    "pricesUpdatedAt": "2026-09-25T13:48:00+00:00"
+    "pricesUpdatedAt": "2026-09-28T13:52:22+00:00"
   },
   "items": {
     "Abyssal ashes": {
-      "price": 2338,
+      "price": 1922,
       "tradeable": true,
       "id": 25775
     },
     "Abyssal bludgeon": {
-      "price": 16274330,
+      "price": 17152547,
       "tradeable": true,
       "referenceOnly": true,
       "id": 13263
     },
     "Abyssal dagger": {
-      "price": 1431348,
+      "price": 1294882,
       "tradeable": true,
       "id": 13265
     },
@@ -56,67 +56,67 @@
       "tradeable": false
     },
     "Abyssal whip": {
-      "price": 810000,
+      "price": 821405,
       "tradeable": true,
       "id": 4151
     },
     "Acorn": {
-      "price": 83,
+      "price": 84,
       "tradeable": true,
       "id": 5312
     },
     "Adamant arrow": {
-      "price": 24,
+      "price": 25,
       "tradeable": true,
       "id": 890
     },
     "Adamant arrow(p++)": {
-      "price": 16,
+      "price": 21,
       "tradeable": true,
       "id": 5626
     },
     "Adamant axe": {
-      "price": 594,
+      "price": 474,
       "tradeable": true,
       "id": 1357
     },
     "Adamant bolts(unf)": {
-      "price": 210,
+      "price": 206,
       "tradeable": true,
       "id": 9380
     },
     "Adamant boots": {
-      "price": 910,
+      "price": 834,
       "tradeable": true,
       "id": 4129
     },
     "Adamant cannonball": {
-      "price": 231,
+      "price": 224,
       "tradeable": true,
       "id": 31912
     },
     "Adamant chainbody": {
-      "price": 2673,
+      "price": 2632,
       "tradeable": true,
       "id": 1111
     },
     "Adamant dart": {
-      "price": 30,
+      "price": 32,
       "tradeable": true,
       "id": 810
     },
     "Adamant javelin": {
-      "price": 52,
+      "price": 53,
       "tradeable": true,
       "id": 829
     },
     "Adamant kiteshield": {
-      "price": 3048,
+      "price": 2890,
       "tradeable": true,
       "id": 1199
     },
     "Adamant longsword": {
-      "price": 1630,
+      "price": 1596,
       "tradeable": true,
       "id": 1301
     },
@@ -126,27 +126,28 @@
       "id": 1123
     },
     "Adamantite bar": {
-      "price": 1944,
+      "price": 1942,
       "tradeable": true,
       "id": 2361
     },
     "Adamantite ore": {
-      "price": 563,
+      "price": 554,
       "tradeable": true,
       "id": 449
     },
     "Aether catalyst": {
-      "price": 361,
+      "price": 364,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 30771
     },
     "Air battlestaff": {
-      "price": 8869,
+      "price": 8782,
       "tradeable": true,
       "id": 1397
     },
     "Air orb": {
-      "price": 1056,
+      "price": 1417,
       "tradeable": true,
       "id": 573
     },
@@ -156,7 +157,7 @@
       "id": 556
     },
     "Air talisman": {
-      "price": 159,
+      "price": 188,
       "tradeable": true,
       "id": 1438
     },
@@ -165,37 +166,37 @@
       "tradeable": false
     },
     "Amulet of power": {
-      "price": 2385,
+      "price": 2102,
       "tradeable": true,
       "id": 1731
     },
     "Amulet of strength": {
-      "price": 1286,
+      "price": 1196,
       "tradeable": true,
       "id": 1725
     },
     "Ancestral hat": {
-      "price": 46150556,
+      "price": 43447853,
       "tradeable": true,
       "id": 21018
     },
     "Ancestral robe bottom": {
-      "price": 68739170,
+      "price": 67515425,
       "tradeable": true,
       "id": 21024
     },
     "Ancestral robe top": {
-      "price": 87873984,
+      "price": 89286258,
       "tradeable": true,
       "id": 21021
     },
     "Ancient brew(2)": {
-      "price": 1335,
+      "price": 1018,
       "tradeable": true,
       "id": 26344
     },
     "Ancient brew(3)": {
-      "price": 1890,
+      "price": 2041,
       "tradeable": true,
       "id": 26342
     },
@@ -205,7 +206,7 @@
       "id": 27616
     },
     "Ancient hilt": {
-      "price": 33690910,
+      "price": 32066500,
       "tradeable": true,
       "id": 26370
     },
@@ -218,27 +219,27 @@
       "tradeable": false
     },
     "Ancient staff": {
-      "price": 60465,
+      "price": 60860,
       "tradeable": true,
       "id": 4675
     },
     "Anglerfish": {
-      "price": 1600,
+      "price": 1558,
       "tradeable": true,
       "id": 13441
     },
     "Antidote++(3)": {
-      "price": 6802,
+      "price": 6522,
       "tradeable": true,
       "id": 5954
     },
     "Antidote++(4)": {
-      "price": 10183,
+      "price": 9195,
       "tradeable": true,
       "id": 5952
     },
     "Antifire potion(2)": {
-      "price": 286,
+      "price": 386,
       "tradeable": true,
       "id": 2456
     },
@@ -247,57 +248,57 @@
       "tradeable": false
     },
     "Araxyte venom sac": {
-      "price": 1190,
+      "price": 990,
       "tradeable": true,
       "id": 29784
     },
     "Arcane prayer scroll": {
-      "price": 4065328,
+      "price": 4084853,
       "tradeable": true,
       "id": 21079
     },
     "Arcane sigil": {
-      "price": 135713285,
+      "price": 139324303,
       "tradeable": true,
       "id": 12827
     },
     "Archer helm": {
-      "price": 38604,
+      "price": 40556,
       "tradeable": true,
       "id": 3749
     },
     "Archers ring": {
-      "price": 2166028,
+      "price": 2234013,
       "tradeable": true,
       "id": 6733
     },
     "Ardeaglais teleport": {
-      "price": 32699,
+      "price": 28196,
       "tradeable": true,
       "id": 34033
     },
     "Armadyl chainskirt": {
-      "price": 25530612,
+      "price": 26082820,
       "tradeable": true,
       "id": 11830
     },
     "Armadyl chestplate": {
-      "price": 34559400,
+      "price": 34361689,
       "tradeable": true,
       "id": 11828
     },
     "Armadyl crossbow": {
-      "price": 33415207,
+      "price": 34982448,
       "tradeable": true,
       "id": 11785
     },
     "Armadyl helmet": {
-      "price": 8577750,
+      "price": 8676882,
       "tradeable": true,
       "id": 11826
     },
     "Armadyl hilt": {
-      "price": 7054556,
+      "price": 6906000,
       "tradeable": true,
       "id": 11810
     },
@@ -307,88 +308,88 @@
       "id": 592
     },
     "Astral rune": {
-      "price": 116,
+      "price": 118,
       "tradeable": true,
       "id": 9075
     },
     "Avantoe seed": {
-      "price": 307,
+      "price": 340,
       "tradeable": true,
       "id": 5298
     },
     "Avernic defender hilt": {
-      "price": 27375774,
+      "price": 27560567,
       "tradeable": true,
       "id": 22477
     },
     "Avernic treads": {
-      "price": 138701005,
+      "price": 136997334,
       "tradeable": true,
       "id": 31088
     },
     "Awakener's orb": {
-      "price": 288505,
+      "price": 279708,
       "tradeable": true,
       "id": 28334
     },
     "Bandos boots": {
-      "price": 864498,
+      "price": 882378,
       "tradeable": true,
       "id": 11836
     },
     "Bandos chestplate": {
-      "price": 22550961,
+      "price": 22142952,
       "tradeable": true,
       "id": 11832
     },
     "Bandos hilt": {
-      "price": 17063644,
+      "price": 17291502,
       "tradeable": true,
       "id": 11812
     },
     "Bandos tassets": {
-      "price": 15098156,
+      "price": 14839162,
       "tradeable": true,
       "id": 11834
     },
     "Bark": {
-      "price": 42,
+      "price": 30,
       "tradeable": true,
       "id": 3239
     },
     "Barrel of demonic tallow (full)": {
-      "price": 18288,
+      "price": 18396,
       "tradeable": true,
       "id": 30795
     },
     "Basket": {
-      "price": 3,
+      "price": 4,
       "tradeable": true,
       "id": 5376
     },
     "Bass": {
-      "price": 60,
+      "price": 42,
       "tradeable": true,
       "id": 365
     },
     "Battlestaff": {
-      "price": 7944,
+      "price": 7876,
       "tradeable": true,
       "id": 1391
     },
     "Belladonna seed": {
-      "price": 110,
+      "price": 122,
       "tradeable": true,
       "id": 5281
     },
     "Bellator ring": {
-      "price": 20368648,
+      "price": 20457554,
       "tradeable": true,
       "referenceOnly": true,
       "id": 28316
     },
     "Bellator vestige": {
-      "price": 20241373,
+      "price": 20319620,
       "tradeable": false,
       "valueNote": "Untradeable: valued as Bellator ring minus 3 chromium ingots",
       "derivedFrom": {
@@ -405,17 +406,17 @@
       }
     },
     "Belle's folly (tarnished)": {
-      "price": 81848,
+      "price": 78863,
       "tradeable": true,
       "id": 31245
     },
     "Berserker ring": {
-      "price": 3668060,
+      "price": 3831283,
       "tradeable": true,
       "id": 6737
     },
     "Big bones": {
-      "price": 310,
+      "price": 308,
       "tradeable": true,
       "id": 532
     },
@@ -424,22 +425,22 @@
       "tradeable": false
     },
     "Binding necklace": {
-      "price": 659,
+      "price": 618,
       "tradeable": true,
       "id": 5521
     },
     "Black d'hide body": {
-      "price": 7358,
+      "price": 7332,
       "tradeable": true,
       "id": 2503
     },
     "Black dragonhide": {
-      "price": 3582,
+      "price": 3618,
       "tradeable": true,
       "id": 1747
     },
     "Black tourmaline core": {
-      "price": 469280,
+      "price": 442166,
       "tradeable": true,
       "id": 21730
     },
@@ -448,17 +449,17 @@
       "tradeable": false
     },
     "Blighted ancient ice sack": {
-      "price": 468,
+      "price": 461,
       "tradeable": true,
       "id": 24607
     },
     "Blighted anglerfish": {
-      "price": 90,
+      "price": 98,
       "tradeable": true,
       "id": 24592
     },
     "Blighted karambwan": {
-      "price": 42,
+      "price": 46,
       "tradeable": true,
       "id": 24595
     },
@@ -467,12 +468,12 @@
       "tradeable": false
     },
     "Blighted super restore(4)": {
-      "price": 3276,
+      "price": 3467,
       "tradeable": true,
       "id": 24598
     },
     "Blood essence": {
-      "price": 87619,
+      "price": 87179,
       "tradeable": true,
       "id": 26390
     },
@@ -481,7 +482,7 @@
       "tradeable": false
     },
     "Blood rune": {
-      "price": 329,
+      "price": 338,
       "tradeable": true,
       "id": 565
     },
@@ -490,7 +491,7 @@
       "tradeable": false
     },
     "Bludgeon axon": {
-      "price": 5424776.6667,
+      "price": 5717515.6667,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/3 of an Abyssal bludgeon",
       "derivedFrom": {
@@ -503,7 +504,7 @@
       }
     },
     "Bludgeon claw": {
-      "price": 5424776.6667,
+      "price": 5717515.6667,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/3 of an Abyssal bludgeon",
       "derivedFrom": {
@@ -516,7 +517,7 @@
       }
     },
     "Bludgeon spine": {
-      "price": 5424776.6667,
+      "price": 5717515.6667,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/3 of an Abyssal bludgeon",
       "derivedFrom": {
@@ -529,7 +530,7 @@
       }
     },
     "Blue dragonhide": {
-      "price": 1718,
+      "price": 1786,
       "tradeable": true,
       "id": 1751
     },
@@ -539,12 +540,12 @@
       "id": 559
     },
     "Body talisman": {
-      "price": 1417,
+      "price": 1400,
       "tradeable": true,
       "id": 1446
     },
     "Bones": {
-      "price": 40,
+      "price": 38,
       "tradeable": true,
       "id": 526
     },
@@ -557,7 +558,7 @@
       "tradeable": false
     },
     "Brimstone ring": {
-      "price": 1627245,
+      "price": 1929722,
       "tradeable": true,
       "referenceOnly": true,
       "id": 22975
@@ -568,22 +569,22 @@
       "id": 882
     },
     "Bronze bar": {
-      "price": 57,
+      "price": 61,
       "tradeable": true,
       "id": 2349
     },
     "Bronze chainbody": {
-      "price": 36,
+      "price": 32,
       "tradeable": true,
       "id": 1103
     },
     "Bronze javelin": {
-      "price": 14,
+      "price": 15,
       "tradeable": true,
       "id": 825
     },
     "Bronze longsword": {
-      "price": 68,
+      "price": 70,
       "tradeable": true,
       "id": 1291
     },
@@ -592,7 +593,7 @@
       "tradeable": false
     },
     "Bucket": {
-      "price": 7,
+      "price": 8,
       "tradeable": true,
       "id": 1925
     },
@@ -606,7 +607,7 @@
       "tradeable": false
     },
     "Burnt page": {
-      "price": 6732,
+      "price": 6640,
       "tradeable": true,
       "id": 20718
     },
@@ -620,22 +621,22 @@
       "tradeable": false
     },
     "Cactus seed": {
-      "price": 92,
+      "price": 142,
       "tradeable": true,
       "id": 5280
     },
     "Cactus spine": {
-      "price": 1602,
+      "price": 1458,
       "tradeable": true,
       "id": 6016
     },
     "Cadantine seed": {
-      "price": 2490,
+      "price": 2497,
       "tradeable": true,
       "id": 5301
     },
     "Calquat tree seed": {
-      "price": 276,
+      "price": 280,
       "tradeable": true,
       "id": 5290
     },
@@ -644,7 +645,7 @@
       "tradeable": false
     },
     "Celastrus seed": {
-      "price": 17374,
+      "price": 17496,
       "tradeable": true,
       "id": 22869
     },
@@ -654,17 +655,17 @@
       "id": 562
     },
     "Chaos talisman": {
-      "price": 213,
+      "price": 214,
       "tradeable": true,
       "id": 1452
     },
     "Chasm teleport scroll": {
-      "price": 39107,
+      "price": 36896,
       "tradeable": true,
       "id": 30775
     },
     "Cheese": {
-      "price": 56,
+      "price": 54,
       "tradeable": true,
       "id": 1985
     },
@@ -674,12 +675,12 @@
       "id": 7054
     },
     "Chromium ingot": {
-      "price": 42425,
+      "price": 45978,
       "tradeable": true,
       "id": 28276
     },
     "Claws of Callisto": {
-      "price": 49737,
+      "price": 47685,
       "tradeable": true,
       "id": 27667
     },
@@ -704,17 +705,17 @@
       "tradeable": false
     },
     "Coal": {
-      "price": 142,
+      "price": 140,
       "tradeable": true,
       "id": 453
     },
     "Coconut": {
-      "price": 1265,
+      "price": 1362,
       "tradeable": true,
       "id": 5974
     },
     "Coconut milk": {
-      "price": 304,
+      "price": 300,
       "tradeable": true,
       "id": 5935
     },
@@ -723,43 +724,43 @@
       "tradeable": true
     },
     "Confliction gauntlets": {
-      "price": 56550000,
+      "price": 59468490,
       "tradeable": true,
       "referenceOnly": true,
       "id": 31106
     },
     "Cosmic rune": {
-      "price": 136,
+      "price": 120,
       "tradeable": true,
       "id": 564
     },
     "Cosmic talisman": {
-      "price": 195,
+      "price": 175,
       "tradeable": true,
       "id": 1454
     },
     "Cow slippers": {
-      "price": 2085,
+      "price": 2136,
       "tradeable": true,
       "id": 33093
     },
     "Cowhide": {
-      "price": 112,
+      "price": 116,
       "tradeable": true,
       "id": 1739
     },
     "Crimson kisten": {
-      "price": 52089436,
+      "price": 51968112,
       "tradeable": true,
       "id": 33631
     },
     "Crystal armour seed": {
-      "price": 5375798,
+      "price": 5530564,
       "tradeable": true,
       "id": 23956
     },
     "Crystal key": {
-      "price": 19986,
+      "price": 20156,
       "tradeable": true,
       "id": 989
     },
@@ -768,17 +769,17 @@
       "tradeable": false
     },
     "Crystal tool seed": {
-      "price": 25507908,
+      "price": 23811526,
       "tradeable": true,
       "id": 23953
     },
     "Crystal weapon seed": {
-      "price": 305007,
+      "price": 318718,
       "tradeable": true,
       "id": 4207
     },
     "Cupronickel bar": {
-      "price": 2486,
+      "price": 2418,
       "tradeable": true,
       "id": 32892
     },
@@ -787,7 +788,7 @@
       "tradeable": false
     },
     "Dagannoth bones": {
-      "price": 12077,
+      "price": 11866,
       "tradeable": true,
       "id": 6729
     },
@@ -805,12 +806,12 @@
       "tradeable": false
     },
     "Dark crab": {
-      "price": 1168,
+      "price": 1274,
       "tradeable": true,
       "id": 11936
     },
     "Dark fishing bait": {
-      "price": 4,
+      "price": 2,
       "tradeable": true,
       "id": 11940
     },
@@ -840,7 +841,7 @@
       "id": 560
     },
     "Demon tear": {
-      "price": 254,
+      "price": 245,
       "tradeable": true,
       "id": 31111
     },
@@ -849,32 +850,32 @@
       "tradeable": false
     },
     "Dexterous prayer scroll": {
-      "price": 15408667,
+      "price": 13906248,
       "tradeable": true,
       "id": 21034
     },
     "Diabolic worms": {
-      "price": 2377,
+      "price": 2268,
       "tradeable": true,
       "id": 30773
     },
     "Diamond": {
-      "price": 1580,
+      "price": 1592,
       "tradeable": true,
       "id": 1601
     },
     "Diamond bolt tips": {
-      "price": 168,
+      "price": 170,
       "tradeable": true,
       "id": 9192
     },
     "Diamond bolts (e)": {
-      "price": 139,
+      "price": 149,
       "tradeable": true,
       "id": 9243
     },
     "Dinh's bulwark": {
-      "price": 11924876,
+      "price": 11583833,
       "tradeable": true,
       "id": 21015
     },
@@ -887,62 +888,62 @@
       "tradeable": false
     },
     "Draconic visage": {
-      "price": 3250680,
+      "price": 3244431,
       "tradeable": true,
       "id": 11286
     },
     "Dragon 2h sword": {
-      "price": 132698,
+      "price": 131294,
       "tradeable": true,
       "id": 7158
     },
     "Dragon arrow": {
-      "price": 1928,
+      "price": 1929,
       "tradeable": true,
       "id": 11212
     },
     "Dragon arrowtips": {
-      "price": 1973,
+      "price": 1975,
       "tradeable": true,
       "id": 11237
     },
     "Dragon axe": {
-      "price": 74059,
+      "price": 77464,
       "tradeable": true,
       "id": 6739
     },
     "Dragon battleaxe": {
-      "price": 119126,
+      "price": 119234,
       "tradeable": true,
       "id": 1377
     },
     "Dragon bolts (unf)": {
-      "price": 2572,
+      "price": 2554,
       "tradeable": true,
       "id": 21930
     },
     "Dragon bones": {
-      "price": 3627,
+      "price": 3748,
       "tradeable": true,
       "id": 536
     },
     "Dragon chainbody": {
-      "price": 194724,
+      "price": 196274,
       "tradeable": true,
       "id": 3140
     },
     "Dragon claws": {
-      "price": 38925804,
+      "price": 37788800,
       "tradeable": true,
       "id": 13652
     },
     "Dragon dagger": {
-      "price": 17226,
+      "price": 17239,
       "tradeable": true,
       "id": 1215
     },
     "Dragon dagger(p++)": {
-      "price": 17480,
+      "price": 16068,
       "tradeable": true,
       "id": 5698
     },
@@ -952,107 +953,107 @@
       "id": 11232
     },
     "Dragon halberd": {
-      "price": 149423,
+      "price": 149500,
       "tradeable": true,
       "id": 3204
     },
     "Dragon harpoon": {
-      "price": 2124051,
+      "price": 2046638,
       "tradeable": true,
       "id": 21028
     },
     "Dragon hunter crossbow": {
-      "price": 30917873,
+      "price": 30735872,
       "tradeable": true,
       "id": 21012
     },
     "Dragon hunter wand": {
-      "price": 10767671,
+      "price": 10136918,
       "tradeable": true,
       "id": 30070
     },
     "Dragon javelin tips": {
-      "price": 734,
+      "price": 750,
       "tradeable": true,
       "id": 19582
     },
     "Dragon knife": {
-      "price": 3524,
+      "price": 3976,
       "tradeable": true,
       "id": 22804
     },
     "Dragon longsword": {
-      "price": 59143,
+      "price": 59149,
       "tradeable": true,
       "id": 1305
     },
     "Dragon mace": {
-      "price": 29296,
+      "price": 29195,
       "tradeable": true,
       "id": 1434
     },
     "Dragon med helm": {
-      "price": 58503,
+      "price": 59748,
       "tradeable": true,
       "id": 1149
     },
     "Dragon pickaxe": {
-      "price": 601559,
+      "price": 593164,
       "tradeable": true,
       "id": 11920
     },
     "Dragon platelegs": {
-      "price": 160978,
+      "price": 161148,
       "tradeable": true,
       "id": 4087
     },
     "Dragon plateskirt": {
-      "price": 161055,
+      "price": 161164,
       "tradeable": true,
       "id": 4585
     },
     "Dragon scimitar": {
-      "price": 60350,
+      "price": 59516,
       "tradeable": true,
       "id": 4587
     },
     "Dragon spear": {
-      "price": 39602,
+      "price": 38382,
       "tradeable": true,
       "id": 1249
     },
     "Dragon thrownaxe": {
-      "price": 288,
+      "price": 334,
       "tradeable": true,
       "id": 20849
     },
     "Dragonbone necklace": {
-      "price": 123230,
+      "price": 130578,
       "tradeable": true,
       "id": 22111
     },
     "Dragonfruit tree seed": {
-      "price": 155078,
+      "price": 153078,
       "tradeable": true,
       "id": 22877
     },
     "Dragonstone": {
-      "price": 10904,
+      "price": 10894,
       "tradeable": true,
       "id": 1615
     },
     "Dragonstone bolt tips": {
-      "price": 396,
+      "price": 391,
       "tradeable": true,
       "id": 9193
     },
     "Dragonstone bolts (e)": {
-      "price": 386,
+      "price": 339,
       "tradeable": true,
       "id": 9244
     },
     "Dragonstone ring": {
-      "price": 10874,
+      "price": 10839,
       "tradeable": true,
       "id": 1645
     },
@@ -1061,32 +1062,32 @@
       "tradeable": false
     },
     "Dwarf weed": {
-      "price": 1370,
+      "price": 1510,
       "tradeable": true,
       "id": 267
     },
     "Dwarf weed seed": {
-      "price": 446,
+      "price": 492,
       "tradeable": true,
       "id": 5303
     },
     "Dynamite": {
-      "price": 176,
+      "price": 180,
       "tradeable": true,
       "id": 13573
     },
     "Earth battlestaff": {
-      "price": 8720,
+      "price": 8740,
       "tradeable": true,
       "id": 1399
     },
     "Earth orb": {
-      "price": 928,
+      "price": 1077,
       "tradeable": true,
       "id": 575
     },
     "Earth rune": {
-      "price": 6,
+      "price": 5,
       "tradeable": true,
       "id": 557
     },
@@ -1096,47 +1097,47 @@
       "id": 1440
     },
     "Echo crystal": {
-      "price": 2196930,
+      "price": 2171380,
       "tradeable": true,
       "id": 28942
     },
     "Edible seaweed": {
-      "price": 109,
+      "price": 92,
       "tradeable": true,
       "id": 403
     },
     "Egg potato": {
-      "price": 216,
+      "price": 186,
       "tradeable": true,
       "id": 7056
     },
     "Elder maul": {
-      "price": 94251505,
+      "price": 91698969,
       "tradeable": true,
       "id": 21003
     },
     "Eldritch orb": {
-      "price": 105919166,
+      "price": 99650000,
       "tradeable": true,
       "id": 24517
     },
     "Elidinis' ward": {
-      "price": 3600285,
+      "price": 3418868,
       "tradeable": true,
       "id": 25985
     },
     "Elkhorn frag": {
-      "price": 25,
+      "price": 36,
       "tradeable": true,
       "id": 31511
     },
     "Elysian sigil": {
-      "price": 500349500,
+      "price": 515061500,
       "tradeable": true,
       "id": 12819
     },
     "Emerald": {
-      "price": 306,
+      "price": 312,
       "tradeable": true,
       "id": 1605
     },
@@ -1146,52 +1147,52 @@
       "id": 9190
     },
     "Enhanced crystal weapon seed": {
-      "price": 107607982,
+      "price": 108705000,
       "tradeable": true,
       "id": 25859
     },
     "Ensouled dagannoth head": {
-      "price": 1306,
+      "price": 1300,
       "tradeable": true,
       "id": 13493
     },
     "Ensouled demon head": {
-      "price": 3175,
+      "price": 3148,
       "tradeable": true,
       "id": 13502
     },
     "Ensouled hellhound head": {
-      "price": 3949,
+      "price": 4100,
       "tradeable": true,
       "id": 26997
     },
     "Ensouled kalphite head": {
-      "price": 867,
+      "price": 690,
       "tradeable": true,
       "id": 13490
     },
     "Ensouled scorpion head": {
-      "price": 603,
+      "price": 626,
       "tradeable": true,
       "id": 13460
     },
     "Etched araxyte fang": {
-      "price": 28250500,
+      "price": 28740000,
       "tradeable": true,
       "id": 33534
     },
     "Etched elder venator fang": {
-      "price": 121719449,
+      "price": 119550563,
       "tradeable": true,
       "id": 33636
     },
     "Eternal crystal": {
-      "price": 3357330,
+      "price": 3385938,
       "tradeable": true,
       "id": 13227
     },
     "Executioner's axe head": {
-      "price": 105593935.0,
+      "price": 106098239.0,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe",
       "derivedFrom": {
@@ -1204,12 +1205,12 @@
       }
     },
     "Eye of Ayak (uncharged)": {
-      "price": 39491198,
+      "price": 39214844,
       "tradeable": true,
       "id": 31115
     },
     "Eye of the Duke": {
-      "price": 105593935.0,
+      "price": 106098239.0,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe",
       "derivedFrom": {
@@ -1222,22 +1223,22 @@
       }
     },
     "Fangs of Venenatis": {
-      "price": 49566,
+      "price": 51616,
       "tradeable": true,
       "id": 27670
     },
     "Farseer helm": {
-      "price": 38102,
+      "price": 38068,
       "tradeable": true,
       "id": 3755
     },
     "Feather": {
-      "price": 2,
+      "price": 4,
       "tradeable": true,
       "id": 314
     },
     "Fire battlestaff": {
-      "price": 8806,
+      "price": 8838,
       "tradeable": true,
       "id": 1393
     },
@@ -1246,22 +1247,22 @@
       "tradeable": false
     },
     "Fire element staff crown": {
-      "price": 5005000,
+      "price": 4850000,
       "tradeable": true,
       "id": 30631
     },
     "Fire orb": {
-      "price": 1140,
+      "price": 1319,
       "tradeable": true,
       "id": 569
     },
     "Fire rune": {
-      "price": 6,
+      "price": 5,
       "tradeable": true,
       "id": 554
     },
     "Fire talisman": {
-      "price": 2530,
+      "price": 2656,
       "tradeable": true,
       "id": 1442
     },
@@ -1270,7 +1271,7 @@
       "tradeable": false
     },
     "Fishing bait": {
-      "price": 5,
+      "price": 4,
       "tradeable": true,
       "id": 313
     },
@@ -1320,7 +1321,7 @@
       "tradeable": false
     },
     "Frozen tear": {
-      "price": 271,
+      "price": 266,
       "tradeable": true,
       "id": 29895
     },
@@ -1329,12 +1330,12 @@
       "tradeable": false
     },
     "Ghrazi rapier": {
-      "price": 22454549,
+      "price": 21997063,
       "tradeable": true,
       "id": 22324
     },
     "Giant egg sac(full)": {
-      "price": 17360,
+      "price": 17626,
       "tradeable": true,
       "id": 23517
     },
@@ -1343,37 +1344,37 @@
       "tradeable": false
     },
     "Glacial temotli": {
-      "price": 76859,
+      "price": 73446,
       "tradeable": true,
       "id": 29889
     },
     "Goat horn": {
-      "price": 34,
+      "price": 42,
       "tradeable": true,
       "id": 9735
     },
     "Godsword shard 1": {
-      "price": 163015,
+      "price": 150820,
       "tradeable": true,
       "id": 11818
     },
     "Godsword shard 2": {
-      "price": 175502,
+      "price": 155047,
       "tradeable": true,
       "id": 11820
     },
     "Godsword shard 3": {
-      "price": 177820,
+      "price": 155859,
       "tradeable": true,
       "id": 11822
     },
     "Gold bar": {
-      "price": 66,
+      "price": 68,
       "tradeable": true,
       "id": 2357
     },
     "Gold ore": {
-      "price": 158,
+      "price": 154,
       "tradeable": true,
       "id": 444
     },
@@ -1382,22 +1383,22 @@
       "tradeable": false
     },
     "Granite gloves": {
-      "price": 23932,
+      "price": 21826,
       "tradeable": true,
       "id": 21736
     },
     "Granite hammer": {
-      "price": 7641396,
+      "price": 7734938,
       "tradeable": true,
       "id": 21742
     },
     "Granite maul": {
-      "price": 93266,
+      "price": 94684,
       "tradeable": true,
       "id": 4153
     },
     "Granite ring": {
-      "price": 27178,
+      "price": 23500,
       "tradeable": true,
       "id": 21739
     },
@@ -1407,82 +1408,82 @@
       "id": 1987
     },
     "Green dragonhide": {
-      "price": 1516,
+      "price": 1590,
       "tradeable": true,
       "id": 1753
     },
     "Grimy avantoe": {
-      "price": 1781,
+      "price": 1842,
       "tradeable": true,
       "id": 211
     },
     "Grimy cadantine": {
-      "price": 2102,
+      "price": 2117,
       "tradeable": true,
       "id": 215
     },
     "Grimy dwarf weed": {
-      "price": 1309,
+      "price": 1290,
       "tradeable": true,
       "id": 217
     },
     "Grimy guam leaf": {
-      "price": 320,
+      "price": 248,
       "tradeable": true,
       "id": 199
     },
     "Grimy harralander": {
-      "price": 348,
+      "price": 319,
       "tradeable": true,
       "id": 205
     },
     "Grimy irit leaf": {
-      "price": 1396,
+      "price": 1389,
       "tradeable": true,
       "id": 209
     },
     "Grimy kwuarm": {
-      "price": 2150,
+      "price": 2274,
       "tradeable": true,
       "id": 213
     },
     "Grimy lantadyme": {
-      "price": 1152,
+      "price": 1204,
       "tradeable": true,
       "id": 2485
     },
     "Grimy marrentill": {
-      "price": 238,
+      "price": 229,
       "tradeable": true,
       "id": 201
     },
     "Grimy ranarr weed": {
-      "price": 5780,
+      "price": 5788,
       "tradeable": true,
       "id": 207
     },
     "Grimy snapdragon": {
-      "price": 7308,
+      "price": 7319,
       "tradeable": true,
       "id": 3051
     },
     "Grimy tarromin": {
-      "price": 203,
+      "price": 210,
       "tradeable": true,
       "id": 203
     },
     "Grimy toadflax": {
-      "price": 2162,
+      "price": 2128,
       "tradeable": true,
       "id": 3049
     },
     "Grimy torstol": {
-      "price": 3404,
+      "price": 3394,
       "tradeable": true,
       "id": 219
     },
     "Grubby key": {
-      "price": 30606,
+      "price": 30618,
       "tradeable": true,
       "id": 23499
     },
@@ -1492,22 +1493,22 @@
       "id": 31235
     },
     "Hallowfell": {
-      "price": 1493863,
+      "price": 1497443,
       "tradeable": true,
       "id": 34027
     },
     "Harmonised orb": {
-      "price": 493743668,
+      "price": 502395756,
       "tradeable": true,
       "id": 24511
     },
     "Harpoon": {
-      "price": 74,
+      "price": 97,
       "tradeable": true,
       "id": 311
     },
     "Holy elixir": {
-      "price": 908852,
+      "price": 938600,
       "tradeable": true,
       "id": 12833
     },
@@ -1516,37 +1517,37 @@
       "tradeable": false
     },
     "Huasca seed": {
-      "price": 41601,
+      "price": 41703,
       "tradeable": true,
       "id": 30088
     },
     "Hueycoatl hide": {
-      "price": 480085,
+      "price": 476699,
       "tradeable": true,
       "id": 30085
     },
     "Hydra bones": {
-      "price": 8155,
+      "price": 7700,
       "tradeable": true,
       "id": 22786
     },
     "Hydra leather": {
-      "price": 8845876,
+      "price": 8885448,
       "tradeable": true,
       "id": 22983
     },
     "Hydra tail": {
-      "price": 99798,
+      "price": 88704,
       "tradeable": true,
       "id": 22988
     },
     "Hydra's claw": {
-      "price": 42005558,
+      "price": 43747818,
       "tradeable": true,
       "id": 22966
     },
     "Hydra's eye": {
-      "price": 542415.0,
+      "price": 643240.6667,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/3 of a Brimstone ring",
       "derivedFrom": {
@@ -1559,7 +1560,7 @@
       }
     },
     "Hydra's fang": {
-      "price": 542415.0,
+      "price": 643240.6667,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/3 of a Brimstone ring",
       "derivedFrom": {
@@ -1572,7 +1573,7 @@
       }
     },
     "Hydra's heart": {
-      "price": 542415.0,
+      "price": 643240.6667,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/3 of a Brimstone ring",
       "derivedFrom": {
@@ -1585,7 +1586,7 @@
       }
     },
     "Ice element staff crown": {
-      "price": 4275472,
+      "price": 4327500,
       "tradeable": true,
       "id": 30628
     },
@@ -1598,7 +1599,7 @@
       "tradeable": false
     },
     "Infernal ashes": {
-      "price": 3628,
+      "price": 3600,
       "tradeable": true,
       "id": 25778
     },
@@ -1607,52 +1608,52 @@
       "tradeable": false
     },
     "Inquisitor's great helm": {
-      "price": 77094500,
+      "price": 79517208,
       "tradeable": true,
       "id": 24419
     },
     "Inquisitor's hauberk": {
-      "price": 113328976,
+      "price": 114700000,
       "tradeable": true,
       "id": 24420
     },
     "Inquisitor's mace": {
-      "price": 293251388,
+      "price": 304519784,
       "tradeable": true,
       "id": 24417
     },
     "Inquisitor's plateskirt": {
-      "price": 112679173,
+      "price": 115080833,
       "tradeable": true,
       "id": 24421
     },
     "Irit seed": {
-      "price": 134,
+      "price": 67,
       "tradeable": true,
       "id": 5297
     },
     "Iron arrow": {
-      "price": 4,
+      "price": 3,
       "tradeable": true,
       "id": 884
     },
     "Iron full helm": {
-      "price": 52,
+      "price": 70,
       "tradeable": true,
       "id": 1153
     },
     "Iron knife": {
-      "price": 38,
+      "price": 41,
       "tradeable": true,
       "id": 863
     },
     "Iron ore": {
-      "price": 72,
+      "price": 74,
       "tradeable": true,
       "id": 440
     },
     "Iron platebody": {
-      "price": 74,
+      "price": 86,
       "tradeable": true,
       "id": 1115
     },
@@ -1662,32 +1663,32 @@
       "id": 1067
     },
     "Iron plateskirt": {
-      "price": 45,
+      "price": 26,
       "tradeable": true,
       "id": 1081
     },
     "Jar of Chemicals": {
-      "price": 109394,
+      "price": 74728,
       "tradeable": true,
       "id": 23064
     },
     "Jar of Darkness": {
-      "price": 242500,
+      "price": 227373,
       "tradeable": true,
       "id": 19701
     },
     "Jar of Decay": {
-      "price": 73670,
+      "price": 56180,
       "tradeable": true,
       "id": 22106
     },
     "Jar of Dreams": {
-      "price": 1200000,
+      "price": 1188505,
       "tradeable": true,
       "id": 24495
     },
     "Jar of Eyes": {
-      "price": 36586,
+      "price": 38173,
       "tradeable": true,
       "id": 23525
     },
@@ -1700,32 +1701,32 @@
       "tradeable": false
     },
     "Jar of Miasma": {
-      "price": 58664,
+      "price": 58144,
       "tradeable": true,
       "id": 13277
     },
     "Jar of Sand": {
-      "price": 564550,
+      "price": 616000,
       "tradeable": true,
       "id": 12885
     },
     "Jar of Smoke": {
-      "price": 165500,
+      "price": 118750,
       "tradeable": true,
       "id": 25524
     },
     "Jar of Spirits": {
-      "price": 85538,
+      "price": 99894,
       "tradeable": true,
       "id": 25521
     },
     "Jar of Stone": {
-      "price": 980000,
+      "price": 900000,
       "tradeable": true,
       "id": 21745
     },
     "Jar of Swamp": {
-      "price": 62500,
+      "price": 63898,
       "tradeable": true,
       "id": 12936
     },
@@ -1734,32 +1735,32 @@
       "tradeable": false
     },
     "Jar of dirt": {
-      "price": 38877,
+      "price": 64102,
       "tradeable": true,
       "id": 12007
     },
     "Jar of souls": {
-      "price": 41468,
+      "price": 41935,
       "tradeable": true,
       "id": 13245
     },
     "Jug of water": {
-      "price": 12,
+      "price": 14,
       "tradeable": true,
       "id": 1937
     },
     "Justiciar chestguard": {
-      "price": 11138954,
+      "price": 10255002,
       "tradeable": true,
       "id": 22327
     },
     "Justiciar faceguard": {
-      "price": 12690154,
+      "price": 11832594,
       "tradeable": true,
       "id": 22326
     },
     "Justiciar legguards": {
-      "price": 10248083,
+      "price": 9301013,
       "tradeable": true,
       "id": 22328
     },
@@ -1768,12 +1769,12 @@
       "tradeable": false
     },
     "Key master teleport": {
-      "price": 32490,
+      "price": 31436,
       "tradeable": true,
       "id": 13249
     },
     "Kodai insignia": {
-      "price": 51966556,
+      "price": 47390502,
       "tradeable": true,
       "id": 21043
     },
@@ -1782,32 +1783,32 @@
       "tradeable": false
     },
     "Kraken tentacle": {
-      "price": 239819,
+      "price": 234932,
       "tradeable": true,
       "id": 12004
     },
     "Kwuarm seed": {
-      "price": 1625,
+      "price": 1698,
       "tradeable": true,
       "id": 5299
     },
     "Lantadyme seed": {
-      "price": 199,
+      "price": 220,
       "tradeable": true,
       "id": 5302
     },
     "Larran's key": {
-      "price": 122774,
+      "price": 124470,
       "tradeable": true,
       "id": 23490
     },
     "Lava battlestaff": {
-      "price": 9296,
+      "price": 9516,
       "tradeable": true,
       "id": 3053
     },
     "Lava rune": {
-      "price": 30,
+      "price": 35,
       "tradeable": true,
       "id": 4699
     },
@@ -1817,12 +1818,12 @@
       "id": 563
     },
     "Letvek": {
-      "price": 1828,
+      "price": 1876,
       "tradeable": true,
       "id": 33625
     },
     "Leviathan's lure": {
-      "price": 105593935.0,
+      "price": 106098239.0,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe",
       "derivedFrom": {
@@ -1835,17 +1836,17 @@
       }
     },
     "Lightbearer": {
-      "price": 4342214,
+      "price": 4393106,
       "tradeable": true,
       "id": 25975
     },
     "Lily of the Sands": {
-      "price": 2004,
+      "price": 2103,
       "tradeable": true,
       "id": 27272
     },
     "Limpwurt root": {
-      "price": 224,
+      "price": 222,
       "tradeable": true,
       "id": 225
     },
@@ -1855,7 +1856,7 @@
       "id": 13391
     },
     "Lobster": {
-      "price": 110,
+      "price": 106,
       "tradeable": true,
       "id": 379
     },
@@ -1869,7 +1870,7 @@
       "tradeable": false
     },
     "Loop half of key": {
-      "price": 9748,
+      "price": 9662,
       "tradeable": true,
       "id": 987
     },
@@ -1878,27 +1879,27 @@
       "tradeable": false
     },
     "Magic fang": {
-      "price": 3106036,
+      "price": 3110000,
       "tradeable": true,
       "id": 12932
     },
     "Magic logs": {
-      "price": 730,
+      "price": 728,
       "tradeable": true,
       "id": 1513
     },
     "Magic potion(2)": {
-      "price": 41,
+      "price": 42,
       "tradeable": true,
       "id": 3044
     },
     "Magic potion(3)": {
-      "price": 79,
+      "price": 76,
       "tradeable": true,
       "id": 3042
     },
     "Magic seed": {
-      "price": 74132,
+      "price": 77499,
       "tradeable": true,
       "id": 5316
     },
@@ -1907,13 +1908,13 @@
       "tradeable": false
     },
     "Magus ring": {
-      "price": 22825388,
+      "price": 22419533,
       "tradeable": true,
       "referenceOnly": true,
       "id": 28313
     },
     "Magus vestige": {
-      "price": 22698113,
+      "price": 22281599,
       "tradeable": false,
       "valueNote": "Untradeable: valued as Magus ring minus 3 chromium ingots",
       "derivedFrom": {
@@ -1930,52 +1931,52 @@
       }
     },
     "Mahogany logs": {
-      "price": 123,
+      "price": 126,
       "tradeable": true,
       "id": 6332
     },
     "Mahogany plank": {
-      "price": 2013,
+      "price": 2150,
       "tradeable": true,
       "id": 8782
     },
     "Mahogany seed": {
-      "price": 184,
+      "price": 244,
       "tradeable": true,
       "id": 21488
     },
     "Malediction shard 3": {
-      "price": 208852,
+      "price": 176143,
       "tradeable": true,
       "id": 11933
     },
     "Manta ray": {
-      "price": 1384,
+      "price": 1340,
       "tradeable": true,
       "id": 391
     },
     "Maple logs": {
-      "price": 10,
+      "price": 12,
       "tradeable": true,
       "id": 1517
     },
     "Maple seed": {
-      "price": 3300,
+      "price": 3350,
       "tradeable": true,
       "id": 5314
     },
     "Masori body": {
-      "price": 41276224,
+      "price": 39476779,
       "tradeable": true,
       "id": 27229
     },
     "Masori chaps": {
-      "price": 26188474,
+      "price": 25291666,
       "tradeable": true,
       "id": 27232
     },
     "Masori mask": {
-      "price": 8497513,
+      "price": 8027662,
       "tradeable": true,
       "id": 27226
     },
@@ -1984,22 +1985,22 @@
       "tradeable": false
     },
     "Mind rune": {
-      "price": 2,
+      "price": 4,
       "tradeable": true,
       "id": 558
     },
     "Mind talisman": {
-      "price": 1172,
+      "price": 1190,
       "tradeable": true,
       "id": 1448
     },
     "Mist rune": {
-      "price": 89,
+      "price": 90,
       "tradeable": true,
       "id": 4695
     },
     "Mithril 2h sword": {
-      "price": 1262,
+      "price": 1290,
       "tradeable": true,
       "id": 1315
     },
@@ -2009,42 +2010,42 @@
       "id": 888
     },
     "Mithril axe": {
-      "price": 110,
+      "price": 106,
       "tradeable": true,
       "id": 1355
     },
     "Mithril bar": {
-      "price": 988,
+      "price": 973,
       "tradeable": true,
       "id": 2359
     },
     "Mithril battleaxe": {
-      "price": 818,
+      "price": 985,
       "tradeable": true,
       "id": 1369
     },
     "Mithril bolts": {
-      "price": 28,
+      "price": 26,
       "tradeable": true,
       "id": 9142
     },
     "Mithril chainbody": {
-      "price": 920,
+      "price": 1049,
       "tradeable": true,
       "id": 1109
     },
     "Mithril javelin": {
-      "price": 5,
+      "price": 8,
       "tradeable": true,
       "id": 828
     },
     "Mithril knife": {
-      "price": 207,
+      "price": 158,
       "tradeable": true,
       "id": 866
     },
     "Mithril longsword": {
-      "price": 472,
+      "price": 614,
       "tradeable": true,
       "id": 1299
     },
@@ -2054,22 +2055,22 @@
       "id": 447
     },
     "Mithril pickaxe": {
-      "price": 516,
+      "price": 507,
       "tradeable": true,
       "id": 1273
     },
     "Mithril platebody": {
-      "price": 2601,
+      "price": 2785,
       "tradeable": true,
       "id": 1121
     },
     "Mithril warhammer": {
-      "price": 864,
+      "price": 938,
       "tradeable": true,
       "id": 1343
     },
     "Mokhaiotl cloth": {
-      "price": 34290268,
+      "price": 37307890,
       "tradeable": false,
       "valueNote": "Untradeable: valued as Confliction gauntlets minus a Tormented bracelet and 10,000 demon tears",
       "derivedFrom": {
@@ -2090,27 +2091,27 @@
       }
     },
     "Mokhaiotl waystone": {
-      "price": 42822,
+      "price": 46154,
       "tradeable": true,
       "id": 31099
     },
     "Mole claw": {
-      "price": 6180,
+      "price": 5902,
       "tradeable": true,
       "id": 7416
     },
     "Mole skin": {
-      "price": 5466,
+      "price": 5418,
       "tradeable": true,
       "id": 7418
     },
     "Molten glass": {
-      "price": 93,
+      "price": 90,
       "tradeable": true,
       "id": 1775
     },
     "Monkfish": {
-      "price": 161,
+      "price": 160,
       "tradeable": true,
       "id": 7946
     },
@@ -2119,97 +2120,97 @@
       "tradeable": false
     },
     "Mort myre fungus": {
-      "price": 221,
+      "price": 245,
       "tradeable": true,
       "id": 2970
     },
     "Mud battlestaff": {
-      "price": 26170,
+      "price": 30224,
       "tradeable": true,
       "id": 6562
     },
     "Mud rune": {
-      "price": 88,
+      "price": 91,
       "tradeable": true,
       "id": 4698
     },
     "Mushroom potato": {
-      "price": 1052,
+      "price": 963,
       "tradeable": true,
       "id": 7058
     },
     "Mystic air staff": {
-      "price": 24957,
+      "price": 24982,
       "tradeable": true,
       "id": 1405
     },
     "Mystic earth staff": {
-      "price": 24928,
+      "price": 24995,
       "tradeable": true,
       "id": 1407
     },
     "Mystic fire staff": {
-      "price": 27758,
+      "price": 25194,
       "tradeable": true,
       "id": 1401
     },
     "Mystic lava staff": {
-      "price": 25876,
+      "price": 26800,
       "tradeable": true,
       "id": 3054
     },
     "Mystic robe bottom": {
-      "price": 48307,
+      "price": 47244,
       "tradeable": true,
       "id": 4093
     },
     "Mystic robe bottom (light)": {
-      "price": 47916,
+      "price": 47297,
       "tradeable": true,
       "id": 4113
     },
     "Mystic robe top": {
-      "price": 72377,
+      "price": 71272,
       "tradeable": true,
       "id": 4091
     },
     "Mystic robe top (light)": {
-      "price": 72427,
+      "price": 71046,
       "tradeable": true,
       "id": 4111
     },
     "Mystic water staff": {
-      "price": 24867,
+      "price": 25246,
       "tradeable": true,
       "id": 1403
     },
     "Nature rune": {
-      "price": 136,
+      "price": 138,
       "tradeable": true,
       "id": 561
     },
     "Nature talisman": {
-      "price": 402,
+      "price": 156,
       "tradeable": true,
       "id": 1462
     },
     "Nightmare staff": {
-      "price": 30185762,
+      "price": 28010892,
       "tradeable": true,
       "id": 24422
     },
     "Nihil horn": {
-      "price": 312561728,
+      "price": 319585244,
       "tradeable": true,
       "id": 26372
     },
     "Nihil shard": {
-      "price": 2877,
+      "price": 3020,
       "tradeable": true,
       "id": 26231
     },
     "Noxious blade": {
-      "price": 12770316.6667,
+      "price": 13038528.0,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/3 of a Noxious halberd",
       "derivedFrom": {
@@ -2222,13 +2223,13 @@
       }
     },
     "Noxious halberd": {
-      "price": 38310950,
+      "price": 39115584,
       "tradeable": true,
       "referenceOnly": true,
       "id": 29796
     },
     "Noxious point": {
-      "price": 12770316.6667,
+      "price": 13038528.0,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/3 of a Noxious halberd",
       "derivedFrom": {
@@ -2241,7 +2242,7 @@
       }
     },
     "Noxious pommel": {
-      "price": 12770316.6667,
+      "price": 13038528.0,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/3 of a Noxious halberd",
       "derivedFrom": {
@@ -2254,62 +2255,62 @@
       }
     },
     "Oak logs": {
-      "price": 38,
+      "price": 40,
       "tradeable": true,
       "id": 1521
     },
     "Oak plank": {
-      "price": 474,
+      "price": 516,
       "tradeable": true,
       "id": 8778
     },
     "Oathplate chest": {
-      "price": 81267032,
+      "price": 81557346,
       "tradeable": true,
       "id": 30753
     },
     "Oathplate helm": {
-      "price": 80346698,
+      "price": 78790434,
       "tradeable": true,
       "id": 30750
     },
     "Oathplate legs": {
-      "price": 82008910,
+      "price": 82250000,
       "tradeable": true,
       "id": 30756
     },
     "Oathplate shards": {
-      "price": 166192,
+      "price": 166978,
       "tradeable": true,
       "id": 30765
     },
     "Occult necklace": {
-      "price": 411541,
+      "price": 410906,
       "tradeable": true,
       "id": 12002
     },
     "Odium shard 3": {
-      "price": 268316,
+      "price": 268278,
       "tradeable": true,
       "id": 11930
     },
     "Onion seed": {
-      "price": 9,
+      "price": 6,
       "tradeable": true,
       "id": 5319
     },
     "Onyx bolt tips": {
-      "price": 8122,
+      "price": 8112,
       "tradeable": true,
       "id": 9194
     },
     "Onyx bolts": {
-      "price": 8292,
+      "price": 8222,
       "tradeable": true,
       "id": 9342
     },
     "Onyx bolts (e)": {
-      "price": 8490,
+      "price": 8445,
       "tradeable": true,
       "id": 9245
     },
@@ -2319,32 +2320,32 @@
       "id": 45
     },
     "Orikalkum gravel": {
-      "price": 101627,
+      "price": 106926,
       "tradeable": true,
       "id": 33657
     },
     "Osmumten's fang": {
-      "price": 17275206,
+      "price": 17129974,
       "tradeable": true,
       "id": 26219
     },
     "Oyster pearls": {
-      "price": 512,
+      "price": 488,
       "tradeable": true,
       "id": 413
     },
     "Palm tree seed": {
-      "price": 17292,
+      "price": 17093,
       "tradeable": true,
       "id": 5289
     },
     "Papaya tree seed": {
-      "price": 1188,
+      "price": 1220,
       "tradeable": true,
       "id": 5288
     },
     "Papyrus": {
-      "price": 104,
+      "price": 64,
       "tradeable": true,
       "id": 970
     },
@@ -2353,7 +2354,7 @@
       "tradeable": false
     },
     "Pegasian crystal": {
-      "price": 99536,
+      "price": 99556,
       "tradeable": true,
       "id": 13229
     },
@@ -2362,17 +2363,17 @@
       "tradeable": false
     },
     "Pillar frag": {
-      "price": 216,
+      "price": 538,
       "tradeable": true,
       "id": 31513
     },
     "Pineapple pizza": {
-      "price": 812,
+      "price": 1062,
       "tradeable": true,
       "id": 2301
     },
     "Pirate boots": {
-      "price": 1337,
+      "price": 942,
       "tradeable": true,
       "id": 7114
     },
@@ -2382,42 +2383,42 @@
       "id": 960
     },
     "Poison ivy seed": {
-      "price": 2,
+      "price": 12,
       "tradeable": true,
       "id": 5106
     },
     "Potato cactus": {
-      "price": 66,
+      "price": 55,
       "tradeable": true,
       "id": 3138
     },
     "Potato cactus seed": {
-      "price": 10,
+      "price": 14,
       "tradeable": true,
       "id": 22873
     },
     "Potato seed": {
-      "price": 6,
+      "price": 4,
       "tradeable": true,
       "id": 5318
     },
     "Prayer potion(2)": {
-      "price": 7437,
+      "price": 4738,
       "tradeable": true,
       "id": 141
     },
     "Prayer potion(3)": {
-      "price": 7202,
+      "price": 7156,
       "tradeable": true,
       "id": 139
     },
     "Prayer potion(4)": {
-      "price": 9802,
+      "price": 9750,
       "tradeable": true,
       "id": 2434
     },
     "Primordial crystal": {
-      "price": 18133818,
+      "price": 18250004,
       "tradeable": true,
       "id": 13231
     },
@@ -2447,62 +2448,62 @@
       "tradeable": false
     },
     "Ranarr seed": {
-      "price": 31613,
+      "price": 32468,
       "tradeable": true,
       "id": 5295
     },
     "Ranging potion(1)": {
-      "price": 421,
+      "price": 480,
       "tradeable": true,
       "id": 173
     },
     "Ranging potion(2)": {
-      "price": 908,
+      "price": 903,
       "tradeable": true,
       "id": 171
     },
     "Ranging potion(3)": {
-      "price": 1442,
+      "price": 1380,
       "tradeable": true,
       "id": 169
     },
     "Raw anglerfish": {
-      "price": 1262,
+      "price": 1299,
       "tradeable": true,
       "id": 13439
     },
     "Raw bass": {
-      "price": 10,
+      "price": 9,
       "tradeable": true,
       "id": 363
     },
     "Raw manta ray": {
-      "price": 1014,
+      "price": 1094,
       "tradeable": true,
       "id": 389
     },
     "Raw monkfish": {
-      "price": 118,
+      "price": 113,
       "tradeable": true,
       "id": 7944
     },
     "Raw rat meat": {
-      "price": 46,
+      "price": 50,
       "tradeable": true,
       "id": 2134
     },
     "Raw sea turtle": {
-      "price": 725,
+      "price": 812,
       "tradeable": true,
       "id": 395
     },
     "Raw shark": {
-      "price": 708,
+      "price": 698,
       "tradeable": true,
       "id": 383
     },
     "Raw swordfish": {
-      "price": 196,
+      "price": 194,
       "tradeable": true,
       "id": 371
     },
@@ -2512,27 +2513,27 @@
       "id": 33106
     },
     "Red d'hide body": {
-      "price": 5925,
+      "price": 5884,
       "tradeable": true,
       "id": 2501
     },
     "Red d'hide vambraces": {
-      "price": 1600,
+      "price": 1688,
       "tradeable": true,
       "id": 2489
     },
     "Red dragonhide": {
-      "price": 2178,
+      "price": 2258,
       "tradeable": true,
       "id": 1749
     },
     "Red spiders' eggs": {
-      "price": 186,
+      "price": 182,
       "tradeable": true,
       "id": 223
     },
     "Redwood tree seed": {
-      "price": 16142,
+      "price": 16264,
       "tradeable": true,
       "id": 22871
     },
@@ -2542,27 +2543,27 @@
       "id": 129
     },
     "Ring of life": {
-      "price": 1783,
+      "price": 1887,
       "tradeable": true,
       "id": 2570
     },
     "Ring of the gods": {
-      "price": 1019106,
+      "price": 1075062,
       "tradeable": true,
       "id": 12601
     },
     "Rock-shell legs": {
-      "price": 38121,
+      "price": 37699,
       "tradeable": true,
       "id": 6130
     },
     "Rock-shell plate": {
-      "price": 38056,
+      "price": 40000,
       "tradeable": true,
       "id": 6129
     },
     "Ruby": {
-      "price": 702,
+      "price": 716,
       "tradeable": true,
       "id": 1603
     },
@@ -2572,182 +2573,182 @@
       "id": 9191
     },
     "Rune 2h sword": {
-      "price": 37894,
+      "price": 37884,
       "tradeable": true,
       "id": 1319
     },
     "Rune arrow": {
-      "price": 43,
+      "price": 42,
       "tradeable": true,
       "id": 892
     },
     "Rune axe": {
-      "price": 7258,
+      "price": 7348,
       "tradeable": true,
       "id": 1359
     },
     "Rune battleaxe": {
-      "price": 24508,
+      "price": 24543,
       "tradeable": true,
       "id": 1373
     },
     "Rune cannonball": {
-      "price": 689,
+      "price": 690,
       "tradeable": true,
       "id": 31914
     },
     "Rune chainbody": {
-      "price": 29710,
+      "price": 29449,
       "tradeable": true,
       "id": 1113
     },
     "Rune claws": {
-      "price": 6586,
+      "price": 6506,
       "tradeable": true,
       "id": 3101
     },
     "Rune crossbow": {
-      "price": 9329,
+      "price": 9425,
       "tradeable": true,
       "id": 9185
     },
     "Rune dagger": {
-      "price": 4436,
+      "price": 4492,
       "tradeable": true,
       "id": 1213
     },
     "Rune dart": {
-      "price": 242,
+      "price": 236,
       "tradeable": true,
       "id": 811
     },
     "Rune dart tip": {
-      "price": 1090,
+      "price": 1048,
       "tradeable": true,
       "id": 824
     },
     "Rune full helm": {
-      "price": 20460,
+      "price": 20512,
       "tradeable": true,
       "id": 1163
     },
     "Rune halberd": {
-      "price": 37614,
+      "price": 38210,
       "tradeable": true,
       "id": 3202
     },
     "Rune javelin": {
-      "price": 126,
+      "price": 122,
       "tradeable": true,
       "id": 830
     },
     "Rune javelin tips": {
-      "price": 394,
+      "price": 405,
       "tradeable": true,
       "id": 19580
     },
     "Rune kiteshield": {
-      "price": 32138,
+      "price": 31994,
       "tradeable": true,
       "id": 1201
     },
     "Rune knife": {
-      "price": 120,
+      "price": 112,
       "tradeable": true,
       "id": 868
     },
     "Rune knife(p++)": {
-      "price": 140,
+      "price": 148,
       "tradeable": true,
       "id": 5667
     },
     "Rune longsword": {
-      "price": 18537,
+      "price": 18833,
       "tradeable": true,
       "id": 1303
     },
     "Rune mace": {
-      "price": 8075,
+      "price": 8164,
       "tradeable": true,
       "id": 1432
     },
     "Rune med helm": {
-      "price": 11052,
+      "price": 11031,
       "tradeable": true,
       "id": 1147
     },
     "Rune pickaxe": {
-      "price": 18674,
+      "price": 18476,
       "tradeable": true,
       "id": 1275
     },
     "Rune platebody": {
-      "price": 38479,
+      "price": 38366,
       "tradeable": true,
       "id": 1127
     },
     "Rune platelegs": {
-      "price": 37853,
+      "price": 37745,
       "tradeable": true,
       "id": 1079
     },
     "Rune plateskirt": {
-      "price": 38064,
+      "price": 37928,
       "tradeable": true,
       "id": 1093
     },
     "Rune scimitar": {
-      "price": 14744,
+      "price": 14992,
       "tradeable": true,
       "id": 1333
     },
     "Rune spear": {
-      "price": 11725,
+      "price": 11781,
       "tradeable": true,
       "id": 1247
     },
     "Rune sq shield": {
-      "price": 22557,
+      "price": 22570,
       "tradeable": true,
       "id": 1185
     },
     "Rune sword": {
-      "price": 12175,
+      "price": 12221,
       "tradeable": true,
       "id": 1289
     },
     "Rune thrownaxe": {
-      "price": 197,
+      "price": 236,
       "tradeable": true,
       "id": 805
     },
     "Rune warhammer": {
-      "price": 24342,
+      "price": 24670,
       "tradeable": true,
       "id": 1347
     },
     "Runite bar": {
-      "price": 12158,
+      "price": 12187,
       "tradeable": true,
       "id": 2363
     },
     "Runite bolts": {
-      "price": 80,
+      "price": 82,
       "tradeable": true,
       "id": 9144
     },
     "Runite bolts (unf)": {
-      "price": 114,
+      "price": 120,
       "tradeable": true,
       "id": 9381
     },
     "Runite limbs": {
-      "price": 9064,
+      "price": 9041,
       "tradeable": true,
       "id": 9431
     },
     "Runite ore": {
-      "price": 10200,
+      "price": 10153,
       "tradeable": true,
       "id": 451
     },
@@ -2761,12 +2762,12 @@
       "id": 13421
     },
     "Sanfew serum(3)": {
-      "price": 15160,
+      "price": 31789,
       "tradeable": true,
       "id": 10927
     },
     "Sanfew serum(4)": {
-      "price": 18817,
+      "price": 20086,
       "tradeable": true,
       "id": 10925
     },
@@ -2779,52 +2780,52 @@
       "tradeable": false
     },
     "Sanguinesti staff (uncharged)": {
-      "price": 16531868,
+      "price": 17055398,
       "tradeable": true,
       "id": 22481
     },
     "Sapphire": {
-      "price": 174,
+      "price": 176,
       "tradeable": true,
       "id": 1607
     },
     "Sapphire bolt tips": {
-      "price": 10,
+      "price": 7,
       "tradeable": true,
       "id": 9189
     },
     "Sarachnis cudgel": {
-      "price": 107622,
+      "price": 107348,
       "tradeable": true,
       "id": 23528
     },
     "Saradomin brew(3)": {
-      "price": 5064,
+      "price": 5175,
       "tradeable": true,
       "id": 6687
     },
     "Saradomin brew(4)": {
-      "price": 7015,
+      "price": 7060,
       "tradeable": true,
       "id": 6685
     },
     "Saradomin hilt": {
-      "price": 24000002,
+      "price": 24220915,
       "tradeable": true,
       "id": 11814
     },
     "Saradomin sword": {
-      "price": 133726,
+      "price": 142035,
       "tradeable": true,
       "id": 11838
     },
     "Saradomin's light": {
-      "price": 59866,
+      "price": 49961,
       "tradeable": true,
       "id": 13256
     },
     "Scaly blue dragonhide": {
-      "price": 226,
+      "price": 620,
       "tradeable": true,
       "id": 27897
     },
@@ -2837,32 +2838,32 @@
       "tradeable": false
     },
     "Scythe of Vitur (uncharged)": {
-      "price": 1188717088,
+      "price": 1181424500,
       "tradeable": true,
       "id": 22486
     },
     "Sea turtle": {
-      "price": 1122,
+      "price": 1018,
       "tradeable": true,
       "id": 397
     },
     "Seaweed": {
-      "price": 5,
+      "price": 8,
       "tradeable": true,
       "id": 401
     },
     "Seercull": {
-      "price": 43146,
+      "price": 49168,
       "tradeable": true,
       "id": 6724
     },
     "Seers ring": {
-      "price": 824813,
+      "price": 817900,
       "tradeable": true,
       "id": 6731
     },
     "Serpentine visage": {
-      "price": 3105857,
+      "price": 3219869,
       "tradeable": true,
       "id": 12927
     },
@@ -2871,27 +2872,27 @@
       "tradeable": false
     },
     "Shark": {
-      "price": 987,
+      "price": 976,
       "tradeable": true,
       "id": 385
     },
     "Shark lure": {
-      "price": 231,
+      "price": 234,
       "tradeable": true,
       "id": 30900
     },
     "Shield left half": {
-      "price": 65167,
+      "price": 65321,
       "tradeable": true,
       "id": 2366
     },
     "Silver ore": {
-      "price": 66,
+      "price": 67,
       "tradeable": true,
       "id": 442
     },
     "Siren's staff": {
-      "price": 105593935.0,
+      "price": 106098239.0,
       "tradeable": false,
       "valueNote": "Untradeable: valued as 1/4 of a Soulreaper axe",
       "derivedFrom": {
@@ -2908,17 +2909,17 @@
       "tradeable": false
     },
     "Skeletal bottoms": {
-      "price": 22940,
+      "price": 23119,
       "tradeable": true,
       "id": 6141
     },
     "Skeletal top": {
-      "price": 35648,
+      "price": 26008,
       "tradeable": true,
       "id": 6139
     },
     "Skeletal visage": {
-      "price": 13664358,
+      "price": 13250000,
       "tradeable": true,
       "id": 22006
     },
@@ -2927,12 +2928,12 @@
       "tradeable": false
     },
     "Skull of Vet'ion": {
-      "price": 52000,
+      "price": 52448,
       "tradeable": true,
       "id": 27673
     },
     "Slayer's enchantment": {
-      "price": 1164,
+      "price": 1108,
       "tradeable": true,
       "id": 21257
     },
@@ -2941,7 +2942,7 @@
       "tradeable": false
     },
     "Smoke battlestaff": {
-      "price": 1923817,
+      "price": 1847842,
       "tradeable": true,
       "id": 11998
     },
@@ -2950,83 +2951,83 @@
       "tradeable": false
     },
     "Smoke rune": {
-      "price": 65,
+      "price": 68,
       "tradeable": true,
       "id": 4697
     },
     "Smouldering stone": {
-      "price": 3748738,
+      "price": 3569062,
       "tradeable": true,
       "id": 13233
     },
     "Snakeskin": {
-      "price": 14,
+      "price": 10,
       "tradeable": true,
       "id": 6289
     },
     "Snapdragon": {
-      "price": 7475,
+      "price": 7548,
       "tradeable": true,
       "id": 3000
     },
     "Snapdragon seed": {
-      "price": 47244,
+      "price": 46454,
       "tradeable": true,
       "id": 5300
     },
     "Snape grass seed": {
-      "price": 12354,
+      "price": 11792,
       "tradeable": true,
       "id": 22879
     },
     "Soaked page": {
-      "price": 4080,
+      "price": 4074,
       "tradeable": true,
       "id": 25578
     },
     "Soiled page": {
-      "price": 4098,
+      "price": 3828,
       "tradeable": true,
       "id": 30068
     },
     "Soul rune": {
-      "price": 392,
+      "price": 390,
       "tradeable": true,
       "id": 566
     },
     "Soulflame horn": {
-      "price": 3715076,
+      "price": 3822967,
       "tradeable": true,
       "id": 30759
     },
     "Soulreaper axe": {
-      "price": 422375740,
+      "price": 424392956,
       "tradeable": true,
       "referenceOnly": true,
       "id": 28338
     },
     "Spectral sigil": {
-      "price": 22774502,
+      "price": 23160375,
       "tradeable": true,
       "id": 12823
     },
     "Spider carcass": {
-      "price": 272,
+      "price": 100,
       "tradeable": true,
       "id": 6291
     },
     "Spider cave teleport": {
-      "price": 32370,
+      "price": 30934,
       "tradeable": true,
       "id": 29782
     },
     "Spined body": {
-      "price": 6494,
+      "price": 6913,
       "tradeable": true,
       "id": 6133
     },
     "Spined chaps": {
-      "price": 15826,
+      "price": 18145,
       "tradeable": true,
       "id": 6135
     },
@@ -3039,17 +3040,17 @@
       "tradeable": false
     },
     "Spirit shield": {
-      "price": 92972,
+      "price": 85167,
       "tradeable": true,
       "id": 12829
     },
     "Staff of the Dead": {
-      "price": 4823147,
+      "price": 4677137,
       "tradeable": true,
       "id": 11791
     },
     "Steam battlestaff": {
-      "price": 44046,
+      "price": 42816,
       "tradeable": true,
       "id": 11787
     },
@@ -3059,42 +3060,42 @@
       "id": 4694
     },
     "Steel arrow": {
-      "price": 10,
+      "price": 9,
       "tradeable": true,
       "id": 886
     },
     "Steel bar": {
-      "price": 605,
+      "price": 592,
       "tradeable": true,
       "id": 2353
     },
     "Steel cannonball": {
-      "price": 258,
+      "price": 278,
       "tradeable": true,
       "id": 2
     },
     "Steel kiteshield": {
-      "price": 290,
+      "price": 330,
       "tradeable": true,
       "id": 1193
     },
     "Steel knife": {
-      "price": 70,
+      "price": 62,
       "tradeable": true,
       "id": 865
     },
     "Steel nails": {
-      "price": 28,
+      "price": 29,
       "tradeable": true,
       "id": 1539
     },
     "Steel platebody": {
-      "price": 898,
+      "price": 806,
       "tradeable": true,
       "id": 1119
     },
     "Strange fruit": {
-      "price": 427,
+      "price": 516,
       "tradeable": true,
       "id": 464
     },
@@ -3103,12 +3104,12 @@
       "tradeable": false
     },
     "Strawberry seed": {
-      "price": 8,
+      "price": 6,
       "tradeable": true,
       "id": 5323
     },
     "Stymphike feather": {
-      "price": 38,
+      "price": 83,
       "tradeable": true,
       "id": 33651
     },
@@ -3126,22 +3127,22 @@
       "tradeable": false
     },
     "Sunfire fanatic chausses": {
-      "price": 3481844,
+      "price": 3318958,
       "tradeable": true,
       "id": 28939
     },
     "Sunfire fanatic cuirass": {
-      "price": 2665158,
+      "price": 2632410,
       "tradeable": true,
       "id": 28936
     },
     "Sunfire fanatic helm": {
-      "price": 1742651,
+      "price": 1698860,
       "tradeable": true,
       "id": 28933
     },
     "Sunfire splinters": {
-      "price": 351,
+      "price": 373,
       "tradeable": true,
       "id": 28924
     },
@@ -3150,82 +3151,82 @@
       "tradeable": false
     },
     "Super attack(2)": {
-      "price": 569,
+      "price": 888,
       "tradeable": true,
       "id": 147
     },
     "Super attack(3)": {
-      "price": 1428,
+      "price": 1471,
       "tradeable": true,
       "id": 145
     },
     "Super combat potion(1)": {
-      "price": 3054,
+      "price": 3212,
       "tradeable": true,
       "id": 12701
     },
     "Super combat potion(2)": {
-      "price": 6336,
+      "price": 6191,
       "tradeable": true,
       "id": 12699
     },
     "Super combat potion(3)": {
-      "price": 9151,
+      "price": 9854,
       "tradeable": true,
       "id": 12697
     },
     "Super defence(2)": {
-      "price": 1685,
+      "price": 1441,
       "tradeable": true,
       "id": 165
     },
     "Super defence(3)": {
-      "price": 2310,
+      "price": 2406,
       "tradeable": true,
       "id": 163
     },
     "Super restore mix(2)": {
-      "price": 3317,
+      "price": 3402,
       "tradeable": true,
       "id": 11493
     },
     "Super restore(3)": {
-      "price": 7350,
+      "price": 7278,
       "tradeable": true,
       "id": 3026
     },
     "Super restore(4)": {
-      "price": 10055,
+      "price": 10013,
       "tradeable": true,
       "id": 3024
     },
     "Super strength(1)": {
-      "price": 794,
+      "price": 825,
       "tradeable": true,
       "id": 161
     },
     "Super strength(2)": {
-      "price": 1518,
+      "price": 1560,
       "tradeable": true,
       "id": 159
     },
     "Super strength(3)": {
-      "price": 2372,
+      "price": 2350,
       "tradeable": true,
       "id": 157
     },
     "Superantipoison(2)": {
-      "price": 602,
+      "price": 668,
       "tradeable": true,
       "id": 183
     },
     "Supercompost": {
-      "price": 14,
+      "price": 26,
       "tradeable": true,
       "id": 6034
     },
     "Superior dragon bones": {
-      "price": 19708,
+      "price": 19384,
       "tradeable": true,
       "id": 22124
     },
@@ -3235,7 +3236,7 @@
       "id": 1939
     },
     "Sweetcorn": {
-      "price": 92,
+      "price": 68,
       "tradeable": true,
       "id": 5986
     },
@@ -3245,7 +3246,7 @@
       "id": 5320
     },
     "Swordfish": {
-      "price": 242,
+      "price": 222,
       "tradeable": true,
       "id": 373
     },
@@ -3254,7 +3255,7 @@
       "tradeable": false
     },
     "Tanzanite fang": {
-      "price": 9950512,
+      "price": 10307562,
       "tradeable": true,
       "id": 12922
     },
@@ -3311,32 +3312,32 @@
       "tradeable": false
     },
     "Teak plank": {
-      "price": 870,
+      "price": 905,
       "tradeable": true,
       "id": 8780
     },
     "Teak seed": {
-      "price": 304,
+      "price": 338,
       "tradeable": true,
       "id": 21486
     },
     "Tinderbox": {
-      "price": 93,
+      "price": 100,
       "tradeable": true,
       "id": 590
     },
     "Toadflax": {
-      "price": 2312,
+      "price": 2288,
       "tradeable": true,
       "id": 2998
     },
     "Toadflax seed": {
-      "price": 1141,
+      "price": 1126,
       "tradeable": true,
       "id": 5296
     },
     "Tokkul": {
-      "price": 10.5257,
+      "price": 10.9519,
       "tradeable": false,
       "derivedFrom": {
         "terms": [
@@ -3349,32 +3350,32 @@
       "valueNote": "Untradeable: valued at 1/260,000 of an Uncut onyx"
     },
     "Tomato seed": {
-      "price": 6,
+      "price": 7,
       "tradeable": true,
       "id": 5322
     },
     "Tome of Earth (empty)": {
-      "price": 1166146,
+      "price": 1032162,
       "tradeable": true,
       "id": 30066
     },
     "Tome of Fire (empty)": {
-      "price": 1787878,
+      "price": 1640696,
       "tradeable": true,
       "id": 20716
     },
     "Tome of Water (empty)": {
-      "price": 1003222,
+      "price": 901674,
       "tradeable": true,
       "id": 25576
     },
     "Tonalztics of Ralos (uncharged)": {
-      "price": 44788336,
+      "price": 50199357,
       "tradeable": true,
       "id": 28919
     },
     "Tooth half of key": {
-      "price": 9816,
+      "price": 9976,
       "tradeable": true,
       "id": 985
     },
@@ -3383,68 +3384,68 @@
       "tradeable": false
     },
     "Tormented bracelet": {
-      "price": 19719732,
+      "price": 19710600,
       "tradeable": true,
       "referenceOnly": true,
       "id": 19544
     },
     "Torn prayer scroll": {
-      "price": 47984,
+      "price": 46490,
       "tradeable": true,
       "id": 21047
     },
     "Torstol": {
-      "price": 3492,
+      "price": 3478,
       "tradeable": true,
       "id": 269
     },
     "Torstol seed": {
-      "price": 14456,
+      "price": 14480,
       "tradeable": true,
       "id": 5304
     },
     "Torva full helm (damaged)": {
-      "price": 203372833,
+      "price": 203461500,
       "tradeable": true,
       "id": 26376
     },
     "Torva platebody (damaged)": {
-      "price": 152465500,
+      "price": 153840347,
       "tradeable": true,
       "id": 26378
     },
     "Torva platelegs (damaged)": {
-      "price": 94335511,
+      "price": 94474818,
       "tradeable": true,
       "id": 26380
     },
     "Treasonous ring": {
-      "price": 89665,
+      "price": 87993,
       "tradeable": true,
       "id": 12605
     },
     "Trident of the seas (full)": {
-      "price": 843278,
+      "price": 838360,
       "tradeable": true,
       "id": 11905
     },
     "Trout": {
-      "price": 21,
+      "price": 19,
       "tradeable": true,
       "id": 333
     },
     "Tumeken's shadow (uncharged)": {
-      "price": 792133806,
+      "price": 782217830,
       "tradeable": true,
       "id": 27277
     },
     "Tuna": {
-      "price": 40,
+      "price": 44,
       "tradeable": true,
       "id": 361
     },
     "Tuna potato": {
-      "price": 1372,
+      "price": 1408,
       "tradeable": true,
       "id": 7060
     },
@@ -3453,33 +3454,33 @@
       "tradeable": false
     },
     "Twisted bow": {
-      "price": 1383767679,
+      "price": 1371535730,
       "tradeable": true,
       "id": 20997
     },
     "Twisted buckler": {
-      "price": 10858080,
+      "price": 11604513,
       "tradeable": true,
       "id": 21000
     },
     "Tyrannical ring": {
-      "price": 204644,
+      "price": 170255,
       "tradeable": true,
       "id": 12603
     },
     "Ugthanki kebab": {
-      "price": 838,
+      "price": 665,
       "tradeable": true,
       "id": 1885
     },
     "Ultor ring": {
-      "price": 104546853,
+      "price": 106426095,
       "tradeable": true,
       "referenceOnly": true,
       "id": 28307
     },
     "Ultor vestige": {
-      "price": 104419578,
+      "price": 106288161,
       "tradeable": false,
       "valueNote": "Untradeable: valued as Ultor ring minus 3 chromium ingots",
       "derivedFrom": {
@@ -3496,32 +3497,32 @@
       }
     },
     "Uncut diamond": {
-      "price": 2470,
+      "price": 2452,
       "tradeable": true,
       "id": 1617
     },
     "Uncut dragonstone": {
-      "price": 14774,
+      "price": 14587,
       "tradeable": true,
       "id": 1631
     },
     "Uncut emerald": {
-      "price": 434,
+      "price": 409,
       "tradeable": true,
       "id": 1621
     },
     "Uncut onyx": {
-      "price": 2736671,
+      "price": 2847502,
       "tradeable": true,
       "id": 6571
     },
     "Uncut ruby": {
-      "price": 1003,
+      "price": 1004,
       "tradeable": true,
       "id": 1619
     },
     "Uncut sapphire": {
-      "price": 216,
+      "price": 206,
       "tradeable": true,
       "id": 1623
     },
@@ -3531,38 +3532,38 @@
       "id": 1724
     },
     "Unicorn horn": {
-      "price": 543,
+      "price": 576,
       "tradeable": true,
       "id": 237
     },
     "Unpowered orb": {
-      "price": 88,
+      "price": 56,
       "tradeable": true,
       "id": 567
     },
     "Venator fang": {
-      "price": 1938,
+      "price": 1922,
       "tradeable": true,
       "id": 33661
     },
     "Venator ring": {
-      "price": 48036196,
+      "price": 48348396,
       "tradeable": true,
       "referenceOnly": true,
       "id": 28310
     },
     "Venator shard": {
-      "price": 12026111,
+      "price": 12236184,
       "tradeable": true,
       "id": 27614
     },
     "Venator tooth": {
-      "price": 1210,
+      "price": 1178,
       "tradeable": true,
       "id": 33663
     },
     "Venator vestige": {
-      "price": 47908921,
+      "price": 48210462,
       "tradeable": false,
       "valueNote": "Untradeable: valued as Venator ring minus 3 chromium ingots",
       "derivedFrom": {
@@ -3579,42 +3580,42 @@
       }
     },
     "Vial of blood": {
-      "price": 8405,
+      "price": 8332,
       "tradeable": true,
       "id": 22446
     },
     "Virtus mask": {
-      "price": 4424643,
+      "price": 4530034,
       "tradeable": true,
       "id": 26241
     },
     "Virtus robe bottom": {
-      "price": 23699848,
+      "price": 23361000,
       "tradeable": true,
       "id": 26245
     },
     "Virtus robe top": {
-      "price": 29312660,
+      "price": 28691792,
       "tradeable": true,
       "id": 26243
     },
     "Voidwaker blade": {
-      "price": 1234000,
+      "price": 1105326,
       "tradeable": true,
       "id": 27684
     },
     "Voidwaker gem": {
-      "price": 34139476,
+      "price": 37227779,
       "tradeable": true,
       "id": 27687
     },
     "Voidwaker hilt": {
-      "price": 1221238,
+      "price": 1403000,
       "tradeable": true,
       "id": 27681
     },
     "Volatile orb": {
-      "price": 31451028,
+      "price": 29519694,
       "tradeable": true,
       "id": 24514
     },
@@ -3627,27 +3628,27 @@
       "tradeable": false
     },
     "Warrior ring": {
-      "price": 53515,
+      "price": 52092,
       "tradeable": true,
       "id": 6735
     },
     "Water battlestaff": {
-      "price": 8862,
+      "price": 8788,
       "tradeable": true,
       "id": 1395
     },
     "Water orb": {
-      "price": 900,
+      "price": 970,
       "tradeable": true,
       "id": 571
     },
     "Water rune": {
-      "price": 6,
+      "price": 5,
       "tradeable": true,
       "id": 555
     },
     "Water talisman": {
-      "price": 308,
+      "price": 337,
       "tradeable": true,
       "id": 1444
     },
@@ -3657,47 +3658,47 @@
       "id": 5982
     },
     "Watermelon seed": {
-      "price": 103,
+      "price": 46,
       "tradeable": true,
       "id": 5321
     },
     "Weapon poison(++)": {
-      "price": 1686,
+      "price": 1956,
       "tradeable": true,
       "id": 5940
     },
     "White berries": {
-      "price": 657,
+      "price": 636,
       "tradeable": true,
       "id": 239
     },
     "Wild pie": {
-      "price": 671,
+      "price": 590,
       "tradeable": true,
       "id": 7208
     },
     "Wilderness crabs teleport": {
-      "price": 17804,
+      "price": 19760,
       "tradeable": true,
       "id": 24251
     },
     "Willow seed": {
-      "price": 92,
+      "price": 54,
       "tradeable": true,
       "id": 5313
     },
     "Wine of Zamorak": {
-      "price": 916,
+      "price": 936,
       "tradeable": true,
       "id": 245
     },
     "Wine of zamorak": {
-      "price": 916,
+      "price": 936,
       "tradeable": true,
       "id": 245
     },
     "Wrath rune": {
-      "price": 327,
+      "price": 340,
       "tradeable": true,
       "id": 21880
     },
@@ -3707,202 +3708,229 @@
       "id": 22118
     },
     "Yellowfin": {
-      "price": 663,
+      "price": 545,
       "tradeable": true,
       "id": 32328
     },
     "Yew logs": {
-      "price": 103,
+      "price": 102,
       "tradeable": true,
       "id": 1515
     },
     "Yew seed": {
-      "price": 21557,
+      "price": 21824,
       "tradeable": true,
       "id": 5315
     },
     "Zalcano shard": {
-      "price": 90104,
+      "price": 98000,
       "tradeable": true,
       "id": 23908
     },
     "Zamorak brew(2)": {
-      "price": 200,
+      "price": 346,
       "tradeable": true,
       "id": 191
     },
     "Zamorak brew(3)": {
-      "price": 426,
+      "price": 502,
       "tradeable": true,
       "id": 189
     },
     "Zamorak hilt": {
-      "price": 17607500,
+      "price": 18350000,
       "tradeable": true,
       "id": 11816
     },
     "Zamorak mix(2)": {
-      "price": 290,
+      "price": 295,
       "tradeable": true,
       "id": 11521
     },
     "Zamorakian spear": {
-      "price": 1149807,
+      "price": 1148417,
       "tradeable": true,
       "id": 11824
     },
     "Zaryte vambraces": {
-      "price": 70936054,
+      "price": 72296391,
       "tradeable": true,
       "id": 26235
     },
     "Zul-andra teleport": {
-      "price": 11938,
+      "price": 12190,
       "tradeable": true,
       "id": 12938
     },
     "Zulrah's scales": {
-      "price": 159,
+      "price": 160,
       "tradeable": true,
       "id": 12934
     },
     "Teak logs": {
-      "price": 159,
+      "price": 172,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 6333
     },
     "Arctic pine logs": {
-      "price": 694,
+      "price": 654,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 10810
     },
     "Camphor logs": {
-      "price": 339,
+      "price": 345,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 32904
     },
     "Ironwood logs": {
-      "price": 105,
+      "price": 108,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 32907
     },
     "Redwood logs": {
-      "price": 755,
+      "price": 774,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 19669
     },
     "Rosewood logs": {
-      "price": 366,
+      "price": 414,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 32910
     },
     "Forester's ration": {
-      "price": 45,
+      "price": 46,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 28157
     },
     "Felling axe handle": {
-      "price": 2013017,
+      "price": 2259941,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 28177
     },
     "Magic leaves": {
-      "price": 668,
+      "price": 774,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 6030
     },
     "Yew leaves": {
-      "price": 498,
+      "price": 476,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 6026
     },
     "Divine super combat potion(4)": {
-      "price": 18246,
+      "price": 18064,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 23685
     },
     "Super combat potion(4)": {
-      "price": 12204,
+      "price": 12398,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 12695
     },
     "Maple leaves": {
-      "price": 324,
+      "price": 327,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 6028
     },
     "Oak leaves": {
-      "price": 95,
+      "price": 90,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 6022
     },
     "Secateurs attachment": {
-      "price": 102,
+      "price": 116,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 28161
     },
     "Willow leaves": {
-      "price": 157,
+      "price": 143,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 6024
     },
     "Willow logs": {
       "price": 24,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 1519
     },
     "Sandworms": {
-      "price": 107,
+      "price": 106,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 13431
     },
     "Raw dark crab": {
-      "price": 948,
+      "price": 938,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 11934
     },
     "Raw lobster": {
-      "price": 118,
+      "price": 128,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 377
     },
     "Raw karambwan": {
-      "price": 262,
+      "price": 258,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 3142
     },
     "Lava scale shard": {
-      "price": 75,
+      "price": 80,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 11994
     },
     "Uncut opal": {
-      "price": 78,
+      "price": 79,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 1625
     },
     "Uncut jade": {
-      "price": 82,
+      "price": 86,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 1627
     },
     "Uncut red topaz": {
-      "price": 1085,
+      "price": 1100,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 1629
     },
     "Soft clay": {
-      "price": 139,
+      "price": 98,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 1761
     },
     "Amethyst": {
-      "price": 2860,
+      "price": 2906,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 21347
     },
     "Stardust": {
-      "price": 92.6667,
+      "price": 65.3333,
       "tradeable": false,
       "derivedFrom": {
         "terms": [
@@ -3915,7 +3943,7 @@
       "valueNote": "Untradeable: valued by buying soft clay packs (150 stardust = 100 soft clay)"
     },
     "Golden nugget": {
-      "price": 1390,
+      "price": 980,
       "tradeable": false,
       "derivedFrom": {
         "terms": [
@@ -3928,7 +3956,7 @@
       "valueNote": "Untradeable: valued by buying soft clay packs (1 nugget = 10 soft clay)"
     },
     "Unidentified minerals": {
-      "price": 1390,
+      "price": 980,
       "tradeable": false,
       "derivedFrom": {
         "terms": [
@@ -3941,57 +3969,67 @@
       "valueNote": "Untradeable: valued by buying soft clay packs (1 mineral = 10 soft clay)"
     },
     "Blood pint": {
-      "price": 101,
+      "price": 82,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 24774
     },
     "Blood shard": {
-      "price": 8081503,
+      "price": 8281726,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 24777
     },
     "Bronze cannonball": {
       "price": 8,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 31906
     },
     "Cooked mystery meat": {
-      "price": 185,
+      "price": 288,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 24785
     },
     "Dragon cannonball": {
-      "price": 1276,
+      "price": 1278,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 31916
     },
     "Enhanced crystal teleport seed": {
-      "price": 3054273,
+      "price": 3082837,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 23959
     },
     "Iron cannonball": {
       "price": 14,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 31908
     },
     "Mithril cannonball": {
-      "price": 148,
+      "price": 142,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 31910
     },
     "Pharaoh's sceptre (uncharged)": {
-      "price": 8452387,
+      "price": 9234667,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 26945
     },
     "Wildblood seed": {
-      "price": 68,
+      "price": 76,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 5311
     },
     "Crystal shard (as divine potions)": {
-      "price": 15105.0,
+      "price": 14165.0,
       "tradeable": false,
       "derivedFrom": {
         "terms": [
@@ -4008,57 +4046,67 @@
       "valueNote": "Crystal shard valued as crystal dust for divine super combat potions (1 shard makes 2.5 potions), as on the beaver page"
     },
     "Red chinchompa": {
-      "price": 1408,
+      "price": 1460,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 10034
     },
     "Black chinchompa": {
-      "price": 3288,
+      "price": 3217,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 11959
     },
     "Steel dart": {
       "price": 4,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 808
     },
     "Extended stamina potion(4)": {
-      "price": 7871,
+      "price": 7673,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 31638
     },
     "Stamina potion(4)": {
-      "price": 3676,
+      "price": 3806,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 12625
     },
     "Amulet of glory(6)": {
-      "price": 10310,
+      "price": 10122,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 11978
     },
     "Amulet of glory": {
-      "price": 11601,
+      "price": 12120,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 1704
     },
     "Aether rune": {
-      "price": 785,
+      "price": 796,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 30843
     },
     "Amylase crystal": {
-      "price": 504,
+      "price": 454,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 12640
     },
     "Pirate's hook": {
-      "price": 938584,
+      "price": 957500,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 2997
     },
     "Mark of grace": {
-      "price": 5040,
+      "price": 4540,
       "tradeable": false,
       "derivedFrom": {
         "terms": [
@@ -4071,7 +4119,7 @@
       "valueNote": "Untradeable: valued at 10 amylase crystals"
     },
     "Brimhaven voucher": {
-      "price": 1173.23,
+      "price": 1196.875,
       "tradeable": false,
       "derivedFrom": {
         "terms": [
@@ -4084,7 +4132,7 @@
       "valueNote": "Untradeable: valued at 1/800 of a Pirate's hook"
     },
     "Termites": {
-      "price": 4032,
+      "price": 3632,
       "tradeable": false,
       "derivedFrom": {
         "terms": [
@@ -4102,79 +4150,94 @@
       "valueNote": "Fixed value: the Wiki money-making guide's average floor 4-5 loot per run (1,676,889 gp/hr at 7 runs/hr, supplies deducted), as of 25 Sep 2026"
     },
     "Ultracompost": {
-      "price": 474,
+      "price": 570,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 21483
     },
     "Dragonfruit": {
-      "price": 790,
+      "price": 737,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 22929
     },
     "Papaya fruit": {
-      "price": 1650,
+      "price": 1732,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 5972
     },
     "Calquat fruit": {
       "price": 101,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 5980
     },
     "Poison ivy berries": {
-      "price": 218,
+      "price": 228,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 6018
     },
     "Celastrus bark": {
-      "price": 8019,
+      "price": 8095,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 22935
     },
     "Monkey nuts": {
-      "price": 133,
+      "price": 130,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 4012
     },
     "Monkey bar": {
-      "price": 770,
+      "price": 875,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 4014
     },
     "Yanillian hops": {
-      "price": 826,
+      "price": 757,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 5998
     },
     "Cadava berries": {
-      "price": 69,
+      "price": 55,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 753
     },
     "Seaweed spore": {
-      "price": 227,
+      "price": 298,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 21490
     },
     "Giant seaweed": {
-      "price": 71,
+      "price": 78,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 21504
     },
     "Mushroom spore": {
-      "price": 79,
+      "price": 100,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 5282
     },
     "Mushroom": {
-      "price": 193,
+      "price": 190,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 6004
     },
     "Magic roots": {
-      "price": 8166,
+      "price": 10168,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 6051
     },
     "Rewards Guardian search (Wiki average)": {
       "price": 5303.44,
@@ -4182,9 +4245,10 @@
       "valueNote": "Fixed value: the Wiki's average Rewards Guardian search (5,303.44 gp, as of 25 Sep 2026); abyssal pearls and untradeable uniques count as 0"
     },
     "Numulite": {
-      "price": 41,
+      "price": 40,
       "tradeable": true,
-      "referenceOnly": true
+      "referenceOnly": true,
+      "id": 21555
     },
     "Hunters' loot sack (master) (Wiki average)": {
       "price": 28215.88,
@@ -4197,40 +4261,49 @@
       "valueNote": "Fixed value: the Wiki's average expert hunters' loot sack (23,301 gp, as of 25 Sep 2026)"
     },
     "Ranarr weed": {
-      "price": 5954,
-      "tradeable": true
+      "price": 5968,
+      "tradeable": true,
+      "id": 257
     },
     "Berserker helm": {
-      "price": 40814,
-      "tradeable": true
+      "price": 39850,
+      "tradeable": true,
+      "id": 3751
     },
     "Warrior helm": {
-      "price": 39484,
-      "tradeable": true
+      "price": 38355,
+      "tradeable": true,
+      "id": 3753
     },
     "Granite shield": {
-      "price": 34979,
-      "tradeable": true
+      "price": 34762,
+      "tradeable": true,
+      "id": 3122
     },
     "Granite helm": {
-      "price": 39043,
-      "tradeable": true
+      "price": 38822,
+      "tradeable": true,
+      "id": 10589
     },
     "Mithril brutal": {
-      "price": 243,
-      "tradeable": true
+      "price": 220,
+      "tradeable": true,
+      "id": 4793
     },
     "Adamant bolts": {
-      "price": 174,
-      "tradeable": true
+      "price": 196,
+      "tradeable": true,
+      "id": 9143
     },
     "Blighted vengeance sack": {
-      "price": 78,
-      "tradeable": true
+      "price": 72,
+      "tradeable": true,
+      "id": 24621
     },
     "Blighted manta ray": {
-      "price": 99,
-      "tradeable": true
+      "price": 97,
+      "tradeable": true,
+      "id": 24589
     },
     "Mimic 3rd age bonus (Wiki average)": {
       "price": 178867.69,
@@ -4238,340 +4311,424 @@
       "valueNote": "Fixed value: the Wiki's extra expected value per master casket when the Mimic fight is enabled"
     },
     "Occult ornament kit": {
-      "price": 2292559,
-      "tradeable": true
+      "price": 2623604,
+      "tradeable": true,
+      "id": 20065
     },
     "Torture ornament kit": {
-      "price": 57754,
-      "tradeable": true
+      "price": 70922,
+      "tradeable": true,
+      "id": 20062
     },
     "Anguish ornament kit": {
-      "price": 206850,
-      "tradeable": true
+      "price": 176660,
+      "tradeable": true,
+      "id": 22246
     },
     "Tormented ornament kit": {
-      "price": 43453,
-      "tradeable": true
+      "price": 54000,
+      "tradeable": true,
+      "id": 23348
     },
     "Dragon defender ornament kit": {
-      "price": 22082,
-      "tradeable": true
+      "price": 20250,
+      "tradeable": true,
+      "id": 20143
     },
     "Dragon kiteshield ornament kit": {
-      "price": 3863797,
-      "tradeable": true
+      "price": 3631898,
+      "tradeable": true,
+      "id": 22239
     },
     "Dragon platebody ornament kit": {
-      "price": 5117035,
-      "tradeable": true
+      "price": 4839806,
+      "tradeable": true,
+      "id": 22236
     },
     "Hood of darkness": {
-      "price": 7425,
-      "tradeable": true
+      "price": 7438,
+      "tradeable": true,
+      "id": 20128
     },
     "Robe top of darkness": {
-      "price": 73001,
-      "tradeable": true
+      "price": 74688,
+      "tradeable": true,
+      "id": 20131
     },
     "Gloves of darkness": {
-      "price": 5364,
-      "tradeable": true
+      "price": 8750,
+      "tradeable": true,
+      "id": 20134
     },
     "Robe bottom of darkness": {
-      "price": 48915,
-      "tradeable": true
+      "price": 48241,
+      "tradeable": true,
+      "id": 20137
     },
     "Boots of darkness": {
-      "price": 5761,
-      "tradeable": true
+      "price": 10453,
+      "tradeable": true,
+      "id": 20140
     },
     "Samurai kasa": {
-      "price": 25038,
-      "tradeable": true
+      "price": 21478,
+      "tradeable": true,
+      "id": 20035
     },
     "Samurai shirt": {
-      "price": 31937,
-      "tradeable": true
+      "price": 44450,
+      "tradeable": true,
+      "id": 20038
     },
     "Samurai gloves": {
-      "price": 28204,
-      "tradeable": true
+      "price": 27852,
+      "tradeable": true,
+      "id": 20041
     },
     "Samurai greaves": {
-      "price": 20923,
-      "tradeable": true
+      "price": 32656,
+      "tradeable": true,
+      "id": 20044
     },
     "Samurai boots": {
-      "price": 7067,
-      "tradeable": true
+      "price": 7128,
+      "tradeable": true,
+      "id": 20047
     },
     "Arceuus hood": {
-      "price": 2038,
-      "tradeable": true
+      "price": 2019,
+      "tradeable": true,
+      "id": 20113
     },
     "Hosidius hood": {
-      "price": 2111,
-      "tradeable": true
+      "price": 2094,
+      "tradeable": true,
+      "id": 20116
     },
     "Lovakengj hood": {
-      "price": 2491,
-      "tradeable": true
+      "price": 2220,
+      "tradeable": true,
+      "id": 20119
     },
     "Piscarilius hood": {
-      "price": 3106,
-      "tradeable": true
+      "price": 2942,
+      "tradeable": true,
+      "id": 20122
     },
     "Shayzien hood": {
-      "price": 2841,
-      "tradeable": true
+      "price": 11388,
+      "tradeable": true,
+      "id": 20125
     },
     "Old demon mask": {
-      "price": 17447,
-      "tradeable": true
+      "price": 29784,
+      "tradeable": true,
+      "id": 20029
     },
     "Lesser demon mask": {
-      "price": 3026,
-      "tradeable": true
+      "price": 2902,
+      "tradeable": true,
+      "id": 20020
     },
     "Greater demon mask": {
-      "price": 3546,
-      "tradeable": true
+      "price": 3515,
+      "tradeable": true,
+      "id": 20023
     },
     "Black demon mask": {
-      "price": 15430,
-      "tradeable": true
+      "price": 15044,
+      "tradeable": true,
+      "id": 20026
     },
     "Jungle demon mask": {
-      "price": 12994,
-      "tradeable": true
+      "price": 8238,
+      "tradeable": true,
+      "id": 20032
     },
     "Left eye patch": {
-      "price": 2643,
-      "tradeable": true
+      "price": 6500,
+      "tradeable": true,
+      "id": 19724
     },
     "Bowl wig": {
-      "price": 21432,
-      "tradeable": true
+      "price": 35788,
+      "tradeable": true,
+      "id": 20110
     },
     "Ale of the gods": {
-      "price": 148917,
-      "tradeable": true
+      "price": 164232,
+      "tradeable": true,
+      "id": 20056
     },
     "Obsidian cape (r)": {
-      "price": 375300,
-      "tradeable": true
+      "price": 363480,
+      "tradeable": true,
+      "id": 20050
     },
     "Fancy tiara": {
-      "price": 9566,
-      "tradeable": true
+      "price": 9320,
+      "tradeable": true,
+      "id": 20008
     },
     "Half moon spectacles": {
-      "price": 19112,
-      "tradeable": true
+      "price": 24712,
+      "tradeable": true,
+      "id": 20053
     },
     "Armadyl godsword ornament kit": {
-      "price": 94808,
-      "tradeable": true
+      "price": 110606,
+      "tradeable": true,
+      "id": 20068
     },
     "Bandos godsword ornament kit": {
-      "price": 2045586,
-      "tradeable": true
+      "price": 2026936,
+      "tradeable": true,
+      "id": 20071
     },
     "Saradomin godsword ornament kit": {
-      "price": 5002965,
-      "tradeable": true
+      "price": 5129140,
+      "tradeable": true,
+      "id": 20074
     },
     "Zamorak godsword ornament kit": {
-      "price": 218506,
-      "tradeable": true
+      "price": 152868,
+      "tradeable": true,
+      "id": 20077
     },
     "Ankou mask": {
-      "price": 8189346,
-      "tradeable": true
+      "price": 8257500,
+      "tradeable": true,
+      "id": 20095
     },
     "Ankou top": {
-      "price": 15553470,
-      "tradeable": true
+      "price": 16086640,
+      "tradeable": true,
+      "id": 20098
     },
     "Ankou gloves": {
-      "price": 2396761,
-      "tradeable": true
+      "price": 2775354,
+      "tradeable": true,
+      "id": 20101
     },
     "Ankou's leggings": {
-      "price": 5997368,
-      "tradeable": true
+      "price": 6057754,
+      "tradeable": true,
+      "id": 20104
     },
     "Ankou socks": {
-      "price": 2098071,
-      "tradeable": true
+      "price": 2072718,
+      "tradeable": true,
+      "id": 20107
     },
     "Mummy's head": {
-      "price": 990525,
-      "tradeable": true
+      "price": 728130,
+      "tradeable": true,
+      "id": 20080
     },
     "Mummy's body": {
-      "price": 1290204,
-      "tradeable": true
+      "price": 1132975,
+      "tradeable": true,
+      "id": 20083
     },
     "Mummy's hands": {
       "price": 329947,
-      "tradeable": true
+      "tradeable": true,
+      "id": 20086
     },
     "Mummy's legs": {
-      "price": 839766,
-      "tradeable": true
+      "price": 713889,
+      "tradeable": true,
+      "id": 20089
     },
     "Mummy's feet": {
-      "price": 390617,
-      "tradeable": true
+      "price": 324954,
+      "tradeable": true,
+      "id": 20092
     },
     "Bucket helm (g)": {
-      "price": 2551142,
-      "tradeable": true
+      "price": 4225000,
+      "tradeable": true,
+      "id": 20059
     },
     "Ring of coins": {
-      "price": 11267667,
-      "tradeable": true
+      "price": 11413972,
+      "tradeable": true,
+      "id": 20017
     },
     "Cabbage": {
       "price": 32,
-      "tradeable": true
+      "tradeable": true,
+      "id": 1965
     },
     "Anti-venom+(4)": {
-      "price": 13825,
-      "tradeable": true
+      "price": 13900,
+      "tradeable": true,
+      "id": 12913
     },
     "Gilded full helm": {
-      "price": 7551349,
-      "tradeable": true
+      "price": 7451995,
+      "tradeable": true,
+      "id": 3486
     },
     "Gilded platebody": {
-      "price": 8778518,
-      "tradeable": true
+      "price": 8772664,
+      "tradeable": true,
+      "id": 3481
     },
     "Gilded platelegs": {
-      "price": 5893600,
-      "tradeable": true
+      "price": 5804340,
+      "tradeable": true,
+      "id": 3483
     },
     "Gilded plateskirt": {
-      "price": 869493,
-      "tradeable": true
+      "price": 890061,
+      "tradeable": true,
+      "id": 3485
     },
     "Gilded kiteshield": {
-      "price": 6266130,
-      "tradeable": true
+      "price": 6474955,
+      "tradeable": true,
+      "id": 3488
     },
     "Gilded med helm": {
-      "price": 1544525,
-      "tradeable": true
+      "price": 1514690,
+      "tradeable": true,
+      "id": 20146
     },
     "Gilded chainbody": {
-      "price": 2085883,
-      "tradeable": true
+      "price": 2238468,
+      "tradeable": true,
+      "id": 20149
     },
     "Gilded sq shield": {
-      "price": 1239152,
-      "tradeable": true
+      "price": 1211522,
+      "tradeable": true,
+      "id": 20152
     },
     "Gilded 2h sword": {
-      "price": 3726466,
-      "tradeable": true
+      "price": 3862994,
+      "tradeable": true,
+      "id": 20155
     },
     "Gilded spear": {
-      "price": 806505,
-      "tradeable": true
+      "price": 683653,
+      "tradeable": true,
+      "id": 20158
     },
     "Gilded hasta": {
-      "price": 782823,
-      "tradeable": true
+      "price": 780000,
+      "tradeable": true,
+      "id": 20161
     },
     "Gilded scimitar": {
-      "price": 11761485,
-      "tradeable": true
+      "price": 11687652,
+      "tradeable": true,
+      "id": 12389
     },
     "Gilded boots": {
-      "price": 932839,
-      "tradeable": true
+      "price": 934168,
+      "tradeable": true,
+      "id": 12391
     },
     "Gilded coif": {
-      "price": 444097,
-      "tradeable": true
+      "price": 466886,
+      "tradeable": true,
+      "id": 23258
     },
     "Gilded d'hide vambraces": {
-      "price": 4218404,
-      "tradeable": true
+      "price": 4245701,
+      "tradeable": true,
+      "id": 23261
     },
     "Gilded d'hide body": {
-      "price": 1695005,
-      "tradeable": true
+      "price": 1663012,
+      "tradeable": true,
+      "id": 23264
     },
     "Gilded d'hide chaps": {
-      "price": 5857018,
-      "tradeable": true
+      "price": 5821306,
+      "tradeable": true,
+      "id": 23267
     },
     "Gilded pickaxe": {
-      "price": 3504239,
-      "tradeable": true
+      "price": 3556296,
+      "tradeable": true,
+      "id": 23276
     },
     "Gilded axe": {
-      "price": 4541367,
-      "tradeable": true
+      "price": 4427466,
+      "tradeable": true,
+      "id": 23279
     },
     "Gilded spade": {
-      "price": 2814053,
-      "tradeable": true
+      "price": 2858235,
+      "tradeable": true,
+      "id": 23282
     },
     "3rd Age full helmet": {
-      "price": 27956722,
-      "tradeable": true
+      "price": 27400000,
+      "tradeable": true,
+      "id": 10350
     },
     "3rd Age platebody": {
-      "price": 143320384,
-      "tradeable": true
+      "price": 141202023,
+      "tradeable": true,
+      "id": 10348
     },
     "3rd Age platelegs": {
-      "price": 71599571,
-      "tradeable": true
+      "price": 69910121,
+      "tradeable": true,
+      "id": 10346
     },
     "3rd Age plateskirt": {
-      "price": 29617959,
-      "tradeable": true
+      "price": 30002221,
+      "tradeable": true,
+      "id": 23242
     },
     "3rd Age kiteshield": {
-      "price": 70779139,
-      "tradeable": true
+      "price": 72613590,
+      "tradeable": true,
+      "id": 10352
     },
     "3rd Age range coif": {
-      "price": 16168506,
-      "tradeable": true
+      "price": 15359722,
+      "tradeable": true,
+      "id": 10334
     },
     "3rd Age range top": {
-      "price": 24781979,
-      "tradeable": true
+      "price": 25327722,
+      "tradeable": true,
+      "id": 10330
     },
     "3rd Age range legs": {
-      "price": 14906513,
-      "tradeable": true
+      "price": 16326993,
+      "tradeable": true,
+      "id": 10332
     },
     "3rd Age vambraces": {
-      "price": 11563313,
-      "tradeable": true
+      "price": 11855556,
+      "tradeable": true,
+      "id": 10336
     },
     "3rd Age mage hat": {
-      "price": 16252486,
-      "tradeable": true
+      "price": 15389679,
+      "tradeable": true,
+      "id": 10342
     },
     "3rd Age robe top": {
-      "price": 133195105,
-      "tradeable": true
+      "price": 133050566,
+      "tradeable": true,
+      "id": 10338
     },
     "3rd Age robe": {
-      "price": 31206700,
-      "tradeable": true
+      "price": 30261870,
+      "tradeable": true,
+      "id": 10340
     },
     "3rd Age amulet": {
-      "price": 43000944,
-      "tradeable": true
+      "price": 40339195,
+      "tradeable": true,
+      "id": 10344
     },
     "3rd Age druidic robe top": {
       "price": 4000000000,
@@ -4581,35 +4738,43 @@
         "source": "PriceCheck.gg street price of 3.975B (30 verified trades, updated about 5 months ago)",
         "asOf": "2026-09-25"
       },
-      "valueNote": "Above the 2.147B GE cap: ~4B off the GE (PriceCheck.gg 3.975B)"
+      "valueNote": "Above the 2.147B GE cap: ~4B off the GE (PriceCheck.gg 3.975B)",
+      "id": 23336
     },
     "3rd Age druidic robe bottoms": {
-      "price": 1922790926,
-      "tradeable": true
+      "price": 1603544744,
+      "tradeable": true,
+      "id": 23339
     },
     "3rd Age druidic cloak": {
-      "price": 968623976,
-      "tradeable": true
+      "price": 768128000,
+      "tradeable": true,
+      "id": 23345
     },
     "3rd Age longsword": {
-      "price": 1082824290,
-      "tradeable": true
+      "price": 927203600,
+      "tradeable": true,
+      "id": 12426
     },
     "3rd Age bow": {
-      "price": 1054252599,
-      "tradeable": true
+      "price": 1040000034,
+      "tradeable": true,
+      "id": 12424
     },
     "3rd Age wand": {
-      "price": 323662443,
-      "tradeable": true
+      "price": 265561833,
+      "tradeable": true,
+      "id": 12422
     },
     "3rd Age druidic staff": {
-      "price": 607234909,
-      "tradeable": true
+      "price": 492200000,
+      "tradeable": true,
+      "id": 23342
     },
     "3rd Age cloak": {
-      "price": 278044873,
-      "tradeable": true
+      "price": 277250000,
+      "tradeable": true,
+      "id": 12437
     },
     "3rd Age pickaxe": {
       "price": 9000000000,
@@ -4619,7 +4784,8 @@
         "source": "PriceCheck.gg street price (30 verified trades, updated about 3 months ago); osrsbestinslot.com estimates 8.53B–9.42B",
         "asOf": "2026-09-25"
       },
-      "valueNote": "Above the 2.147B GE cap: ~9B off the GE (PriceCheck.gg; osrsbestinslot 8.5–9.4B)"
+      "valueNote": "Above the 2.147B GE cap: ~9B off the GE (PriceCheck.gg; osrsbestinslot 8.5–9.4B)",
+      "id": 20014
     },
     "3rd Age axe": {
       "price": 2900000000,
@@ -4629,203 +4795,253 @@
         "source": "Between PriceCheck.gg (3.075B, 30 verified trades, updated about 6 months ago) and osrsbestinslot.com (2.48B–2.75B)",
         "asOf": "2026-09-25"
       },
-      "valueNote": "Above the 2.147B GE cap: ~2.9B off the GE (PriceCheck.gg 3.1B; osrsbestinslot 2.5–2.75B)"
+      "valueNote": "Above the 2.147B GE cap: ~2.9B off the GE (PriceCheck.gg 3.1B; osrsbestinslot 2.5–2.75B)",
+      "id": 20011
     },
     "Purple sweets": {
-      "price": 4947,
-      "tradeable": true
+      "price": 5002,
+      "tradeable": true,
+      "id": 10476
     },
     "Red firelighter": {
-      "price": 79,
-      "tradeable": true
+      "price": 72,
+      "tradeable": true,
+      "id": 7329
     },
     "Green firelighter": {
-      "price": 81,
-      "tradeable": true
+      "price": 86,
+      "tradeable": true,
+      "id": 7330
     },
     "Blue firelighter": {
-      "price": 81,
-      "tradeable": true
+      "price": 74,
+      "tradeable": true,
+      "id": 7331
     },
     "Purple firelighter": {
-      "price": 79,
-      "tradeable": true
+      "price": 71,
+      "tradeable": true,
+      "id": 10326
     },
     "White firelighter": {
-      "price": 82,
-      "tradeable": true
+      "price": 70,
+      "tradeable": true,
+      "id": 10327
     },
     "Holy blessing": {
-      "price": 3388,
-      "tradeable": true
+      "price": 8744,
+      "tradeable": true,
+      "id": 20220
     },
     "Unholy blessing": {
-      "price": 10669,
-      "tradeable": true
+      "price": 9245,
+      "tradeable": true,
+      "id": 20223
     },
     "Peaceful blessing": {
-      "price": 2734,
-      "tradeable": true
+      "price": 3050,
+      "tradeable": true,
+      "id": 20226
     },
     "War blessing": {
-      "price": 6976,
-      "tradeable": true
+      "price": 7063,
+      "tradeable": true,
+      "id": 20232
     },
     "Honourable blessing": {
-      "price": 3495,
-      "tradeable": true
+      "price": 2285,
+      "tradeable": true,
+      "id": 20229
     },
     "Ancient blessing": {
-      "price": 4188,
-      "tradeable": true
+      "price": 3580,
+      "tradeable": true,
+      "id": 20235
     },
     "Charge dragonstone jewellery scroll": {
-      "price": 184,
-      "tradeable": true
+      "price": 175,
+      "tradeable": true,
+      "id": 20238
     },
     "Nardah teleport": {
-      "price": 11747,
-      "tradeable": true
+      "price": 11090,
+      "tradeable": true,
+      "id": 12402
     },
     "Mos le'harmless teleport": {
-      "price": 949,
-      "tradeable": true
+      "price": 928,
+      "tradeable": true,
+      "id": 12411
     },
     "Mort'ton teleport": {
-      "price": 12138,
-      "tradeable": true
+      "price": 14473,
+      "tradeable": true,
+      "id": 12406
     },
     "Feldip hills teleport": {
-      "price": 1058,
-      "tradeable": true
+      "price": 917,
+      "tradeable": true,
+      "id": 12404
     },
     "Lunar isle teleport": {
-      "price": 2597,
-      "tradeable": true
+      "price": 2572,
+      "tradeable": true,
+      "id": 12405
     },
     "Digsite teleport": {
-      "price": 3986,
-      "tradeable": true
+      "price": 3848,
+      "tradeable": true,
+      "id": 12403
     },
     "Piscatoris teleport": {
-      "price": 3506,
-      "tradeable": true
+      "price": 3020,
+      "tradeable": true,
+      "id": 12408
     },
     "Pest control teleport": {
-      "price": 362,
-      "tradeable": true
+      "price": 328,
+      "tradeable": true,
+      "id": 12407
     },
     "Tai bwo wannai teleport": {
-      "price": 3320,
-      "tradeable": true
+      "price": 3718,
+      "tradeable": true,
+      "id": 12409
     },
     "Lumberyard teleport": {
-      "price": 3328,
-      "tradeable": true
+      "price": 3440,
+      "tradeable": true,
+      "id": 12642
     },
     "Iorwerth camp teleport": {
-      "price": 5565,
-      "tradeable": true
+      "price": 5447,
+      "tradeable": true,
+      "id": 12410
     },
     "Master scroll book (empty)": {
-      "price": 60103,
-      "tradeable": true
+      "price": 67782,
+      "tradeable": true,
+      "id": 21387
     },
     "Saradomin page 1": {
-      "price": 1241,
-      "tradeable": true
+      "price": 2275,
+      "tradeable": true,
+      "id": 3827
     },
     "Saradomin page 2": {
-      "price": 744,
-      "tradeable": true
+      "price": 13224,
+      "tradeable": true,
+      "id": 3828
     },
     "Saradomin page 3": {
-      "price": 1151,
-      "tradeable": true
+      "price": 10078,
+      "tradeable": true,
+      "id": 3829
     },
     "Saradomin page 4": {
-      "price": 761,
-      "tradeable": true
+      "price": 6300,
+      "tradeable": true,
+      "id": 3830
     },
     "Zamorak page 1": {
-      "price": 3742,
-      "tradeable": true
+      "price": 5707,
+      "tradeable": true,
+      "id": 3831
     },
     "Zamorak page 2": {
-      "price": 3499,
-      "tradeable": true
+      "price": 2994,
+      "tradeable": true,
+      "id": 3832
     },
     "Zamorak page 3": {
-      "price": 3805,
-      "tradeable": true
+      "price": 4026,
+      "tradeable": true,
+      "id": 3833
     },
     "Zamorak page 4": {
-      "price": 3844,
-      "tradeable": true
+      "price": 3448,
+      "tradeable": true,
+      "id": 3834
     },
     "Guthix page 1": {
-      "price": 829,
-      "tradeable": true
+      "price": 1700,
+      "tradeable": true,
+      "id": 3835
     },
     "Guthix page 2": {
-      "price": 1272,
-      "tradeable": true
+      "price": 2750,
+      "tradeable": true,
+      "id": 3836
     },
     "Guthix page 3": {
-      "price": 1087,
-      "tradeable": true
+      "price": 1228,
+      "tradeable": true,
+      "id": 3837
     },
     "Guthix page 4": {
-      "price": 1072,
-      "tradeable": true
+      "price": 10014,
+      "tradeable": true,
+      "id": 3838
     },
     "Bandos page 1": {
-      "price": 785,
-      "tradeable": true
+      "price": 1575,
+      "tradeable": true,
+      "id": 12613
     },
     "Bandos page 2": {
-      "price": 835,
-      "tradeable": true
+      "price": 695,
+      "tradeable": true,
+      "id": 12614
     },
     "Bandos page 3": {
-      "price": 1006,
-      "tradeable": true
+      "price": 1030,
+      "tradeable": true,
+      "id": 12615
     },
     "Bandos page 4": {
-      "price": 1074,
-      "tradeable": true
+      "price": 1068,
+      "tradeable": true,
+      "id": 12616
     },
     "Armadyl page 1": {
-      "price": 2870,
-      "tradeable": true
+      "price": 7166,
+      "tradeable": true,
+      "id": 12617
     },
     "Armadyl page 2": {
-      "price": 2674,
-      "tradeable": true
+      "price": 6250,
+      "tradeable": true,
+      "id": 12618
     },
     "Armadyl page 3": {
-      "price": 2401,
-      "tradeable": true
+      "price": 2450,
+      "tradeable": true,
+      "id": 12619
     },
     "Armadyl page 4": {
-      "price": 2318,
-      "tradeable": true
+      "price": 6806,
+      "tradeable": true,
+      "id": 12620
     },
     "Ancient page 1": {
-      "price": 2237,
-      "tradeable": true
+      "price": 2681,
+      "tradeable": true,
+      "id": 12621
     },
     "Ancient page 2": {
-      "price": 2193,
-      "tradeable": true
+      "price": 3166,
+      "tradeable": true,
+      "id": 12622
     },
     "Ancient page 3": {
-      "price": 2251,
-      "tradeable": true
+      "price": 2664,
+      "tradeable": true,
+      "id": 12623
     },
     "Ancient page 4": {
-      "price": 2020,
-      "tradeable": true
+      "price": 3136,
+      "tradeable": true,
+      "id": 12624
     }
   },
   "bosses": [
